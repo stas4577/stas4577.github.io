@@ -1,0 +1,427 @@
+@font-face {
+  font-family: 'Xbox Logo New';
+  src: url('../fonts/XboxLogoNew-Regular.eot');
+  src: url('../fonts/XboxLogoNew-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/XboxLogoNew-Regular.woff2') format('woff2'), url('../fonts/XboxLogoNew-Regular.woff') format('woff'), url('../fonts/XboxLogoNew-Regular.ttf') format('truetype'), url('../fonts/XboxLogoNew-Regular.svg#XboxLogoNew-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ropa Sans SC PTT';
+  src: url('../fonts/RopaSansSCPTT-Regular.eot');
+  src: url('../fonts/RopaSansSCPTT-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/RopaSansSCPTT-Regular.woff2') format('woff2'), url('../fonts/RopaSansSCPTT-Regular.woff') format('woff'), url('../fonts/RopaSansSCPTT-Regular.ttf') format('truetype'), url('../fonts/RopaSansSCPTT-Regular.svg#RopaSansSCPTT-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Uni Sans Thin Caps';
+  src: url('../fonts/UniSansThinCaps.eot');
+  src: url('../fonts/UniSansThinCaps.eot?#iefix') format('embedded-opentype'), url('../fonts/UniSansThinCaps.woff2') format('woff2'), url('../fonts/UniSansThinCaps.woff') format('woff'), url('../fonts/UniSansThinCaps.ttf') format('truetype'), url('../fonts/UniSansThinCaps.svg#UniSansThinCaps') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Uni Sans Heavy Caps';
+  src: url('../fonts/UniSansHeavyCaps.eot');
+  src: url('../fonts/UniSansHeavyCaps.eot?#iefix') format('embedded-opentype'), url('../fonts/UniSansHeavyCaps.woff2') format('woff2'), url('../fonts/UniSansHeavyCaps.woff') format('woff'), url('../fonts/UniSansHeavyCaps.ttf') format('truetype'), url('../fonts/UniSansHeavyCaps.svg#UniSansHeavyCaps') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+}
+a:active,
+a:hover,
+a {
+  text-decoration: none;
+  color: #000;
+}
+.main {
+  height: 100vh;
+  background: url('../images/Main.png') no-repeat;
+  background-size: cover;
+  padding-top: 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main_title {
+  font-family: 'Xbox Logo New';
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+.main_card {
+  height: 200px;
+  background: #fff;
+  border-radius: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main_card img {
+  position: absolute;
+  right: -10%;
+  top: -20%;
+}
+.main_card_title {
+  font-size: 2.5rem;
+  color: #ffb732;
+}
+.main_card_subtitle {
+  font-size: 2rem;
+}
+.main_card_sale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background: linear-gradient(45deg, #ffe324 0%, #ffb533 100%);
+  padding: 0 10px;
+  border-radius: 10px;
+}
+.main_card_sale_info {
+  font-family: 'Uni Sans Heavy Caps';
+}
+.main_card_sale_info:first-child {
+  font-size: 0.8rem;
+  margin-bottom: 6px;
+  margin-right: 5px;
+}
+.main_card_sale_info:nth-child(2) {
+  font-size: 2rem;
+}
+.logo {
+  height: 80px;
+}
+.phone {
+  color: #fff;
+  font-family: 'Uni Sans Thin Caps';
+  font-size: 1.8rem;
+}
+.form {
+  background: #1c1d1e;
+  height: 100%;
+  border-radius: 30px;
+  font-family: 'Ropa Sans SC PTT';
+  padding: 10% 10%;
+  position: relative;
+}
+.form img {
+  position: absolute;
+  right: -10%;
+  top: -10%;
+}
+.form_window {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 90%;
+}
+.form_title {
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: center;
+  width: 75%;
+  line-height: 1;
+}
+.form_submit {
+  background: linear-gradient(45deg, #ffe324 0%, #ffb533 100%);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  font-family: 'Uni Sans Heavy Caps';
+  font-size: 2rem;
+  color: #1c1d1e;
+  border: 0;
+  height: 17%;
+}
+.form_submit:hover {
+  -webkit-transform: scale(1.15, 1.15);
+          transform: scale(1.15, 1.15);
+}
+input {
+  height: 15%;
+  width: 70%;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  background: #000;
+  padding: 0 5%;
+  color: #fff;
+}
+input:focus {
+  outline: none;
+}
+input::-webkit-input-placeholder {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+input::-moz-placeholder {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+input:-moz-placeholder {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+.arrow {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+.icon {
+  height: 5vw;
+}
+.about {
+  height: 800px;
+  min-height: 500px;
+  background: #1e1e1e;
+  padding: 4vw 0;
+  color: #fff;
+}
+.about_title {
+  font-size: 5rem;
+  font-family: 'Xbox Logo New';
+}
+.about_text {
+  font-size: 2.3rem;
+  line-height: 1.2;
+}
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.slider_img {
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+.slider_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 50%;
+  -webkit-transform: translateX(60%);
+          transform: translateX(60%);
+  bottom: 0;
+}
+.slide {
+  position: absolute;
+  height: 350px;
+  width: 100%;
+  right: 0%;
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+.slide_active {
+  opacity: 1;
+}
+.button_nav {
+  height: 18px;
+  width: 18px;
+  border-radius: 10px;
+  background: #fff;
+  margin: 0 10px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+.button_nav_active {
+  background: #FFB720;
+}
+.cost {
+  height: 1200px;
+  background: #1E1E1E;
+  padding: 4vw 0;
+}
+.cost_title {
+  font-size: 4.5rem;
+  font-family: 'Xbox Logo New';
+  color: #fff;
+}
+.cost_img {
+  height: 100%;
+}
+.cost_block {
+  background: #3B3B3B;
+  height: 20vw;
+  width: 100%;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 10%;
+}
+.cost_block_title {
+  font-size: 3.8rem;
+  text-align: center;
+  font-family: 'Ropa Sans SC PTT';
+  line-height: 1;
+  color: #ffb732;
+}
+.cost_block_cost {
+  width: 60%;
+  background: linear-gradient(45deg, #ffe324 0%, #ffb533 100%);
+  height: 22%;
+  margin: 5% 0;
+  border-radius: 18px;
+}
+.cost_info {
+  margin-top: 50px;
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+  .main_card {
+    height: 150px;
+  }
+  .main_title {
+    line-height: 1.3;
+  }
+  .main_left {
+    margin-top: -10%;
+  }
+  .main_right {
+    margin-top: -10%;
+  }
+}
+@media (max-width: 990px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media (max-width: 770px) {
+  html {
+    font-size: 10px;
+  }
+  .main_title {
+    font-size: 2.7rem;
+  }
+  .main {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+  }
+  .main_title {
+    text-align: center;
+  }
+  .main_card {
+    width: 70%;
+    height: auto;
+    padding: 3% 0;
+    margin-bottom: 40px;
+  }
+  .main_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main_left {
+    margin-top: 0%;
+  }
+  .main_right {
+    margin-top: 0%;
+  }
+  .header {
+    margin-bottom: 40px;
+  }
+  .test {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .form {
+    height: 250px;
+    padding: 0;
+  }
+  .icon {
+    right: -5% !important;
+    top: -15% !important;
+    height: 7vw;
+  }
+  #icon_ad {
+    top: -10% !important;
+  }
+  #arrow_img {
+    display: none;
+  }
+}

@@ -29,6 +29,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 html {
   font-size: 16px;
@@ -356,6 +357,72 @@ input:focus {
 .cost_small {
   font-size: 2.1rem;
 }
+.sales {
+  height: 1800px;
+  background: #1E1E1E;
+  border: 1px solid red;
+}
+.sales_title {
+  font-size: 5rem;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Xbox Logo New';
+}
+.sales_title img {
+  margin-right: 25px;
+}
+.sales_block {
+  background: linear-gradient(45deg, #ffe324 0%, #ffb533 100%);
+  height: 630px;
+  width: 100%;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 50px 0;
+}
+.sales_block_title {
+  font-family: 'Ropa Sans SC PTT';
+  font-size: 3.7rem;
+  text-align: center;
+  line-height: 1;
+  color: #3e3e3e;
+}
+.sales_block_sale {
+  border-radius: 18px;
+  background: #3B3B3B;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.sales_block_sale span {
+  color: #fff;
+}
+.sales_block_add {
+  color: #3e3e3e;
+  font-family: 'Ropa Sans SC PTT';
+  font-size: 2.4rem;
+  line-height: 1;
+}
 @media (max-width: 1200px) {
   html {
     font-size: 14px;
@@ -386,6 +453,9 @@ input:focus {
   .slider {
     height: 55vw;
     margin-top: 40px;
+  }
+  input {
+    font-size: 1.5rem !important;
   }
 }
 @media (max-width: 768px) {
@@ -473,13 +543,41 @@ input:focus {
   }
 }
 @media (max-width: 575px) {
+  html {
+    font-size: 9px;
+  }
   .cost_block {
     margin: 20px 0;
     width: 80%;
+  }
+  .about_title {
+    white-space: nowrap;
+  }
+  .icon {
+    min-height: 50px;
   }
 }
 @media (max-width: 400px) {
   html {
     font-size: 8px;
+  }
+}
+@media (max-width: 370px) {
+  html {
+    font-size: 7px;
+  }
+  input {
+    font-size: 2rem !important;
+  }
+  .about_title {
+    font-size: 4.4rem;
+    white-space: nowrap;
+  }
+  .icon {
+    min-height: 40px;
+  }
+  .cost_title {
+    font-size: 2.8rem;
+    white-space: nowrap;
   }
 }

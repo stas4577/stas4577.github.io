@@ -358,9 +358,8 @@ input:focus {
   font-size: 2.1rem;
 }
 .sales {
-  height: 1800px;
   background: #1E1E1E;
-  border: 1px solid red;
+  padding: 70px 0;
 }
 .sales_title {
   font-size: 5rem;
@@ -372,13 +371,14 @@ input:focus {
       -ms-flex-align: center;
           align-items: center;
   font-family: 'Xbox Logo New';
+  margin-bottom: 40px;
 }
 .sales_title img {
   margin-right: 25px;
 }
 .sales_block {
   background: linear-gradient(45deg, #ffe324 0%, #ffb533 100%);
-  height: 630px;
+  height: 100%;
   width: 100%;
   border-radius: 25px;
   display: -webkit-box;
@@ -402,6 +402,7 @@ input:focus {
   text-align: center;
   line-height: 1;
   color: #3e3e3e;
+  margin: 10% 0;
 }
 .sales_block_sale {
   border-radius: 18px;
@@ -413,6 +414,7 @@ input:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 10px;
 }
 .sales_block_sale span {
   color: #fff;
@@ -422,6 +424,87 @@ input:focus {
   font-family: 'Ropa Sans SC PTT';
   font-size: 2.4rem;
   line-height: 1;
+}
+.smile {
+  background: url('../images/smile_1.png') #000000;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 1100px;
+  padding: 200px 0;
+  color: #fff;
+  text-align: center;
+  overflow-y: hidden;
+}
+.smile_title {
+  font-size: 4rem;
+  font-family: 'Xbox Logo New';
+  line-height: 1;
+}
+.smile_text {
+  font-size: 2rem;
+  font-family: 'Ropa Sans SC PTT';
+  line-height: 1.2;
+  margin: 80px 0;
+}
+.smile .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.smile_button {
+  background: #36393A;
+  height: 200px;
+  border-radius: 30px;
+  width: 100%;
+  border: none;
+  color: #fff;
+  font-size: 3rem;
+  font-family: 'Ropa Sans SC PTT';
+  line-height: 1.2;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  position: relative;
+}
+.smile_button:focus {
+  outline: none;
+}
+.smile_button:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+.comments {
+  height: 800px;
+  background: #333;
+}
+@media (min-width: 2200px) {
+  .smile {
+    height: 1350px;
+    padding-top: 400px;
+  }
+}
+@media (max-width: 1570px) {
+  .smile_text {
+    margin: 40px 0;
+  }
+  .smile_title {
+    margin-top: -50px;
+  }
+}
+@media (max-width: 1300px) {
+  .smile {
+    background: url('../images/допы/1300-(1).png');
+    background-size: 100% 100%;
+    height: 1000px;
+  }
 }
 @media (max-width: 1200px) {
   html {
@@ -438,6 +521,9 @@ input:focus {
   }
   .main_right {
     margin-top: -10%;
+  }
+  .smile_title {
+    margin-top: 15%;
   }
 }
 @media (max-width: 992px) {
@@ -555,6 +641,20 @@ input:focus {
   }
   .icon {
     min-height: 50px;
+  }
+  .sales_block {
+    margin-bottom: 50px;
+  }
+  .hr {
+    height: 20px;
+    width: 100vw;
+  }
+  .hr_1 {
+    height: 10px;
+    width: 100vw;
+  }
+  .sales_title {
+    font-size: 4rem;
   }
 }
 @media (max-width: 400px) {

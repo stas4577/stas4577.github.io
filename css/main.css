@@ -79,11 +79,21 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+.main_card:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 .main_card img {
   position: absolute;
-  right: -10%;
-  top: -20%;
+  right: 0%;
+  top: 0%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
 }
 .main_card_title {
   font-size: 2.5rem;
@@ -129,11 +139,6 @@ a {
   font-family: 'Ropa Sans SC PTT';
   padding: 10% 10%;
   position: relative;
-}
-.form img {
-  position: absolute;
-  right: -10%;
-  top: -10%;
 }
 .form_window {
   display: -webkit-box;
@@ -186,42 +191,37 @@ input {
 input:focus {
   outline: none;
 }
-input::-webkit-input-placeholder {
-  font-size: 1.2rem;
-  font-weight: 900;
-}
-input::-moz-placeholder {
-  font-size: 1.2rem;
-  font-weight: 900;
-}
-input:-moz-placeholder {
-  font-size: 1.2rem;
-  font-weight: 900;
-}
 .arrow {
   position: absolute;
-  bottom: 0%;
+  bottom: 10px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
+  -webkit-transform: translateX(-50%, 0px);
+          transform: translateX(-50%, 0px);
   -webkit-transition: all 3s;
   transition: all 3s;
 }
 .icon {
   height: 5vw;
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  min-height: 50px;
 }
 .about {
-  height: 800px;
-  min-height: 500px;
+  height: auto;
   background: #1e1e1e;
-  padding: 4vw 0;
+  padding: 6vw 0;
   color: #fff;
 }
 .about_title {
   font-size: 5rem;
   font-family: 'Xbox Logo New';
+  margin-bottom: 40px;
+}
+.about_img {
+  margin-bottom: 40px;
 }
 .about_text {
   font-size: 2.3rem;
@@ -241,7 +241,6 @@ input:-moz-placeholder {
   position: relative;
 }
 .slider_img {
-  height: 400px;
   width: 100%;
   position: relative;
 }
@@ -280,7 +279,7 @@ input:-moz-placeholder {
   background: #FFB720;
 }
 .cost {
-  height: 1200px;
+  height: auto;
   background: #1E1E1E;
   padding: 4vw 0;
 }
@@ -294,8 +293,8 @@ input:-moz-placeholder {
 }
 .cost_block {
   background: #3B3B3B;
-  height: 20vw;
   width: 100%;
+  height: 460px;
   border-radius: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,15 +318,43 @@ input:-moz-placeholder {
   line-height: 1;
   color: #ffb732;
 }
+.cost_block_add {
+  color: #fff;
+  font-family: 'Ropa Sans SC PTT';
+  font-size: 2.5rem;
+  text-align: center;
+  width: 120%;
+}
 .cost_block_cost {
   width: 60%;
   background: linear-gradient(45deg, #ffe324 0%, #ffb533 100%);
-  height: 22%;
-  margin: 5% 0;
+  height: 30%;
+  margin-top: 5%;
   border-radius: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .cost_info {
   margin-top: 50px;
+}
+.cost_big {
+  font-family: 'Uni Sans Heavy Caps';
+  font-size: 4.2rem;
+  color: #3B3B3B;
+}
+.cost_small {
+  font-size: 2.1rem;
 }
 @media (max-width: 1200px) {
   html {
@@ -346,17 +373,33 @@ input:-moz-placeholder {
     margin-top: -10%;
   }
 }
-@media (max-width: 990px) {
+@media (max-width: 992px) {
   html {
     font-size: 11px;
   }
+  .cost_block {
+    height: 300px;
+  }
+  .slide {
+    height: auto;
+  }
+  .slider {
+    height: 55vw;
+    margin-top: 40px;
+  }
 }
-@media (max-width: 770px) {
+@media (max-width: 768px) {
   html {
     font-size: 10px;
   }
   .main_title {
     font-size: 2.7rem;
+  }
+  .cost_big {
+    font-size: 3.5rem;
+  }
+  .cost_small {
+    font-size: 1.8rem;
   }
   .main {
     -webkit-box-pack: start;
@@ -372,7 +415,7 @@ input:-moz-placeholder {
     text-align: center;
   }
   .main_card {
-    width: 70%;
+    width: 65%;
     height: auto;
     padding: 3% 0;
     margin-bottom: 40px;
@@ -412,17 +455,31 @@ input:-moz-placeholder {
   }
   .form {
     height: 250px;
-    padding: 0;
-  }
-  .icon {
-    right: -5% !important;
-    top: -15% !important;
-    height: 7vw;
-  }
-  #icon_ad {
-    top: -10% !important;
+    padding: 20px 0;
   }
   #arrow_img {
     display: none;
+  }
+  .cost_title {
+    font-size: 3rem;
+  }
+  .cost_block {
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .slider {
+    height: 70vw;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 575px) {
+  .cost_block {
+    margin: 20px 0;
+    width: 80%;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 8px;
   }
 }

@@ -36,8 +36,8 @@ html {
 a:active,
 a:hover,
 a {
-  text-decoration: none;
-  color: #000;
+  text-decoration: none !important;
+  color: #fff !important;
 }
 .main {
   height: 100vh;

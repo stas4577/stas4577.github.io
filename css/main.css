@@ -365,7 +365,8 @@ input:-moz-placeholder {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 100vh;
+    height: auto;
+    padding-bottom: 50px;
   }
   .main_title {
     text-align: center;

@@ -57,6 +57,12 @@ $(document).ready(function () {
 	$('.close').click(function () {
 		$('.black').css('display','none')
 	})
+	$('.cost_block').click(function () {
+		$('.black').css('display','flex')
+	})
+	$('.sales_block').click(function () {
+		$('.black').css('display','flex')
+	})
 
 
 

@@ -100,7 +100,7 @@ a {
   background: linear-gradient(45deg, #ffe324 0%, #ffb533 100%) !important;
   height: 70px !important;
   font-size: 2.2rem;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   border: none !important;
   color: #171717;
   font-family: 'Uni Sans Heavy Caps';
@@ -150,7 +150,7 @@ a {
 .main_card {
   height: 200px;
   background: #fff;
-  border-radius: 20px;
+  border-radius: 1.875rem;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -200,7 +200,7 @@ a {
           align-items: flex-end;
   background: linear-gradient(45deg, #ffe324 0%, #ffb533 100%);
   padding: 0 10px;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 .main_card_sale_info {
   font-family: 'Uni Sans Heavy Caps';
@@ -218,13 +218,13 @@ a {
 }
 .phone {
   color: #fff;
-  font-family: 'Uni Sans Thin Caps';
-  font-size: 1.8rem;
+  font-family: 'Ropa Sans SC PTT';
+  font-size: 2.4rem;
 }
 .form {
   background: #1c1d1e;
   height: 100%;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   font-family: 'Ropa Sans SC PTT';
   padding: 10% 10%;
   position: relative;
@@ -271,7 +271,7 @@ a {
 input {
   height: 15%;
   width: 70%;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   border: 2px solid #fff;
   background: #000;
   padding: 0 5%;
@@ -358,7 +358,7 @@ input:focus {
 .button_nav {
   height: 18px;
   width: 18px;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   background: #fff;
   margin: 0 10px;
   -webkit-transition: all .5s;
@@ -384,7 +384,7 @@ input:focus {
   background: #3B3B3B;
   width: 100%;
   height: 460px;
-  border-radius: 25px;
+  border-radius: 1.5625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -427,7 +427,7 @@ input:focus {
   background: linear-gradient(45deg, #ffe324 0%, #ffb533 100%);
   height: 30%;
   margin-top: 5%;
-  border-radius: 18px;
+  border-radius: 1.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -459,7 +459,7 @@ input:focus {
 }
 .sales_title {
   font-size: 5rem;
-  color: #fff;
+  color: #FFB732;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -470,7 +470,7 @@ input:focus {
   margin-bottom: 40px;
 }
 .sales_title img {
-  margin-right: 25px;
+  width: 350px;
 }
 .sales_icon {
   height: 10vw;
@@ -480,7 +480,7 @@ input:focus {
   background: linear-gradient(45deg, #ffe324 0%, #ffb533 100%);
   height: 100%;
   width: 100%;
-  border-radius: 25px;
+  border-radius: 1.5625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -513,7 +513,7 @@ input:focus {
   margin: 10% 0;
 }
 .sales_block_sale {
-  border-radius: 18px;
+  border-radius: 1.125rem;
   background: #3B3B3B;
   width: 60%;
   display: -webkit-box;
@@ -569,7 +569,7 @@ input:focus {
 .smile_button {
   background: #36393A;
   height: 200px;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   width: 100%;
   border: none;
   color: #fff;
@@ -600,7 +600,7 @@ input:focus {
 }
 .comments_more {
   height: 80px;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   background: #3B3B3B;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -678,6 +678,7 @@ input:focus {
   height: auto;
   background: #1E1E1E;
   padding: 70px 0;
+  padding-bottom: 0px;
 }
 .galery_title {
   margin-bottom: 5%;
@@ -724,6 +725,7 @@ input:focus {
 .license {
   background: #1E1E1E;
   padding: 10% 0;
+  padding-bottom: 5%;
 }
 .license_title {
   font-size: 3.5rem;
@@ -735,7 +737,7 @@ input:focus {
 }
 .license_img img {
   border: 3px solid #fff;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   width: 100%;
   margin-bottom: 30px;
 }
@@ -1029,6 +1031,9 @@ footer .container {
   .galery_slide_right {
     -webkit-transform: translate(-50%, -50%) !important;
             transform: translate(-50%, -50%) !important;
+  }
+  .sales_title img {
+    width: 100px;
   }
 }
 @media (max-width: 400px) {

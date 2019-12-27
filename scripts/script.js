@@ -25,6 +25,7 @@ $(document).ready(function () {
 			current_slide = $(this).index()
 		}
 	})
+
 	
 
 	let galery_slide = 0
@@ -50,6 +51,15 @@ $(document).ready(function () {
 			$('.galery_slide').eq(galery_slide).addClass('galery_slide_active')
 		}
 	})
+	$('.smile_button').click(function () {
+		$('.black').css('display','flex')
+	})
+	$('.close').click(function () {
+		$('.black').css('display','none')
+	})
+
+
+
 
 	
 })

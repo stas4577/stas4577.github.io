@@ -649,7 +649,7 @@ input:focus {
   font-family: 'Xbox Logo New';
 }
 .comments_more {
-  height: 80px;
+  height: 100px;
   border-radius: 1.25rem;
   background: #3B3B3B;
   display: -webkit-box;
@@ -665,6 +665,7 @@ input:focus {
   transition: -webkit-transform .3s;
   transition: transform .3s;
   transition: transform .3s, -webkit-transform .3s;
+  margin-top: 70px;
 }
 .comments_more:hover {
   -webkit-transform: scale(1.1, 1.1);
@@ -684,19 +685,20 @@ input:focus {
   font-family: 'Ropa Sans SC PTT';
 }
 .comment_header {
-  height: 65%;
+  height: auto;
   background: #3B3B3B;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  border-top-left-radius: 1.875rem;
+  border-top-right-radius: 1.875rem;
   padding: 5%;
   font-size: 2rem;
   color: #fff;
 }
 .comment_footer {
+  max-height: 110px;
   height: 35%;
   background: linear-gradient(45deg, #ffe324 0%, #ffb533 100%);
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 1.875rem;
+  border-bottom-right-radius: 1.875rem;
   font-size: 2rem;
   padding: 0 5%;
   display: -webkit-box;
@@ -708,14 +710,36 @@ input:focus {
 }
 .comment_name {
   font-size: 2rem;
-  text-decoration: underline;
 }
 .comment_img {
   margin-right: 25px;
-  height: 70%;
+  height: 80px;
 }
 .comment_author {
   line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.comment_link {
+  color: #FFE025 !important;
+}
+.comment_link:hover {
+  border-bottom: 1px solid #FFE025;
+  color: #FFE025 !important;
+}
+.comment_hr {
+  height: 2px;
+  width: 100%;
+  background: #1e1e1e;
+  margin-top: 2px;
 }
 #smile_2 {
   background-image: url('../images/smile_2.png');
@@ -1084,6 +1108,21 @@ footer .container {
   }
   .sales_title img {
     width: 100px;
+  }
+  .comments_more {
+    height: 80px;
+  }
+  .comment_name {
+    font-size: 2.6rem;
+  }
+  .comment_age {
+    font-size: 2.6rem;
+  }
+  .comment_img {
+    height: 60px;
+  }
+  .comment_hr {
+    height: 1px;
   }
 }
 @media (max-width: 400px) {

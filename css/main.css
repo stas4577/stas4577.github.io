@@ -923,6 +923,21 @@ input:focus {
   #smile_title_1 {
     margin-top: 0;
   }
+  .input_title {
+    font-size: 2rem;
+  }
+  .close {
+    right: -15%;
+    top: -10%;
+  }
+}
+@media (max-width: 690px) {
+  .close {
+    right: 50%;
+    top: -20%;
+    -webkit-transform: translateX(70%);
+            transform: translateX(70%);
+  }
 }
 @media (max-width: 575px) {
   html {
@@ -982,6 +997,12 @@ input:focus {
 @media (max-width: 400px) {
   html {
     font-size: 8px;
+  }
+  .close {
+    right: 50%;
+    top: -20%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
   }
 }
 @media (max-width: 370px) {

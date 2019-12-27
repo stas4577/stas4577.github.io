@@ -26,4 +26,30 @@ $(document).ready(function () {
 		}
 	})
 	
+
+	let galery_slide = 0
+	$('.galery_slide_left').click(function () {
+		if (galery_slide == 0) {
+			$('.galery_slide').eq(galery_slide).removeClass('galery_slide_active')
+			galery_slide = 9
+			$('.galery_slide').eq(9).addClass('galery_slide_active')
+		} else {
+			$('.galery_slide').eq(galery_slide).removeClass('galery_slide_active')
+			galery_slide--
+			$('.galery_slide').eq(galery_slide).addClass('galery_slide_active')
+		}
+	})
+	$('.galery_slide_right').click(function () {
+		if (galery_slide == 9) {
+			$('.galery_slide').eq(galery_slide).removeClass('galery_slide_active')
+			galery_slide = 0
+			$('.galery_slide').eq(0).addClass('galery_slide_active')
+		} else {
+			$('.galery_slide').eq(galery_slide).removeClass('galery_slide_active')
+			galery_slide++
+			$('.galery_slide').eq(galery_slide).addClass('galery_slide_active')
+		}
+	})
+
+	
 })

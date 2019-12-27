@@ -766,6 +766,12 @@ footer .container {
     height: 1350px;
     padding-top: 400px;
   }
+  footer {
+    height: 70px;
+  }
+  .footer {
+    font-size: 1.7rem;
+  }
 }
 @media (max-width: 1570px) {
   .smile_text {

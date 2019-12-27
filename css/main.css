@@ -772,6 +772,9 @@ footer .container {
   .footer {
     font-size: 1.7rem;
   }
+  #smile_title_1 {
+    margin-top: 250px;
+  }
 }
 @media (max-width: 1570px) {
   .smile_text {

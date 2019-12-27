@@ -10,14 +10,32 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
-	
+<div class="black">
+	<div class="container">
+				<div class="col-6 offset-3 buy">
+					<img src="images/close.png" alt="" class="close">
+					<div class="buy_title">форма обратной связи</div>
+					<form action="">
+						<div class="input_title">Ваше имя</div>
+						<input placeholder="ИВАН" type="text">
+						<div class="input_title">Ваш номер телефона</div>	
+						<input placeholder="+7 (999) 999 99 99" type="text">
+						<input value="ОТПРАВИТЬ" class="buy_button" type="submit">
+					</form>
+				</div>
+	</div>
+</div>	
 
 <div class="main">
 	<div class="container">
 			<div class="header">
 				<div class="row justify-content-between align-items-center">
 					<img src="images/logo.png" alt="" class="logo">
-						<a href="tel:+7 (999) 999-99-99" class="phone">+7 (999) 999-99-99</a>
+						<a href="tel:+7 (999) 999-99-99" class="phone">
+						<?php  
+							echo '123';
+						?>
+						+7 (999) 999-99-99</a>
 				</div>
 			</div>
 	</div>
@@ -58,9 +76,9 @@
 				</div>
 			</div>
 			<div class="container">
-				<div class="arrow">
+				<a href="#test" class="arrow">
 					<img id="arrow_img" src="images/arrow.png" alt="">
-				</div>
+				</a>
 			</div>
 </div>
 
@@ -88,7 +106,7 @@
 			</div>
 			<div class="slider col-12 col-lg-6">
 				<div class="slider_img">
-					<img src="images/фото4.png" alt="" class="slide slide_active">
+					<img src="images/фото 4.png" alt="" class="slide slide_active">
 					<img src="images/фото 3.png" alt="" class="slide">
 					<img src="images/фото 2.png" alt="" class="slide">
 					<img src="images/фото 1.png" alt="" class="slide">
@@ -244,7 +262,7 @@
 </div>
 
 
-
+<a name="test" href="#"></a>
 <div class="smile">
 	<div class="container">
 		<div class="row">
@@ -263,7 +281,7 @@
 					проблем как полости рта так и со здоровьем в целом.
 				</div>
 			</div>
-		</div>
+		</div>	
 		<div class="row">
 			<div class="col-6 offset-3">
 				<button class="smile_button">
@@ -275,7 +293,7 @@
 		</div>
 	</div>
 </div>
-		
+
 
 <div class="comments">
 	<div class="container">

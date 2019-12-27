@@ -739,6 +739,28 @@ input:focus {
   width: 100%;
   margin-bottom: 30px;
 }
+footer {
+  height: 50px;
+  background: #0B0B0B;
+}
+footer .container {
+  height: 100%;
+}
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  font-family: 'Xbox Logo New';
+  font-size: 1.2rem;
+}
 @media (min-width: 2200px) {
   .smile {
     height: 1350px;
@@ -929,6 +951,12 @@ input:focus {
   .close {
     right: -15%;
     top: -10%;
+  }
+  footer {
+    height: 35px;
+  }
+  .footer {
+    padding: 0 30px;
   }
 }
 @media (max-width: 690px) {

@@ -63,6 +63,7 @@ $(document).ready(function () {
 	$('.sales_block').click(function () {
 		$('.black').css('display','flex')
 	})
+	
 
 
 

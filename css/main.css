@@ -500,6 +500,10 @@ input:focus {
 .sales_icon {
   height: 10vw;
   min-height: 65px;
+  background: #3B3B3B;
+  border-radius: 200px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 .sales_block {
   background: #FFDA27;
@@ -534,6 +538,9 @@ input:focus {
 }
 .sales_block:hover .cost_big {
   color: #3B3B3B !important;
+}
+.sales_block:hover .sales_icon {
+  background: #FFDA27;
 }
 .sales_block:hover .cost_small {
   color: #3B3B3B !important;

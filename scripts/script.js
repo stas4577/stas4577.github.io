@@ -28,7 +28,8 @@ $(document).ready(function () {
 			$('.menu_text').eq(menu_active-1).css('opacity','1')
 		}
 	})
-	$('.menu').tap(function() {
+
+	$('.team_img').tap(function() {
 		if ($(this).hasClass('team_active')) {
 			return false
 		} else if ($(this).data('name') == 3) {
@@ -72,6 +73,7 @@ $(document).ready(function () {
 			}
 		}
 	})
+
 	$('.team_img').click(function() {
 		if ($(this).hasClass('team_active')) {
 			return false
@@ -116,7 +118,8 @@ $(document).ready(function () {
 			}
 		}
 	})
-	$('#check').tap(function() {
+	
+	$('#check').click(function() {
 		if (check == 0) {
 			$('#check_text').html('&#10003')
 			$('#form_check').val('1')
@@ -126,8 +129,9 @@ $(document).ready(function () {
 			$('#form_check').val('0')
 			check = 0
 		}
-	}
-	$('#check').click(function() {
+		
+	})
+	$('#check').tap(function() {
 		if (check == 0) {
 			$('#check_text').html('&#10003')
 			$('#form_check').val('1')
@@ -145,7 +149,7 @@ $(document).ready(function () {
 			alert ('Введите номер телефона')
 			return false
 		}
-	}
+	})
 	$('.submit').click(function() {
 		if ($('input[name = Phone]').val() == false) {
 			alert ('Введите номер телефона')

@@ -15,7 +15,10 @@ $(document).ready(function () {
 			$('.menu_text').eq(menu_active-1).css('opacity','1')
 		}
 	})
-
+	alert ('123')
+	$('.menu').tap(function () {
+		alert ('123')
+	})
 	$('.team_img').click(function() {
 		if ($(this).hasClass('team_active')) {
 			return false

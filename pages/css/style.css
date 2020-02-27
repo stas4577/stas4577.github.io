@@ -1,0 +1,236 @@
+@font-face {
+  font-family: 'Noteworthy';
+  src: url('../fonts/Noteworthy-Bold.eot');
+  src: url('../fonts/Noteworthy-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Noteworthy-Bold.woff2') format('woff2'), url('../fonts/Noteworthy-Bold.woff') format('woff'), url('../fonts/Noteworthy-Bold.ttf') format('truetype'), url('../fonts/Noteworthy-Bold.svg#Noteworthy-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Xbox Logo New';
+  src: url('../fonts/XboxLogoNew-Regular.eot');
+  src: url('../fonts/XboxLogoNew-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/XboxLogoNew-Regular.woff2') format('woff2'), url('../fonts/XboxLogoNew-Regular.woff') format('woff'), url('../fonts/XboxLogoNew-Regular.ttf') format('truetype'), url('../fonts/XboxLogoNew-Regular.svg#XboxLogoNew-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+}
+header {
+  width: 100%;
+  height: 60px;
+  background: #26C21EFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+}
+.switcher {
+  width: 100vw;
+  position: relative;
+}
+.nav_link {
+  margin: 0 25px;
+  color: #fff;
+  margin-top: 2px;
+}
+.nav_link:after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 90%;
+  background: red;
+  margin: 0 auto;
+  opacity: 0;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+.nav_link:hover {
+  cursor: pointer;
+}
+.active {
+  margin-top: 2px;
+}
+.active:after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 90%;
+  background: red;
+  margin: 0 auto;
+  opacity: 1;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+.block {
+  height: calc(100% - 100px);
+  -webkit-animation: switch_off 1s forwards;
+          animation: switch_off 1s forwards;
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  padding: 20px 0;
+}
+.block_active {
+  display: block;
+  background: white;
+}
+.block_content {
+  height: 320px;
+  width: 280px;
+  background: #E5E5E5FF;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.block_content_head {
+  height: 25%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.block_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 90%;
+}
+.block_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+}
+.content {
+  padding: 10px 20px;
+  text-align: center;
+  font-family: 'Noteworthy';
+}
+.content_head {
+  background: #4FED11FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 2rem;
+  font-family: 'Xbox Logo New';
+}
+.content_count {
+  width: 50px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  border: none;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 10px;
+  padding: 0 10px;
+  font-family: 'Noteworthy';
+}
+.content_count:after {
+  content: '123';
+}
+.content_count:focus {
+  outline: none;
+}
+.content_footer {
+  height: 15%;
+  width: calc(100% - 40px);
+  background: #FF8991FF;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+}
+.content_add {
+  width: 30px;
+  height: 30px;
+  background: #EDEDEDFF;
+  border-radius: 20px;
+  position: relative;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.content_add:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  cursor: pointer;
+}
+.content_add:hover .content_line_ver {
+  background: red;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.content_add:hover .content_line_hor {
+  background: red;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.content_line_ver {
+  height: 2px;
+  width: 20px;
+  background: #C6C6C6FF;
+  position: absolute;
+  left: 5px;
+  top: 14px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.content_line_hor {
+  height: 2px;
+  width: 20px;
+  background: #C6C6C6FF;
+  position: absolute;
+  left: 5px;
+  top: 14px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}

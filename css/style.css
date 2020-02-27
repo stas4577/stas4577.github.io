@@ -1,0 +1,225 @@
+@font-face {
+  font-family: 'Noteworthy';
+  src: url('../fonts/Noteworthy-Bold.eot');
+  src: url('../fonts/Noteworthy-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Noteworthy-Bold.woff2') format('woff2'), url('../fonts/Noteworthy-Bold.woff') format('woff'), url('../fonts/Noteworthy-Bold.ttf') format('truetype'), url('../fonts/Noteworthy-Bold.svg#Noteworthy-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Xbox Logo New';
+  src: url('../fonts/XboxLogoNew-Regular.eot');
+  src: url('../fonts/XboxLogoNew-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/XboxLogoNew-Regular.woff2') format('woff2'), url('../fonts/XboxLogoNew-Regular.woff') format('woff'), url('../fonts/XboxLogoNew-Regular.ttf') format('truetype'), url('../fonts/XboxLogoNew-Regular.svg#XboxLogoNew-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+button {
+  border: none;
+  outline: none !important;
+}
+.main {
+  height: 103vh;
+  background: url('../images/BGM.png') no-repeat;
+  background-size: 100% 100%;
+  font-family: 'Noteworthy';
+  color: #fff;
+}
+.main_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main_title {
+  font-size: 3.6rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.main_title:after {
+  content: 'Кубанский мясокомбинат';
+  text-transform: uppercase;
+  display: block;
+  font-family: 'Xbox Logo New';
+  font-size: 1.8rem;
+  margin: 30px 0 80px;
+}
+.main_button {
+  height: 120px;
+  border-radius: 2rem;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0px 0px 12.96px 3.04px rgba(0, 0, 1, 0.23), inset 0px 0px 10px 0px rgba(0, 0, 1, 0.64);
+          box-shadow: 0px 0px 12.96px 3.04px rgba(0, 0, 1, 0.23), inset 0px 0px 10px 0px rgba(0, 0, 1, 0.64);
+  background: #fff;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: #DF2C36;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.main_button:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+.meat {
+  height: 100%;
+  width: 100%;
+  background: url('../images/meat.png');
+  background-size: 95% 100%;
+  background-position: 0px -15px;
+  -webkit-transition: background-position 0.1s;
+  transition: background-position 0.1s;
+}
+header {
+  padding: 40px 0;
+  font-family: 'Noteworthy';
+}
+.header_button {
+  padding: 7px 0;
+  border-radius: 0.8rem;
+  border: 3px solid #DF2C36;
+  width: 100%;
+  color: #DF2C36;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+.header_button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+}
+.menu_button {
+  height: auto;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+.menu_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu_main_border {
+  display: block;
+  height: 1px;
+  background: #DF2C36;
+  opacity: 0;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+.menu_noactive {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  margin: 5px 0;
+  color: #F7814D;
+  text-align: center;
+}
+.menu_noactive_border {
+  width: 100%;
+  height: 1px;
+  background: #F7814D;
+}
+.menu_noactive:nth-child(2) {
+  margin-top: 10px;
+}
+.header_icon {
+  height: 50px;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+.header_icon:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+}
+.about {
+  padding: 60px 0 120px;
+  -webkit-box-shadow: inset 0px 20px 40px -10px rgba(0, 0, 0, 0.06);
+          box-shadow: inset 0px 20px 40px -10px rgba(0, 0, 0, 0.06);
+  text-transform: uppercase;
+  font-family: 'Noteworthy';
+  text-align: center;
+  color: #DF2C36;
+}
+.about_title {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+.about_text {
+  font-size: 1.4rem;
+  font-family: 'Xbox Logo New';
+}
+footer {
+  background: url('../images/footer.png') no-repeat;
+  height: 100px;
+  background-size: cover;
+  padding-top: 30px;
+  color: #fff;
+  font-family: 'Xbox Logo New';
+  font-size: 1.1rem;
+  overflow: hidden;
+}
+.footer_info {
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}

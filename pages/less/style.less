@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'Noteworthy';
+    src: url('../fonts/Noteworthy-Bold.eot');
+    src: url('../fonts/Noteworthy-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Noteworthy-Bold.woff2') format('woff2'),
+        url('../fonts/Noteworthy-Bold.woff') format('woff'),
+        url('../fonts/Noteworthy-Bold.ttf') format('truetype'),
+        url('../fonts/Noteworthy-Bold.svg#Noteworthy-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Xbox Logo New';
+    src: url('../fonts/XboxLogoNew-Regular.eot');
+    src: url('../fonts/XboxLogoNew-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/XboxLogoNew-Regular.woff2') format('woff2'),
+        url('../fonts/XboxLogoNew-Regular.woff') format('woff'),
+        url('../fonts/XboxLogoNew-Regular.ttf') format('truetype'),
+        url('../fonts/XboxLogoNew-Regular.svg#XboxLogoNew-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@note:'Noteworthy';
+@xbox:'Xbox Logo New';
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	overflow-x: hidden;
+}
+.container{
+	width: 80%;
+	margin: 0 auto;
+	height: 100%;
+}
+header{
+	width: 100%;
+	height: 60px;
+	background: #26C21EFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+}
+.switcher{
+	width: 100vw;
+	position: relative;
+}
+.nav_link{
+	margin: 0 25px;
+	color: #fff;
+	margin-top: 2px;
+	&:after{
+		content: '';
+		display: block;
+		height: 2px;
+		width: 90%;
+		background: red;
+		margin: 0 auto;
+		opacity: 0;
+		transition: opacity .2s;
+
+	}
+	&:hover{
+		cursor: pointer;
+	}
+}
+.active{
+	margin-top: 2px;
+	&:after{
+		content: '';
+		display: block;
+		height: 2px;
+		width: 90%;
+		background: red;
+		margin: 0 auto;
+		opacity: 1;
+		transition: opacity .2s;
+
+	}
+}
+
+.block{
+	height: calc(~'100% - 100px');
+	animation: switch_off 1s forwards;
+	position: absolute;
+	width: 100%;
+	top: 60px;
+	padding: 20px 0;
+	&_active{
+		display: block;
+		background: white;
+	}
+	&_content{
+		height: 320px;
+		width: 280px;
+		background: #E5E5E5FF;
+		border-radius: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		&_head{
+			height: 25%;
+			border-top-left-radius:20px;
+			border-top-right-radius:20px;
+		}
+	}
+	&_wrap{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 90%;
+	}
+	&_row{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 100px;
+	}
+}
+.content{
+	padding: 10px 20px;
+	text-align: center;
+	font-family: @note;
+	&_head{
+		background: #4FED11FF;
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		color: #fff;
+		font-size: 2rem;
+		font-family: @xbox;
+	}
+	&_count{
+		width: 50px;
+		height: 20px;
+		position: absolute;
+		left: 50%;
+		border:none;
+		transform: translateX(-50%);
+		border-radius: 10px;
+		padding: 0 10px;
+		font-family: @note;
+		&:after{
+			content: '123';
+		}
+		&:focus{
+			outline: none;
+		}
+
+	}
+	&_footer{
+		height: 15%;
+		width: calc(~'100% - 40px');
+		background: #FF8991FF;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		position: relative;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		padding: 0 20px;
+	}
+	&_add{
+		width: 30px;
+		height: 30px;
+		background: #EDEDEDFF;
+		border-radius: 20px;
+		position: relative;
+		transition: all .3s;
+		&:hover {
+			transform: scale(1.2,1.2);
+			cursor: pointer;
+		}
+		&:hover .content_line_ver{
+			background: red;
+			transform: rotate(90deg);
+		}
+		&:hover .content_line_hor{
+			background: red;
+			transform: rotate(180deg);
+		}
+	}
+	&_line{
+		&_ver{
+			height: 2px;
+			width: 20px;
+			background: #C6C6C6FF;
+			position: absolute;
+			left: 5px;
+			top: 14px;
+			transition: all .3s;
+		}
+		&_hor{
+			height: 2px;
+			width: 20px;
+			background: #C6C6C6FF;
+			position: absolute;
+			left: 5px;
+			top: 14px;
+			transform: rotate(90deg);
+			transition: all .3s;
+		}
+	}
+}

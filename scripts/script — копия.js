@@ -1,12 +1,7 @@
 'use sctrict'
 $(document).ready(function () {
-	let check = 0
-	let slider_active = false
+	let menu_active,check = 0
 	let team_active = 2
-	let menu_active = 1
-	$('.menu').eq(0).css('height','250px')
-	$('.menu_text').eq(0).css('opacity','1')
-
 	$('.menu').click(function () {
 		if (menu_active == $(this).index()) {
 			$(this).css('height','50px')
@@ -20,9 +15,10 @@ $(document).ready(function () {
 			$('.menu_text').eq(menu_active-1).css('opacity','1')
 		}
 	})
-
-
-	
+	alert ('123')
+	$('.menu').tap(function () {
+		alert ('123')
+	})
 
 	$('.team_img').click(function() {
 		if ($(this).hasClass('team_active')) {
@@ -68,7 +64,6 @@ $(document).ready(function () {
 			}
 		}
 	})
-	
 	$('#check').click(function() {
 		if (check == 0) {
 			$('#check_text').html('&#10003')
@@ -82,7 +77,7 @@ $(document).ready(function () {
 		
 	})
 	$('input[name = Phone]').inputmask("+ 9 999 999 99 99");
-	$('.submit').click(function() {
+	$('.submit').click(function(e) {
 		if ($('input[name = Phone]').val() == false) {
 			alert ('Введите номер телефона')
 			return false
@@ -97,50 +92,11 @@ $(document).ready(function () {
 		}
 	})
 
-	$('.slider_down').click(function () {
-		if (slider_active){
-			return false
-		} else {
-			slider_active = true
-			$('.comment_top').eq(0).addClass('comment_upper')
-			$('.comment_top').eq(0).removeClass('comment_top')
-			$('.comment_bottom').eq(0).addClass('comment_top')
-			$('.comment_bottom').eq(0).removeClass('comment_bottom')
-			$('.comment_under').eq(0).addClass('comment_bottom')
-			$('.comment_under').eq(0).removeClass('comment_under')
-			setTimeout(function () {
-				$('.comments_slider_block').append($('.comment_upper').eq(0))
-				$('.comment_upper').eq(1).addClass('comment_under')
-				$('.comment_upper').eq(1).removeClass('comment_upper')
-				slider_active = false	
-		},800)
-		}
+	if ($(window).width() < 610) {
+		$('.nav').remove()
+		$('.logo').append('<div class="nav"> <a href="#" class="nav_link">Home</a><a href="#" class="nav_link">Servise</a><a href="#" class="nav_link">Extension</a><a href="#" class="nav_link">Pricing</a><a href="#" class="nav_link">Help</a></div>')
 
-	})
-
-
-	$('.slider_up').click(function () {
-		if (slider_active){
-			return false
-		} else {
-			slider_active = true
-			$('.comment_bottom').eq(0).addClass('comment_under')
-			$('.comment_bottom').eq(0).removeClass('comment_bottom')
-			$('.comment_top').eq(0).addClass('comment_bottom')
-			$('.comment_top').eq(0).removeClass('comment_top')
-			$('.comment_upper').eq(0).addClass('comment_top')
-			$('.comment_upper').eq(0).removeClass('comment_upper')
-			setTimeout(function () {
-				$('.comments_slider_block').prepend($('.comment_under').eq(1))
-				$('.comment_under').eq(0).addClass('comment_upper')
-				$('.comment_under').eq(0).removeClass('comment_under')
-				slider_active = false	
-		},800)
-		}
-
-	})
-
-	
+	}
 	
 })
 

@@ -1000,7 +1000,6 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    display: block;
   }
   .menu_bur_nav_link {
     margin: 10px 20px;

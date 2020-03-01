@@ -145,6 +145,7 @@ $(document).ready(function () {
 		$('.menu_bur_back').css('transform','translate(0)')
 		$('.black').css('display','block')
 		$('.menu_bur').eq(0).css('opacity','0')
+		$('body').css('overflow-y','hidden')
 	})
 	$('.menu_bur').eq(1).click(function() {
 		$('.line').removeClass('line_active')
@@ -152,7 +153,17 @@ $(document).ready(function () {
 		$('.menu_bur_back').css('transform','translate(100%)')
 		$('.black').css('display','none')
 		$('.menu_bur').eq(0).css('opacity','1')
+		$('body').css('overflow-y','scroll')
 	})
+	$('.menu_bur_nav_link').click(function() {
+		$('.line').removeClass('line_active')
+		$('.menu_bur_back').css('opacity','0')
+		$('.menu_bur_back').css('transform','translate(100%)')
+		$('.black').css('display','none')
+		$('.menu_bur').eq(0).css('opacity','1')
+		$('body').css('overflow-y','scroll')
+	})
+	
 
 	
 	

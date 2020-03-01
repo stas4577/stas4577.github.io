@@ -1,7 +1,7 @@
 'use sctrict'
 $(document).ready(function () {
 	let check = 0
-	let slider_active = false
+	let slider_active,menu_bur = false
 	let team_active = 2
 	let menu_active = 1
 	$('.menu').eq(0).css('height','250px')
@@ -138,6 +138,20 @@ $(document).ready(function () {
 		},800)
 		}
 
+	})
+	$('.menu_bur').eq(0).click(function() {
+		$('.line').addClass('line_active')
+		$('.menu_bur_back').css('opacity','1')
+		$('.menu_bur_back').css('transform','translate(0)')
+		$('.black').css('display','block')
+		$('.menu_bur').eq(0).css('opacity','0')
+	})
+	$('.menu_bur').eq(1).click(function() {
+		$('.line').removeClass('line_active')
+		$('.menu_bur_back').css('opacity','0')
+		$('.menu_bur_back').css('transform','translate(100%)')
+		$('.black').css('display','none')
+		$('.menu_bur').eq(0).css('opacity','1')
 	})
 
 	

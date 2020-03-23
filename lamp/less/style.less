@@ -447,9 +447,11 @@ header{
 
 			}
 			}
+			
 			&:nth-child(1){
 				margin-right: -8%;
 				border-color: #7DE9E5 !important;
+
 				& img{
 					width: 150%;
 					position: absolute;
@@ -488,6 +490,234 @@ header{
 }
 
 
+#advantages_img{
+	width: 100%;
+	position: absolute;
+	left: 42.2%;
+	top: 61.1%;
+	transform: translate(-50%, -50%) rotate(14deg);
+}
+
+
+
+
+.kit{
+	padding: 5% 0;
+	&_title{
+		font-size: 1.8rem;
+		width: auto;
+		text-align: left;
+		margin-bottom: 3%;
+		text-shadow: none;
+		& .title_light{
+			padding: 0 5%;
+			margin-left: -5%;
+			border-radius: .4rem;
+		}
+	}
+	&_subtitle{
+		font-size: .8rem;
+		text-transform: uppercase;
+		color: #858585;
+		text-align: left;
+	}
+	&_block{
+		display: flex;
+		flex-direction: column;
+		margin-top: 75px;
+	}
+	&_card{
+		width: 45%;
+		height: 16.5rem;
+		background: #EFF0F2;
+		border-radius: 2.2rem;
+		box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.24);
+		margin: 0 2%;
+		padding: 0 3%;
+		box-sizing: border-box;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		& img{
+			position: absolute;
+			top: 50%;
+			right: 2.5%;
+			transform: translateY(-50%);
+			opacity: .9;
+			max-height: 95%;
+		}
+	}
+}
+#card_1{
+	width: 40%;
+}
+#card_2{
+	right: 10%;
+	height: 75%;
+}
+#card_3{
+	right: 5%;
+	width: 30%;
+}
+#card_4{
+	right: 5%;
+	width: 25%;
+}
+#card_5{
+	right: 5%;
+	width: 45%;
+}
+.row{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: 20px 0;
+}
+
+
+
+
+.buy{
+	padding-top: 5%;
+	padding-bottom: 10%;
+	&_block{
+		display: flex;
+		align-items: center;
+		margin-top: 40px;
+		& img{
+			width: 47%;
+		}
+	}
+	&_info{
+		margin-left: 6%;
+		width: 50%;
+		& .title{
+			font-size: 2rem;
+			text-align: left;
+			text-shadow: none;
+			letter-spacing: 3px;
+		}
+		& .subtitle{
+			text-align: left;
+			font-size: 1.6rem;
+			color: #505050;
+		}
+	}
+	&_cost{
+		display: flex;
+		font-size: 2rem;
+		font-weight: 800;
+		letter-spacing: 2px;
+		margin-top: 30px;
+		&_new{
+			color: #4F4F4F;
+			margin-right: 5%;
+		}
+		&_old{
+			color: #D0D1D1;
+			position: relative;
+			&:after{
+				content: '';
+				display: inline-block;
+				width: 110%;
+				background:#D0D1D1;
+				height: 4px;
+				position: absolute;
+				top: calc(~'50% - 2px');
+				left: -6%;
+
+			}
+		}
+	}
+	&_button{
+		width: 100%;
+		height: 200%;
+		min-height: 55px;
+		border-radius: 1.2rem;
+		background: blue;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 15px;
+		background-image: linear-gradient( 130deg, #73E9E4 0%, #31D5CF 99%);
+		box-shadow: 0px 47px 41px -21px rgba(129,226,222,1);
+		font-size: 1.4rem;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: 800;
+		letter-spacing: 2px;
+		transition: transform .3s;
+		&:hover{
+			cursor: pointer;
+			transform: scale(1.1);
+		}
+	}
+
+}
+
+
+.answers{
+	padding-top: 5%;
+	padding-bottom: 10%;
+	margin-top: 75px;
+	&_block{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 100px;
+	}
+}
+.answer{
+	background: #fff;
+	width: 90%;
+	margin: 25px 0;
+	border-radius: 2.2rem;
+	box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.1);
+	padding: 2% 5%;
+	box-sizing: border-box;
+	transition: height .8s;
+	overflow-y: hidden;
+	&:hover{
+		cursor: pointer;
+	}
+	& .title{
+		font-size: 1.8rem;
+		text-shadow: none;
+		text-align: left;
+	}
+	&_hide{
+		flex-direction: column;
+		align-items: flex-start;
+		opacity: 0;
+		transition: opacity 1s;
+		&_line{
+			width: 100%;
+			height: 2px;
+			background: #EFEFEF;
+			margin: 2% 0;
+		}
+		&_text{
+			text-transform: uppercase;
+			font-size: 1.2rem;
+			color: #505050;
+			word-spacing: 4px;
+		}
+	}
+}
+
+.title_wrap{
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+
+
+
+
+
 
 
 
@@ -512,12 +742,30 @@ header{
 
 @media(max-width: 1440px){
 	html{
-		font-size: 13px;
+		font-size: 12px;
 	}
+	.advantages_block_body{
+		padding-right: 10%;
+		& .subtitle{
+			& br{
+				content: '';
+			}
+		}
+	}
+	.advantages_block{
+		height: calc(~'150px + 25vw');
+		&_body{
+			width: 60%;
+		}
+	}
+	.advantages_add br{
+		content: '';
+	}
+
 }
 @media(max-width: 1024px) {
 	html{
-		font-size: 10px;
+		font-size: 11px;
 	}
 	.main{
 		padding-bottom: 15%;
@@ -528,6 +776,12 @@ header{
 	.play{
 		width: 4.5rem;
 		margin: 20px 0;
+	}
+	.kit_card{
+		height: 15rem;
+	}
+	.buy_info .title{
+		letter-spacing: 0 !important;
 	}
 }
 @media(max-width: 790px){
@@ -560,6 +814,13 @@ header{
 		width: 30px;
 		height: 30px;
 		border-radius: 30px;
+	}
+	.buy{
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	.buy_button{
+		width: 80%;
 	}
 
 }
@@ -605,6 +866,76 @@ header{
 	}
 	.slider_block{
 		height: 45vw;
+	}
+	.advantages_block{
+		height: calc(~'220px + 20vw');
+	}
+	.row{
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+	}
+	.kit_card{
+		margin: 2% 0;
+		width: 90%;
+		height: 22rem;
+		padding: 0 5%;
+		
+	}
+	.kit_title{
+		font-size: 2.5rem;
+	}
+	.kit_subtitle{
+		font-size: 1.2rem;
+	}
+	#card_1{
+		width: 40%;
+	}
+	#card_2{
+		right: 15%;
+	}
+	#card_3{
+		right: 5%;
+	}
+	#card_4{
+		right: 7%;
+	}
+	#card_5{
+		right: 0%;
+	}
+	.buy_button{
+		width: 80%;
+		margin-left: 10%;
+	}
+	.buy_block{
+		flex-direction: column;
+		& img{
+			width: 80%;
+		}
+	}
+	.buy_info{
+		width: 80%;
+		padding: 0;
+		& .title br{
+			content: '';
+		}
+		& .title{
+			text-align: center;
+			font-size: 3rem;
+			margin-bottom: 20px;
+		}
+		& .subtitle{
+			text-align: center;
+			font-size: 2rem;
+			& br{
+				content: '';
+			}
+		}
+	}
+	.buy_cost{
+		display: flex;
+		justify-content: center;
+		font-size: 3rem;
 	}
 }
 @media (max-width: 500px) {
@@ -662,9 +993,62 @@ header{
 		width: 4rem;
 		margin: 10px 0;
 	}
-
+	.buy_button{
+		width: 100%;
+		margin-left: 0;
+	}
 
 }
+
+
+
+@media(max-width: 425px){
+	.advantages_block{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 500px;
+		& .subtitle{
+			font-size: 1.2rem;
+		}
+		&:nth-child(2){
+			flex-direction: column-reverse;
+		}
+		&:nth-child(4){
+			flex-direction: column-reverse;
+		}
+		&_body{
+			width: 95%;
+			padding: 5% 10%;
+			margin: 25px 0;
+			height: auto;
+		}
+		&_head{
+			width: 65%;
+		}
+	}
+	#advantages_err{
+		flex-direction: column-reverse;
+	}
+	.advantages_add{
+		height: auto;
+		width: 70%;
+		padding: 4% 8%;
+		& .subtitle{
+			font-size: 1.2rem;
+		}
+	}
+	.kit_card{
+		width: 100%;
+	}
+	.buy_info .title{
+		width: 120%;
+		margin-left: -10%;
+	}
+}
+
+
+
 @media (max-width: 375px){
 	.slide{
 		background-size: 125% 105% !important;

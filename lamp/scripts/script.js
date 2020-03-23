@@ -53,6 +53,22 @@ $(document).ready(function(){
 	$('.advantages').eq(0).css('padding-bottom',advantages_height * 0.08 + 'px')
 	$('.advantages_block_head').height($('.advantages_block_head').width())
 	$('.advantages_block_head').css('border',$('.advantages_block_head').width() * 0.18 + 'px solid #7AECE7')
+
+	$(window).resize(function () {
+		advantages_height = $('.advantages').outerHeight()
+		advantages_width = advantages_height * 0.54
+		$('.slide_next').eq(0).height($('.slide').eq(0).outerHeight() + 'px')
+		$('.slide_prev').eq(0).height($('.slide').eq(0).outerHeight() + 'px')
+		if (advantages_width < $(window).width()) {advantages_width = $(window).width() + 20}
+		$('.advantages').eq(0).css('background-size',advantages_width + 'px ' + '100%')
+		$('.advantages').eq(0).css('padding-top',advantages_height * 0.08 + 'px')
+		$('.advantages').eq(0).css('padding-bottom',advantages_height * 0.08 + 'px')
+		$('.advantages_block_head').height($('.advantages_block_head').width())
+		$('.advantages_block_head').css('border',$('.advantages_block_head').width() * 0.18 + 'px solid #7AECE7')
+	})
+
+
+
 	$('.slider_nav_button').click(function () {
 		if ($(this).index() == active_slide) {
 			return false
@@ -123,9 +139,50 @@ $(document).ready(function(){
 		$('.youtube').css('display','block')
 		$('#youtube').attr('src','https://www.youtube.com/embed/AnDQDwQKJ64?autoplay=1&loop=1&&playlist=Video_ID')
 	})
-
-	
-
+	$('.buy_button').height($('.buy_button').width() / 5)
+	let answer_height = $('.answer').eq(0).height()
+	let answer_active = 4
+	$('.answer_hide').css('display','none')
+	let answer_height_noactive = $('.answer').eq(0).height()
+	let answer_work = false
+	$('.answer').height($('.answer').height())
+	$('.answer').click(function() {
+		if (answer_work == false) {
+			answer_work = true
+			if ($(this).index() == answer_active) {
+			$('.answer').eq($(this).index()).height(answer_height_noactive)
+			$('.answer_hide').eq($(this).index()).css('opacity','0')
+			setTimeout(function () {
+				$('.answer_hide').eq(answer_active).css('display','none')
+				answer_active = 4
+			},800)
+			}
+			else if (answer_active == 4) {
+				$('.answer').eq($(this).index()).height(answer_height)
+				$('.answer_hide').eq($(this).index()).css('display','flex')
+				answer_active = $(this).index()
+				setTimeout(function () {
+					$('.answer_hide').eq(answer_active).css('opacity','1')
+				},100)
+			}
+			else {
+				$('.answer').eq($(this).index()).height(answer_height)
+				$('.answer_hide').eq($(this).index()).css('display','flex')
+				$('.answer').eq(answer_active).height(answer_height_noactive)
+				$('.answer_hide').eq(answer_active).css('opacity','0')
+				answer_active = $(this).index()
+				setTimeout(function () {
+					$('.answer_hide').eq(answer_active).css('opacity','1')
+				},100)
+			}
+			setTimeout(function () {
+				answer_work = false
+			},800)
+		} else {
+			return false
+		}
+	})
+	$('.title_wrap').height($('.title_wrap').height())
 
 
 	

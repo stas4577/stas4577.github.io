@@ -629,6 +629,76 @@ header img {
   display: flex;
   align-items: center;
 }
+footer {
+  background: url('../images/footer.png');
+  background-size: 100% 100%;
+  padding-top: 15vw;
+  padding-bottom: 5vw;
+  display: flex;
+  align-items: center;
+}
+.contacts_title {
+  font-size: 3.6rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+.contacts_line {
+  width: 1px;
+  background: #fff;
+  height: 100%;
+  margin: 0 50px;
+}
+.contacts_right {
+  display: flex;
+  flex-direction: column;
+}
+.contacts_links {
+  display: flex;
+}
+.contacts_links img {
+  margin-right: 40px;
+  transition: transform .3s;
+}
+.contacts_links img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.contacts_button {
+  width: 120%;
+  height: calc(50px + 4vw);
+  background: #fff;
+  margin: 40px 0;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 5%;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  color: #4F4F4F;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 800;
+  transition: transform .3s;
+}
+.contacts_button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.contact {
+  color: #fff;
+  font-size: 1.6rem;
+  margin: 30px 0;
+  text-transform: uppercase;
+}
+.contact_title {
+  font-weight: 600;
+}
+.contact_text {
+  font-weight: 300;
+}
 @media (min-width: 2200px) {
   html {
     font-size: 24px;
@@ -673,6 +743,9 @@ header img {
   }
   .buy_info .title {
     letter-spacing: 0 !important;
+  }
+  .contacts_line {
+    margin: 0 30px;
   }
 }
 @media (max-width: 790px) {
@@ -821,6 +894,20 @@ header img {
     justify-content: center;
     font-size: 3rem;
   }
+  footer {
+    padding-right: 3%;
+    padding-left: 3%;
+  }
+  .contacts_button {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .contacts_links img {
+    height: 50px;
+  }
+  .contact {
+    margin: 15px 0;
+  }
 }
 @media (max-width: 500px) {
   html {
@@ -878,6 +965,34 @@ header img {
   .buy_button {
     width: 100%;
     margin-left: 0;
+  }
+  footer {
+    flex-direction: column;
+    padding-top: 40%;
+  }
+  .contacts_line {
+    height: 1px;
+    width: 100%;
+  }
+  .contacts_title {
+    text-align: center;
+  }
+  .contacts_right {
+    align-items: center;
+  }
+  .contacts_links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .contacts_links img {
+    margin: 0;
+  }
+  .contact {
+    text-align: center;
+  }
+  .contact br {
+    content: '';
   }
 }
 @media (max-width: 425px) {

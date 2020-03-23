@@ -183,6 +183,14 @@ $(document).ready(function(){
 		}
 	})
 	$('.title_wrap').height($('.title_wrap').height())
+	$('.contacts_line').height($('.contacts').height())
+	let footer_height = $('footer').outerHeight()
+	let footer_width = advantages_height * 0.54
+	if (footer_width < $(window).width()) {footer_width = $(window).width() + 20}
+	$('footer').eq(0).css('background-size',footer_width + 'px ' + '100%')
+	if ($(window).width() < 500) {
+		$('.contacts_line').height('1px')
+	}
 
 
 	

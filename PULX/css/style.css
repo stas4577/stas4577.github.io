@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'Uni Sans Heavy CAPS';
+  src: url('../fonts/UniSansHeavyCAPS.eot');
+  src: url('../fonts/UniSansHeavyCAPS.eot?#iefix') format('embedded-opentype'), url('../fonts/UniSansHeavyCAPS.woff2') format('woff2'), url('../fonts/UniSansHeavyCAPS.woff') format('woff'), url('../fonts/UniSansHeavyCAPS.ttf') format('truetype'), url('../fonts/UniSansHeavyCAPS.svg#UniSansHeavyCAPS') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Uni Sans Thin CAPS';
+  src: url('../fonts/UniSansThinCAPS.eot');
+  src: url('../fonts/UniSansThinCAPS.eot?#iefix') format('embedded-opentype'), url('../fonts/UniSansThinCAPS.woff2') format('woff2'), url('../fonts/UniSansThinCAPS.woff') format('woff'), url('../fonts/UniSansThinCAPS.ttf') format('truetype'), url('../fonts/UniSansThinCAPS.svg#UniSansThinCAPS') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+button:focus {
+  outline: none;
+}
+button {
+  cursor: pointer;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+html {
+  overflow-x: hidden !important;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  width: 100vw;
+  font-family: 'Uni Sans Heavy CAPS';
+  overflow: hidden;
+}
+.container {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.svg {
+  height: 10000%;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1.5s, transform 0s;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+.main_button {
+  height: 22%;
+  transition: all .6s linear;
+  overflow: hidden;
+  width: 100%;
+  margin: 5% 0;
+  border-radius: 2rem;
+  border: none;
+  box-shadow: 0px 10px 18px 0px rgba(0, 0, 1, 0.17);
+  font-family: 'Uni Sans Heavy CAPS';
+  font-size: 1.6rem;
+  transform: scale(0);
+}
+.buttons {
+  flex-direction: column;
+  height: 0;
+  display: none;
+  transition: all 1s;
+}
+#port {
+  background: #fff;
+}
+#port_text {
+  background: linear-gradient(-5deg, #2868c2 0%, #0c1840);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#buy {
+  background: linear-gradient(-5deg, #2868c2 0%, #0c1840);
+  color: #fff;
+  position: relative;
+}
+#buy_white {
+  transition: all 8s cubic-bezier(0.39, 0.575, 0.565, 1);
+  position: absolute;
+  left: calc(50% - 30%);
+  top: calc(50%);
+  filter: blur(13px);
+  width: 60%;
+  height: 80%;
+  background: #fff;
+  border-radius: .6rem;
+  opacity: .5;
+  transform: rotate(90deg);
+}
+@media (min-width: 2200px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1440px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 425px) {
+  html {
+    font-size: 14px;
+  }
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 9px;
+  }
+}

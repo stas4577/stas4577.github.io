@@ -94,14 +94,14 @@ a,a:hover{
 	}
 }
 html{
-	overflow-x: hidden !important;
+	scroll-behavior: smooth;
 }
+
 body{
 	margin: 0;
 	padding: 0;
 	font-size: 16px;
 	overflow-x: hidden !important;
-	width: 100vw;
 	font-family: @mont;
 
 }
@@ -184,7 +184,15 @@ body{
 		letter-spacing: 1px;
 	}
 }
-
+#more{
+	color: #4F4F4F !important;
+	outline: none;
+	display: flex;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
 header{
 	display: flex;
 	justify-content: space-between;
@@ -721,6 +729,7 @@ footer{
 	padding-top: 15vw;
 	padding-bottom: 5vw;
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
 
 }
@@ -745,7 +754,7 @@ footer{
 	&_right{
 		display: flex;
 		flex-direction: column;
-
+		margin-right: 5%;
 	}
 	&_links{
 		display: flex;
@@ -792,6 +801,145 @@ footer{
 	}
 	&_text{
 		font-weight: 300;
+	}
+}
+
+
+
+
+
+.send{
+	width: 100vw;
+	height: 150vh;
+	background: #fff;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	display: none;
+	justify-content: center;
+	align-items: flex-end;
+	box-sizing: border-box;
+	padding: 5% 0;
+	padding-bottom: calc(~'5% + 50vh');
+	overflow: hidden;
+	&_block{
+		background: #EEF0F1;
+		box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.24);
+		width: calc(~'250px + 30%');
+		border-radius: 3.2rem;
+		box-sizing: border-box;
+		padding: 4% 3%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+	}
+	& .title{
+		font-size: 2.6rem;
+	}
+}
+
+.form{
+	height: 100%;
+	width: 100%;
+	margin-top: 4%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	&_label{
+		color: #505050;
+		text-transform: uppercase;
+		font-weight: 600;
+		filter: blur(0.4px);
+		margin-bottom: 2%;
+		text-align: center;
+	}
+	&_input{
+		height: 50px;
+		width: 80%;
+		border-radius: 1.2rem;
+		border: 1px solid #505050;
+		margin-bottom: 8%;
+		padding: 5px 20px;
+		box-sizing: border-box;
+		font-family: @mont;
+		font-size: 1.4rem;
+		background: #EEF0F1;
+		color: #505050;
+		&:focus{
+			outline: none;
+		}
+	}
+	&_button{
+		width: 50%;
+		transition: transform .3s;
+		height: 80px;
+		border-radius: 1rem;
+		border: none;
+		background: linear-gradient(130deg, #7ed4ce 0%, #9fe8e3 99%);
+		box-shadow: 0px 8px 13px 0px rgba(126, 212, 206, 0.6);
+		color: #fff;
+		font-size: 2rem;
+		font-weight: 800;
+		margin-top: 2%;
+		&:hover{
+			transform: scale(1.1);
+		}
+		&:focus{
+			outline: none;
+		}
+
+	}
+}
+
+
+
+.close{	
+	position: absolute;
+	right: -5%;
+	top: -5%;
+	width: 30px;
+	height: 30px;
+	opacity: .6;
+	&:hover{
+		cursor: pointer;
+		opacity: 1;
+	}
+	&_line{
+		background: #28FFF6;
+		height: 4px;
+		width: 40px;
+		position: absolute;
+		left: -5px;
+		top: 13px;
+	}
+}
+#line_1{
+	transform: rotate(45deg);
+}
+#line_2{
+	transform: rotate(-45deg);
+}
+
+
+
+.copy{
+	background: #242424;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	font-weight: 300;
+	& span:nth-child(1){
+		font-weight: 600;
+		font-size: 1.8rem;
+	}
+	& a{
+		color: #fff;
 	}
 }
 
@@ -899,6 +1047,13 @@ footer{
 	.buy_button{
 		width: 80%;
 	}
+	.send_block{
+		width: 80%;
+	}
+	.send{
+		align-items: center;
+	}
+	
 
 }
 
@@ -1031,6 +1186,18 @@ footer{
 
 		}
 	}
+	.form_label br{
+		content: '' !important;
+	}
+	.form_button{
+		width: 80%;
+	}
+	#dop{
+		font-size: 1.5rem;
+	}
+	.form_input{
+		font-size: 2.2rem;
+	}
 }
 @media (max-width: 500px) {
 	html{
@@ -1109,7 +1276,8 @@ footer{
 		&_links{
 			margin-top: 30px;
 			display: flex;
-			justify-content: space-evenly;
+			justify-content: space-between;
+			width: 100%;
 			& img{
 				margin: 0;
 			}
@@ -1170,6 +1338,24 @@ footer{
 	.buy_info .title{
 		width: 120%;
 		margin-left: -10%;
+	}
+	.answer{
+		padding: 15px 5%;
+		font-size: 1rem;
+	}
+	.send_block .title{
+		margin-bottom: 10%;
+	}
+	.form_input{
+		margin-bottom: 15%;
+	}
+	.close{
+		top: -15%;
+		left: 50%;
+		transform: translate(-50%);
+	}
+	.answers_block{
+		margin-top: 50px;
 	}
 }
 

@@ -6,11 +6,44 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="images/favicon.ico">
 	<script src="scripts/jquery-3.4.1.js"></script>
+	<script src="scripts/jquery.inputmask.js"></script>
 	<script src="scripts/script.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 <body>
+
+
+
+	<div class="send">
+		<div class="send_block">
+			<div class="title">Форма обратной <br> <span class="title_light">связи</span> </div>
+			<form class="form" action="">
+				<div class="form_label">Ваше имя</div>
+				<input name="name" class="form_input" type="text">
+				<div class="form_label">Ваш номер телефона</div>
+				<input name="phone" class="form_input" type="text">
+				<div id="dop" class="form_label">СПОСОБ ОПЛАТЫ И ДРУГИЕ ДЕТАЛИ ЗАКАЗА<br>
+УТОЧНИМ У ВАС ПО ТЕЛЕФОНУ</div>
+				<input value="ОТПРАВИТЬ" class="submit form_button" type="submit">
+			</form>
+			<div class="close">
+				<div id="line_1" class="close_line"></div>
+				<div id="line_2" class="close_line"></div>
+			</div>
+		</div>
+	</div>
 	
+
+
+
+
+
+
+
+	<a name="top" href="#"></a>
+
+
+
 	<section class="main container">
 		<header>
 			<img src="images/logo.png" alt="">
@@ -28,24 +61,25 @@
 					стильного маникюра<br>
 					И визажистов	
 				</div>
-				<button class="main_button">Узнать подробнее</button>
+				<button class="main_button">
+					<a id="more" href="#test">Узнать подробнее</a>
+				</button>
 			</div>
 		</div>
 	</section>
-
+	<a name="test" href="#"></a>
 	<section class="slider container">
 
-		<div class="title">ДЛЯ ЧЕГО НУЖеН<br>
+		<div class="title">ДЛЯ ЧЕГО НУЖЕН<br>
 КОЛЬЦЕВой <span class="title_light">фонарь?</span></div>
 		<div class="subtitle">Для самых стильных и красивых селфи! <br>
 Первый помощник визажиста, косметолога, <br>
 мастеров маникюра, педикюра и татуажа!</div>
-
 		<div class="slider_block">
 
 			<div class="slide slide_noactiveL">
 				<div class="slide_title"><span class="title_light">80</span></div>
-				<div class="slide_title">Светадиодных<br> лампочек</div>
+				<div class="slide_title">Светодиодных<br> лампочек</div>
 				<div class="slide_subtitle">ДЛЯ ЛУЧШЕГО СВЕТА<br>
 				ЛУЧШИХ СЕЛФИ И<br>
 				ПРОФЕССИОНАЛЬНОЙ<br>
@@ -73,14 +107,12 @@
 			<div class="slide_prev"></div>
 			<div class="slide_next"></div>
 		</div>
-
 		<div class="slider_nav">
 			<div class="slider_nav_button"></div>
 			<div class="slider_nav_button slider_nav_button_active"></div>
 			<div class="slider_nav_button"></div>
 		</div>
 	</section>
-
 	<section class="advantages container">
 		<div class="title">ПРЕИМУЩЕСТВА<br>
 нашего <span class="title_light_white">фонаря</span></div>
@@ -209,11 +241,10 @@
 					<div class="buy_cost_new">3900 р.</div>
 					<div class="buy_cost_old">5500 р.</div>
 				</div>
-				<div class="buy_button">Оформить заказ сейчас</div>
+				<div class="showForm buy_button">Оформить заказ сейчас</div>
 			</div>
 		</div>
 	</section>
-
 	<section class="answers container">
 		<div class="title">Часто задоваемые<br> <span class="title_light">вопросы</span></div>
 		<div class="answers_block">
@@ -275,7 +306,7 @@
 					<div class="buy_cost_new">3900 р.</div>
 					<div class="buy_cost_old">5500 р.</div>
 				</div>
-				<div class="buy_button">Оформить заказ сейчас</div>
+				<div class="showForm buy_button">Оформить заказ сейчас</div>
 			</div>
 		</div>
 	</section>
@@ -298,15 +329,18 @@
 			</div>
 		</div>
 		<div class="contacts_line"></div>
-		<div class="contats_right">
+		<div class="contacts_right">
 			<div class="contacts_links">
 				<img src="images/vk.png" alt="">
 				<img src="images/insta.png" alt="">
 			</div>
-			<div class="contacts_button">Оформить заказ сейчас</div>
-			<div class="contacts_button">Вернуться в начало</div>
+			<div class="showForm contacts_button">Оформить заказ сейчас</div>
+			<a href="#top" class="contacts_button">Вернуться в начало</a>
 		</div>
 	</footer>
-
+	<section class="copy container">
+		<span>© 2019 KIN</span>
+		<a target="_blank" href="https://vk.com/pulx009">PULX DESIGN</a>
+	</section>
 </body>
 </html>

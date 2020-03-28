@@ -191,7 +191,26 @@ $(document).ready(function(){
 	if ($(window).width() < 500) {
 		$('.contacts_line').height('1px')
 	}
+	$('input[name = phone]').inputmask("+ 9 999 999 99 99")
+	let phone
+	$('.submit').click(function() {
+		phone = $('input[name = phone]').val()
+		phone = phone.replace(/_/g,'')
+		phone = phone.replace(/\s/g,'')
+		if ($('input[name = phone]').val() == false  || phone.length < 12) {
+			alert ('Введите номер телефона')
+			return false
+		}
+	})
+	function showForm() {
+		$('.send').css('display','flex')
+		$('html').css('overflow-y','hidden')
+	}	
+	function closeForm () {
+		$('.send').css('display','none')
+		$('html').css('overflow-y','scroll')
+	}
+	$('.showForm').click(showForm)
+	$('.close').click(closeForm)
 
-
-	
 })

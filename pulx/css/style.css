@@ -1,24 +1,24 @@
 
 @font-face {
     font-family: 'Uni Sans Heavy CAPS';
-    src: url('../pulx/aaa/UniSansHeavyCAPS.eot');
-    src: url('../pulx/aaa/UniSansHeavyCAPS.eot?#iefix') format('embedded-opentype'),
-        url('../pulx/aaa/UniSansHeavyCAPS.woff2') format('woff2'),
-        url('../pulx/aaa/UniSansHeavyCAPS.woff') format('woff'),
-        url('../pulx/aaa/UniSansHeavyCAPS.ttf') format('truetype'),
-        url('../pulx/aaa/UniSansHeavyCAPS.svg#UniSansHeavyCAPS') format('svg');
+    src: url('../images/UniSansHeavyCAPS.eot');
+    src: url('../images/UniSansHeavyCAPS.eot?#iefix') format('embedded-opentype'),
+        url('../images/UniSansHeavyCAPS.woff2') format('woff2'),
+        url('../images/UniSansHeavyCAPS.woff') format('woff'),
+        url('../images/UniSansHeavyCAPS.ttf') format('truetype'),
+        url('../images/UniSansHeavyCAPS.svg#UniSansHeavyCAPS') format('svg');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Uni Sans Thin CAPS';
-    src: url('../pulx/aaa/UniSansThinCAPS.eot');
-    src: url('../pulx/aaa/UniSansThinCAPS.eot?#iefix') format('embedded-opentype'),
-        url('../pulx/aaa/UniSansThinCAPS.woff2') format('woff2'),
-        url('../pulx/aaa/UniSansThinCAPS.woff') format('woff'),
-        url('../pulx/aaa/UniSansThinCAPS.ttf') format('truetype'),
-        url('../pulx/aaa/UniSansThinCAPS.svg#UniSansThinCAPS') format('svg');
+    src: url('../images/UniSansThinCAPS.eot');
+    src: url('../images/UniSansThinCAPS.eot?#iefix') format('embedded-opentype'),
+        url('../images/UniSansThinCAPS.woff2') format('woff2'),
+        url('../images/UniSansThinCAPS.woff') format('woff'),
+        url('../images/UniSansThinCAPS.ttf') format('truetype'),
+        url('../images/UniSansThinCAPS.svg#UniSansThinCAPS') format('svg');
     font-weight: 100;
     font-style: normal;
 }

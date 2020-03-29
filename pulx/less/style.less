@@ -1,0 +1,271 @@
+
+@font-face {
+    font-family: 'Uni Sans Heavy CAPS';
+    src: url('../fonts/UniSansHeavyCAPS.eot');
+    src: url('../fonts/UniSansHeavyCAPS.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UniSansHeavyCAPS.woff2') format('woff2'),
+        url('../fonts/UniSansHeavyCAPS.woff') format('woff'),
+        url('../fonts/UniSansHeavyCAPS.ttf') format('truetype'),
+        url('../fonts/UniSansHeavyCAPS.svg#UniSansHeavyCAPS') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Uni Sans Thin CAPS';
+    src: url('../fonts/UniSansThinCAPS.eot');
+    src: url('../fonts/UniSansThinCAPS.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UniSansThinCAPS.woff2') format('woff2'),
+        url('../fonts/UniSansThinCAPS.woff') format('woff'),
+        url('../fonts/UniSansThinCAPS.ttf') format('truetype'),
+        url('../fonts/UniSansThinCAPS.svg#UniSansThinCAPS') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+@uni: 'Uni Sans Heavy CAPS';
+
+button:focus{
+	outline: none;
+}
+button{
+	cursor: pointer;
+}
+a,a:hover{
+	text-decoration: none;
+}
+html{
+	overflow-x: hidden !important;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	width: 100vw;
+	font-family: @uni;
+	overflow: hidden;
+	height: 100vh;
+	position: relative;
+
+}
+.container{
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.svg{
+	height: 10000%;
+	position: absolute;
+	left: 20%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	transition: all 1.5s, transform 0s;
+	
+}
+
+.main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	position: relative;
+	&_button{
+		height: 22%;
+		transition: all .6s linear;
+		overflow: hidden;
+		width: 100%;
+		margin: 5% 0;
+		border-radius: 2rem;
+		border:none;
+		box-shadow: 0px 10px 18px 0px rgba(0, 0, 1, 0.17);
+		font-family: 'Uni Sans Heavy CAPS';
+		font-size: 1.6rem;
+		transform: scale(0);
+		&:hover{
+			cursor: pointer;
+		}
+	}
+}
+
+.buttons{
+	flex-direction: column;
+	height: 0;
+	display: none;
+	transition: all 1s;
+
+}
+#port{
+	background: #fff;
+	&_text{
+		background: linear-gradient(-5deg, #2868c2 0%, #0c1840);
+		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
+	}
+}
+#buy{
+	background: linear-gradient(-5deg, #2868c2 0%, #0c1840);
+	color: #fff;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 2s,transform .3s,opacity .6s;
+	&_white{
+		transition: all 8s cubic-bezier(.38, 0, .63, 1);
+		position: absolute;
+		left: calc(~'50% - 30%');
+		top: calc(~'50%');
+		filter: blur(13px);
+		width: 60%;
+		height: 80%;
+		background: #fff;
+		border-radius: .6rem;
+		opacity: .5;
+		transform: rotate(90deg);
+	}
+	&_BG{
+		background: linear-gradient(135deg, #2868c2 0%, #0c1840);
+		position: absolute;
+		left: 0;
+		top: 0;
+		font-family: 'Uni Sans Heavy CAPS';
+		font-size: 1.6rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: all 2s linear ,border-radius 5s,transform .3s,left 0s, top 0s;
+		border-radius: 20rem;
+		opacity: 0;
+		cursor: pointer;
+		box-sizing: border-box;
+		
+	}
+}
+
+#studio {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 10%;
+	color: #00428C;
+	font-family: 'Uni Sans Thin CAPS';
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	font-style: normal;
+	opacity: 0;
+	transition: opacity .6s;
+}
+
+#svg_white{
+	position: absolute;
+	z-index: 1000;
+	height: 250px;
+	opacity: 0;
+	transition: all .8s;
+}
+
+
+.buy_open{
+	position: absolute;
+	top: 90%;
+	transition: top 1.5s, opacity 1s;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	opacity: 0;
+	&_window{
+		width: calc(~'150px + 15%');
+		height: 50%;
+		background: #fff;
+		border-radius: 2rem;
+	}
+	&_button{
+		margin-top: 5%;
+		padding: 1% 3%;
+		color: #21529F;
+		transition: all .6s linear;
+		overflow: hidden;
+		border-radius: 2rem;
+		border:none;
+		background: #FFF;
+		box-shadow: 5px 15px 17px -10px rgba(255, 255, 255, 1);
+		font-family: 'Uni Sans Heavy CAPS';
+		font-size: 1.6rem;
+		display: flex;
+		align-items: center;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 2200px){
+	html{
+		font-size: 24px;
+	}
+}
+
+
+@media(max-width: 1440px){
+	html{
+		font-size: 14px;
+	}
+
+}
+@media(max-width: 1024px) {
+	html{
+		font-size: 12px;
+	}
+	.buy_open_window{
+		width: calc(~'200px + 10%');
+	}
+
+
+}
+
+
+@media(max-width: 425px) {
+	html{
+		font-size: 14px;
+	}
+	.container{
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.buy_open_button{
+		padding: 3% 12%;
+		border-radius: 2.7rem;
+	}
+}
+@media (max-width: 500px) {
+	html{
+		font-size: 9px;
+	}
+}
+
+
+
+@media(max-width: 425px){
+	
+}
+
+
+

@@ -1,6 +1,7 @@
 'use strict'
 $(document).ready(function(){
-	let transition = ($('.svg').css('transition-duration'))
+	setTimeout (function () {
+		let transition = ($('.svg').css('transition-duration'))
 	transition = +transition.slice(0,3).replace(/[A-Za-zА-Яа-яЁё]/g, "") * 1000
 	setTimeout(function () {
 		$('.svg').height('25%')
@@ -103,4 +104,5 @@ $(document).ready(function(){
 		},300)
 	}
 	$('#buy_BG').on('click',buy)
+},1500)
 })

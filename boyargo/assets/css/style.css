@@ -2112,7 +2112,7 @@ section, footer, nav, header, menu {
     #main .header_title small {
       font-size: 18px; }
   #main #water {
-    height: 150% !important; }
+    height: 140% !important; }
   #main #colodec {
     height: 130% !important; }
   #main .progressBar {
@@ -2269,7 +2269,7 @@ section, footer, nav, header, menu {
     margin-top: 20px;
     position: relative; }
     #main .form_control .img {
-      height: 125px;
+      height: 150px;
       width: 100%;
       border-radius: 5px 5px 0 0;
       border: 1px dotted #00bff3;
@@ -3524,7 +3524,7 @@ section, footer, nav, header, menu {
   position: relative; }
 
 #img_fix {
-  height: 150% !important; }
+  height: 140% !important; }
 
 @keyframes MoveUpDown {
   0%, 100% {
@@ -3648,8 +3648,6 @@ section, footer, nav, header, menu {
   color: #fff; }
 .light_theme #main .footer table {
   color: #fff; }
-.light_theme #main .answer_block.switchPresent {
-  height: 90px; }
 .light_theme #main .footer {
   position: relative;
   z-index: 2; }

@@ -384,7 +384,7 @@ section, footer, nav, header, menu{max-width: 1920px; margin: 0 auto;}
 		}
 	}
 	#water{
-		height: 150% !important;
+		height: 140% !important;
 	}
 	#colodec{
 		height: 130% !important;
@@ -568,7 +568,7 @@ section, footer, nav, header, menu{max-width: 1920px; margin: 0 auto;}
 		position: relative;
 
 		.img{
-			height: 125px;
+			height: 150px;
 			width: 100%;
 			border-radius: 5px 5px 0 0;
 			border: 1px dotted #00bff3;
@@ -1945,7 +1945,7 @@ section, footer, nav, header, menu{max-width: 1920px; margin: 0 auto;}
 	position: relative;
 }
 #img_fix{
-	height: 150% !important;
+	height: 140% !important;
 
 }
 
@@ -2047,7 +2047,6 @@ section, footer, nav, header, menu{max-width: 1920px; margin: 0 auto;}
 	#main .question .img.five::before{bottom: -30px;}
 	#main .footer{background: #f00;color:#fff;}
 	#main .footer table{color:#fff;}
-	#main .answer_block.switchPresent{height: 90px;}
 	#main .footer{position: relative;z-index: 2;}
 	#main .one_step strong{color: #8ace27;}
 	#main .radio_list li label::before, #main .radio_list li [type="radio"]:checked + label::before, #main [type="tel"]{border-color:#f00;}

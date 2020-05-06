@@ -2891,7 +2891,7 @@ section, footer, nav, header, menu {
       position: absolute;
       left: -180px;
       top: -270px;
-      background: url("../img/phone12.png") no-repeat 50% 50%/cover;
+      background: url("../img/phone.png") no-repeat 50% 50%/cover;
       width: 361px;
       height: 527px; }
   #main .radio_list li label {

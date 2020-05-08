@@ -2078,7 +2078,7 @@ section, footer, nav, header, menu {
 
 #main {
   position: relative;
-  background: url("../img/quiz.png");
+  background: url("../img/quiz.jpg");
   background-size: 100% 100%; }
   #main .wrap {
     overflow: hidden;
@@ -2892,7 +2892,7 @@ section, footer, nav, header, menu {
       position: absolute;
       left: -180px;
       top: -270px;
-      background: url("../img/phone12.png") no-repeat 50% 50%/cover;
+      background: url("../img/phone12.jpg") no-repeat 50% 50%/cover;
       width: 361px;
       height: 527px; }
   #main .radio_list li label {

@@ -1,5 +1,6 @@
 <?php 
-$imail="stas_arh_2002@mail.ru"; //Email (можно через запятую - email1, email2, email3)
+include 'bx24.php';
+$imail="zayavka@boyargo.ru"; //Email (можно через запятую - email1, email2, email3)
 $ireply=""; //Email для ответа (нажимая на ''отправить'' клиент отправит сообщение на этот email)
 $tiny_text="спасибо за вашу заявку, мы свяжемся с вами в ближайшее время."; //Благодарность
 $ntimer=""; //Таймер возврата на главную, в секундах - после успешного заказа, по истичению заданного времени заказчика перекинет на главную страницу
@@ -44,8 +45,8 @@ if (
     'add'     => 'Дополнительно: ', 'dop'    => 'Дополнительно: ', 'additional' => 'Дополнительно: ',
     'deep'    => 'Глубина: ',          'messenger'   => 'Мессенджер: ',          'price'      => 'Стоимость: ', 'total_price' => 'Итого: ',
     'subject' => 'Тема: ',          'theme'  => 'Тема: ',
-    'toplivo'   => 'Источник воды: ',
-    'object'   => 'Объект: ',
+    'toplivo'   => 'Объект: ',
+    'object'   => 'Источник воды: ',
     'wrong'   => 'Что не устраивает: ',
     'analyse'   => 'Есть ли анализ: ',
     'work'   => 'Производительность системы: ',
@@ -147,7 +148,7 @@ function frarr($arr){
 
 
 
-  if ( mail('stas_arh_2002@mail.ru',$title,$message) ) {
+  if ( mail('zayavka@boyargo.ru',$title,$message) ) {
     
 
     $title = 'Заявка с сайта boyargo.ru/opros';

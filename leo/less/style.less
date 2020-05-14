@@ -1,0 +1,1060 @@
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MyriadPro-Regular.eot');
+    src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+        url('../fonts/MyriadPro-Regular.woff') format('woff'),
+        url('../fonts/MyriadPro-Regular.ttf') format('truetype'),
+        url('../fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Forum';
+    src: url('../fonts/Forum.eot');
+    src: url('../fonts/Forum.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Forum.woff2') format('woff2'),
+        url('../fonts/Forum.woff') format('woff'),
+        url('../fonts/Forum.ttf') format('truetype'),
+        url('../fonts/Forum.svg#Forum') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@forum: 'Forum';
+@pro: 'Myriad Pro';
+body{
+	margin: 0;
+	padding: 0;
+	font-family: @pro;
+	overflow-x: hidden;
+}
+html,body{
+	height: 100%;
+}
+
+.logo_small{
+	opacity: 0.5;
+	
+}
+.container{
+	margin: 0 auto;
+	max-width: 1150px;
+}
+.main{
+	position: relative;
+	box-sizing: border-box;
+	padding: 5vh 0;
+	padding-top: 10vh;
+	z-index: 1100;
+	&_mob{
+		display: none;
+	}
+	width: 100vw;
+	height: calc(~'100vh - 150px');
+	min-height: 100%;
+	background: url('../img/mainBG.png');
+	&_block{
+		display: flex;
+		justify-content: space-between;
+		&_left{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+		&_right{
+			display: flex;
+			justify-content: flex-end;
+		}
+		&_text{
+			display: flex;
+			&_info{
+				color: #fff;
+				font-size: 3.6rem;
+				margin-top: 20px;
+				margin-left: 30px;
+			}
+		}
+	}
+}
+
+.logo{
+	margin-bottom: 12vh;
+	z-index: 10;
+}
+
+.decor{
+	position: absolute;
+	opacity: .5;
+	width: 10vw;
+}
+#left{
+	left: 0;
+	top: 0;
+	opacity: .7;
+}
+#right{
+	right: 0;
+	bottom: 0;
+	transform: scale(-1,1);
+}
+
+.menu{
+	height: 160px;
+	background: #fff;
+	&_mob{
+		display: none;
+	}
+	&_wrap{
+		position: relative;
+		height: 100%;
+	}
+	&_buttons{
+		display: flex;
+		justify-content: flex-end;
+		height: 100%;
+		align-items: center;
+	}
+	&_img{
+		z-index: 1000;
+		& img{
+			z-index: 1000;
+		}
+	}
+}
+
+#logo{
+	position: absolute;
+	left: -100px;
+	top: -67px;
+}
+#link_phone{
+	margin-right: 30px;
+}
+
+.buy{
+	background: #F8F8F8;
+	color: #792421;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 150px;
+	& .menu{
+		height: 100px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100vw;
+		a{
+			z-index: 2000;
+		}
+		&_icon{
+			width: 80px;
+			height: 80px;
+			& img{
+				max-width: 100%;
+			}
+		}
+		&_wrap{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+	&_BG{
+		position: absolute;
+		right: -2.4%;
+		bottom: -70%;
+	}
+	&_wrap{
+		padding-top: 110px;
+		position: relative;
+	}
+	&_block{
+		margin-left: 33%;
+		&_item{
+			font-size: 2.8rem;
+			display: flex;
+			&_text{
+				margin-top: 20px;
+				margin-left: 30px;
+			}
+			&:last-child{
+				margin-left: 38%;
+				margin-top: 40px;
+			}
+		}
+	}
+	&_cost{
+		width: 450px;
+		height: 450px;
+		background: url('../img/cost_border.png') no-repeat;
+		background-size: cover;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		top: -50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		& span{
+			& b{
+				font-size: 2.4rem;
+			}
+			font-size: 2.2rem;
+			&:last-child{
+				font-size: 4rem;
+				font-weight: 200;
+				font-family: @forum;
+			}
+		}
+	}
+}
+
+
+.advantages{
+	color: #fff;
+	background: #7B2522;
+	padding: 100px 0;
+	position: relative;
+	z-index: 1100;
+	&_head{
+		display: flex;
+		z-index: 10000;
+		& .logo_small{
+			margin-right: 25px;
+		}
+		&_title{
+			font-size: 3.75rem;
+			margin-top: 15px;
+			margin-bottom: 60px;
+			z-index: 10000;
+		}
+		&_subtitle{
+			font-size: 2.6rem;
+			font-family: @forum;
+			z-index: 10000;
+		}
+	}
+	&_block{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-top: 110px;
+		color: #7A2422;
+	}
+	&_card{
+		width: 460px;
+		height: 460px;
+		background: #fff;
+		margin: 0 15px;
+		padding: 55px;
+		box-sizing: border-box;
+		background-size: cover !important;
+		z-index: 100;
+		&_title{
+			font-size: 3.1rem;
+			margin-bottom: 35px;
+			line-height: 1;
+		}
+		&_text{
+			font-family: @forum;
+			font-size: 1.5rem;
+			line-height: 26px;
+		}
+	}
+}
+.row{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	width: 100%;
+	margin: 15px 0;
+	&_one{
+		display: flex;
+		justify-content: flex-start;
+		padding-left: 86px;
+		margin: 15px 0;
+	}
+}
+
+
+
+.title{
+	margin-top: 15px;
+}
+.more_ico{
+	margin-bottom: 15px;
+}
+
+#card_1{
+	background: url('../img/advatages_1.png');
+}
+#card_2{
+	background: url('../img/advatages_2.png');
+}
+#card_3{
+	background: url('../img/advatages_3.png');
+}
+#card_4{
+	background: url('../img/advatages_4.png');
+}
+#card_5{
+	background: url('../img/advatages_5.png');
+}
+#card_6{
+	background: url('../img/advatages_6.png');
+}
+#card_7{
+	background: url('../img/advatages_7.png');
+}
+
+#decor_left_top{
+	top: 9%;
+	opacity: 1;
+}
+#decor_left_bottom{
+	top: 70%;
+	opacity: 1;
+}
+#decor_right_center{
+	top: 40%;
+	right: 0;
+	opacity: 1;
+	transform: scale(-1,1);
+}
+
+.advantages_text_bottom{
+	margin-top: 100px;
+	font-size: 1.4rem;
+}
+
+
+
+.free_worker{
+	height: 1100px;
+	&_mobblock{
+		display: none;
+	}
+	&_block{
+		padding-left: 33%;
+		display: flex;
+		color: #792421;
+		&_img{
+			width: 67px;
+			& img{
+				max-width: 100%;
+			}
+		}
+		&_title{
+			font-size: 3.75rem;
+			margin-top: 18px;
+			line-height: .9;
+			margin-bottom: 30px;
+		}
+		&_subtitle{
+			font-family: @forum;
+			font-size: 2.5rem;
+		}
+		&_text{
+			margin-left: 18px;
+			& .more_ico{
+				margin-bottom: 12px;
+			}
+		}
+	}
+	& .menu_icon{
+		width: 260px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+.mob{
+	display: none;
+}
+.clients{
+	color: #fff;
+	background: #792421;
+	padding-top: 170px;
+	position: relative;
+	padding-bottom: 170px;
+	& #decor_left_top{
+		top: 0;
+	}
+	&_wrap{
+		display: flex;
+		justify-content: space-between;
+	}
+	&_info{
+		font-size: 2.5rem;
+		font-family: @forum;
+		margin: 30px 0;
+	}
+	&_button{
+		width: 450px;
+		height: 130px;
+		box-sizing: border-box;
+		border: 10px solid #fff;
+		font-size: 2.1rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		
+	}
+	& .main_block_right{
+		height: 90%;
+		& img{
+			height: auto;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+
+.rewards{
+	margin-top: 400px;
+	&_right{
+		display: flex;
+		max-height: 347px;
+		& img{
+			max-height: 100%;
+		}
+		&_main{
+			position: relative;
+		}
+		&_more{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			margin-left: 30px;
+			& img{
+				height: 25%;
+			}
+		}
+	}
+}
+.arrow{
+	position: absolute;
+	cursor: pointer;
+}
+
+#left_arrow{
+	bottom: -90px;
+	left: 0;
+}
+#right_arrow{
+	bottom: -90px;
+	right: 0;
+}
+.clients_button_mob{
+	display: none;
+}
+
+.menu_last{
+	& #logo{
+		width: 100px;
+		position: relative;
+		left: 0;
+		top: 0;
+	}
+
+	& .menu_wrap{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+
+.insta{
+	height: 1000px;
+	background: #F8F8F8;
+	box-sizing: border-box;
+	padding: 110px 0;
+	color: #792422;
+	&_img{
+		width: 65px;
+		& img{
+			max-width: 100%;
+		}
+	}
+	&_head{
+		display: flex;
+	}
+	&_title{
+		font-size: 3.4rem;
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+	&_block{
+		height: 480px;
+		margin: 50px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&_img{
+			width: 85%;
+			height: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			&_shadow{
+				display: flex;
+				justify-content: center;
+				& img{
+					width: 100%;
+					height: 80%;
+				}
+			}
+
+
+		}
+		&_leftArrow{
+			cursor: pointer;
+		}
+		&_rightArrow{
+			cursor: pointer;
+		}
+	}
+	&_links{
+		padding-left: 60px;
+		display: flex;
+		align-items: center;
+	}
+	&_link{
+		width: 8.33%;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+.insta_links_row{
+	display: flex;
+	& .insta_link{
+		margin: 0 25px;
+	}
+}
+
+
+
+@media (max-width: 1440px) {
+	html{
+		font-size: 14px;
+	}
+	.main_block_left{
+		& .logo{
+			margin-bottom: 100px;
+		}
+	}
+	.phone{
+		width: 80%;
+	}
+	.container{
+		max-width: 992px;
+	}
+	#logo{
+		width: 480px;
+	}
+	.menu{
+		height: 127px;
+	}
+	.row_one{
+		padding-left: 6px;
+	}
+	.insta_block_img{
+		width: 80%;
+		height: 380px;
+		&_shadow{
+			height: 100%;
+			margin: 0 5px;
+			& img{
+				height: 100%;
+				width: 100%;
+			}
+		}
+	}
+	.insta_links{
+		padding-left: 80px;
+	}
+
+}
+@media (max-width: 1150px){
+	html{
+		font-size: 13px;
+	}
+	.main_block_left{
+		width: 62%;
+		& br{
+			content: '' !important;
+		}
+	}
+	.container{
+		max-width: 700px;
+	}
+	#logo{
+		width: 400px;
+	}
+	.buy_block_item{
+		& br{
+			content: '' !important;
+		}
+		&:last-child{
+			margin-left: 150px;
+		}
+	}
+	.buy_cost{
+		width: 400px;
+		height: 400px;
+	}
+	.buy_BG{
+		height: 1000px;
+		right: -5%;
+		bottom: -55%;
+	}
+	.advantages_card{
+		width: 315px;
+		height: 315px;
+		padding: 20px;
+		&_title{
+			font-size: 2.8rem;
+			margin-bottom: 20px;
+		}
+	}
+	.clients_button{
+		width: 320px;
+		height: 100px;
+		font-size: 2rem;
+	}
+	.clients{
+		& .main_block_right{
+			height: 450px;
+			width: 220px;
+		}
+		&_info{
+			font-size: 2.2rem;
+			margin: 15px 0;
+		}
+	}
+	.rewards_right{
+		width: 40%;
+		&_main {
+			width: 90%;
+			display: flex;
+			align-items: center;
+			& #reward_0{
+				width: 100%;
+				height: 100%;
+
+			}
+		}
+	}
+	.rewards{
+		& .main_block_left{
+			width: 55%;
+		}
+		&_right{
+			padding-top: 40px;
+			height: 278px;
+
+		}
+		&_right_main{
+			
+		}
+	}
+	.insta_block_img{
+		height: 300px;
+	}
+	.insta_block{
+		margin: 30px 0;
+	}
+	.insta_links{
+		padding-left: 70px;
+	}
+	.insta_link{
+		margin-right: 10px;
+	}
+
+
+}
+
+@media (max-width: 992px){
+	html{
+		font-size: 11px;
+	}
+	.logo_small{
+		& img{
+			width: 65px;
+		}
+	}
+	.main_block_text_info{
+		margin-left: 20px;
+	}
+	.advantages_card_text{
+		font-size: 2rem;
+	}
+	.advantages_card_title{
+		font-size: 3.2rem;
+	}
+	.clients{
+
+		&_info{
+			font-size: 2.6rem;
+			margin: 30px 0;
+		}
+	}
+	
+}
+@media (max-width: 768px) {
+	.main{
+		display: none;
+		&_mob{
+			background: url('../img/main_mob.png');
+			background-position: center center;
+			color: #fff;
+			padding: 40px 0;
+			box-sizing: border-box;
+			position: relative;
+			display: flex;
+		}
+		&_block{
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			&_left{
+				& .logo{
+					margin-bottom: 50px;
+				}
+			}
+			&_text{
+				justify-content: center;
+				&_info{
+					font-size: 1.9rem;
+					text-align: center;
+					width: 100%;
+					margin: 0;
+					margin-top: 5%;
+				}
+			}
+			&_right{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: flex-end;
+				margin-top: 5%;
+			}
+		}
+	}
+	.decor{
+		display: none;
+	}
+	.logo{
+		display: flex;
+		justify-content: center;
+
+	}
+	.decor_mob{
+		position: absolute;
+		left: 0;
+		top: 20%;
+		transform: translateX(-50%);
+		opacity: 0.5;
+
+	}
+	.phone{
+		z-index: 1000;
+		min-width: 165px;
+	}
+	.menu_wrap{
+		display: none !important;
+	}
+	.menu_mob{
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		height: 100%;
+		padding-top: 10px;
+		&_icon{
+			width: 70px;
+			height: 70px;
+			margin: 0 25px;
+			& img{
+				width: 100%;
+			}
+		}
+	}
+	.menu{
+		height: 120px !important;
+	}
+	.buy_block{
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		&_item:last-child {
+			margin: 0;
+			margin-top: 80px;
+		}
+	}
+	.buy_cost{
+		top: 100px;
+	}
+	.buy{
+		padding-bottom: 250px;
+		&_BG{
+			right: 0%;
+			top: 4%;
+		}
+	}
+	.row{
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+		&_one{
+			justify-content: center;
+			width: 100%;
+			padding: 0;
+		}
+	}
+	.advantages_card{
+		margin: 10px 0;
+		text-align: center;
+		height: 300px;
+		width: 300px;
+		padding-top: 35px;
+		background: #fff !important;
+		&_title{
+			font-size: 30px;
+			margin-bottom: 15px;
+		}
+		&_text{
+			font-size: 20px;
+		}
+	}
+	.free_worker_block{
+		display: none;
+	}
+	.free_worker_mobblock{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		& br{
+			content: ' ';
+			display: block;
+		}
+		& .buy_cost_text span:first-child{
+			font-size: 3.2rem;
+			font-weight: 700;
+		}
+		& .buy_cost_text span:last-child{
+			font-size: 2.9rem;
+		}
+
+	}
+	.free_worker_mobblock_last{
+		margin-top: 200px;
+		display: flex;
+		& .free_worker_block_title {
+			font-size: 3.2rem;
+		}
+		& .free_worker_block_subtitle{
+			font-size: 2.6rem;
+		}
+	}
+	.advantages_head{
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		&_title{
+			margin-bottom: 15px;
+		}
+	}
+	.advantages_text_bottom{
+		text-align: center;
+	}
+	.logo_small{
+		margin: 0 !important;
+	}
+	.mob{
+		display: flex !important;
+	}
+	#decor_left_top{
+		top: 47%;
+		opacity: 1;
+		display: flex !important;
+		transform: translateY(-50%);
+		opacity: .7;
+		width: 150px;
+		z-index: -4;
+	}
+	#decor_left_bottom{
+		top: 94%;
+		opacity: 1;
+		display: flex !important;
+		transform: translateY(-50%);
+		opacity: .7;
+		width: 150px;
+		z-index: -4;
+	}
+	#decor_right_center{
+		top: 23%;
+		right: 0;
+		opacity: 1;
+		transform: scale(-1,1);
+		display: flex !important;
+		transform: translateY(-50%) scale(-1,1);
+		opacity: .7;
+		width: 150px;
+		z-index: -4;
+	}
+	#decor_right_bottom{
+		top: 68%;
+		right: 0;
+		opacity: 1;
+		transform: scale(-1,1);
+		display: flex !important;
+		transform: translateY(-50%) scale(-1,1);
+		opacity: .7;
+		width: 150px;
+		z-index: -4;
+	}
+	.clients_wrap{
+		flex-direction: column;
+		align-items: center;
+	}
+	.clients{
+		text-align: center;
+		padding-top: 70px;
+		& .main_block_right{
+			height: auto;
+			width:50%;
+		}
+		& .main_block_text{
+			flex-direction: column;
+		}
+		&_button{
+			display: none;
+			&_mob{
+				width: 250px;
+				height: 80px;
+				border: 10px solid #fff;
+				margin-top: 60px;
+				font-size: 1.8rem;	
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				cursor: pointer;
+			}
+		}
+		&_title{
+			font-size: 4rem;
+		}
+	}
+	.rewards{
+		margin-top: 100px;
+		&_right{
+			height: auto;
+			max-height: none;
+			&_more{
+				display: none;
+			}
+			&_main{
+				height: auto;
+				width: auto;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 380px;
+				& #reward_0{
+					width: 100%;
+					height: 100%;
+					object-fit: contain;
+				}
+			}
+		}
+	}
+	
+	.hide_mob{
+		display: none;
+	}
+	.insta_block_img{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 300px;
+		width: 300px;
+	}
+	.insta_block_leftArrow,.insta_block_rightArrow{
+		width: 60px;
+		& img{
+			max-width: 100%;
+		}
+	}
+	.insta_links{
+		flex-direction: column;
+		align-items: flex-start;
+		padding-left: 30px;
+	}
+	.insta_links_row{
+		margin: 15px 0;
+	}
+	.rewards_right{
+		width: 50%;
+		min-width: 220px;
+	}
+
+
+}
+@media (max-width: 425px) {
+	.container{
+		max-width: 375px;
+		padding: 0;
+	}
+	.buy_block_item{
+		font-size: 2.4rem;
+		& br{
+			content: '';
+			display: none;
+		}
+	}
+	#decor_left_top{
+		width: 100px;
+	}
+	#decor_left_bottom{
+		width: 100px;
+	}
+	#decor_right_center{
+		width: 100px;
+	}
+	#decor_right_bottom{
+		width: 100px;
+	}
+	.insta_block_img{
+		width: 250px;
+		height: 250px;
+	}
+	.insta_block_leftArrow,.insta_block_rightArrow{
+		width: 50px;
+		
+	}
+	.main_block_left{
+		width: 90% !important;
+	}
+
+
+	
+}
+@media (max-width: 375px) {
+	.insta_block_img{
+		width: 220px;
+		height: 220px;
+	}
+	.insta_title{
+		margin-left: 8px;
+	}
+}
+

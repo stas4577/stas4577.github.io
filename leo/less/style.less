@@ -470,11 +470,11 @@ html,body{
 
 
 .insta{
-	height: 1000px;
 	background: #F8F8F8;
 	box-sizing: border-box;
 	padding: 110px 0;
 	color: #792422;
+	padding-bottom: 180px;
 	&_img{
 		width: 65px;
 		& img{
@@ -540,7 +540,85 @@ html,body{
 	}
 }
 
+.news{
+	margin-top: 300px;
+	&_icon{
+		width: 6%;
+		& img{
+			max-width: 100%;
+		}
+	}
+	&_head{
+		display: flex;
+	}
+	&_title{
+		font-size: 3.4rem;
+		margin-left: 30px;
+		margin-top: 16px;
+	}
+	&_body{
+		padding-left: calc(~'6% + 30px');
+		margin-top: 60px;
+	}
+	&_mail{
+		height: 110px;
+		width: 60%;
+		border: 5px solid #8D1F1B;
+		background: #F8F8F8;
+		margin-right: 5%;
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;
+		padding-left: 50px;
+		font-size: 2rem;
+		color: #8D1F1B;
+		&::placeholder{
+			font-size: 2rem;
+			color: #8D1F1B;
 
+			
+
+		}
+
+	}
+	&_button{
+		height: 110px;
+		background: #8D1F1B;
+		outline: none;
+		border: none;
+		color: #F8F8F8;
+		width: 25%;
+		font-size: 2rem;
+		cursor: pointer;
+	}
+	&_row{
+		display: flex;
+		align-items: flex-start;
+	}
+	&_info{
+		margin-top: 30px;
+		font-weight: 700;
+	}
+}
+
+
+.footer{
+	height: 750px;
+	background: #8D1F1B;
+	box-sizing: border-box;
+	color: #fff;
+	&_title{
+		margin-left: calc(~'6% + 30px');
+		padding-top: 50px;
+		font-size: 1.6rem;
+	}
+	&_text{
+		margin-left: calc(~'6% + 30px');
+		margin-top: 50px;
+	}
+
+
+}
 
 @media (max-width: 1440px) {
 	html{
@@ -1006,6 +1084,38 @@ html,body{
 		width: 50%;
 		min-width: 220px;
 	}
+	.news_mail{
+		height: 80px;
+		padding-left: 4%;
+	}
+	.news_button{
+		height: 80px;
+		font-size: 1.8rem;
+	}
+	.news_icon{
+		width: 65px;
+		margin-left: 15px;
+	}
+	.news_title{
+		margin-left: 10px;
+		margin-top: 12px;
+	}
+	.news_mail{
+		width: 62%;
+	}
+	.news_button{
+		width: 30%;
+	}
+	.news_body{
+		padding-left: 15px;
+	}
+	.footer_title,.footer_text{
+		margin-left: 15px;
+	}
+	.footer{
+		height: 250px;
+	}
+
 
 
 }
@@ -1043,6 +1153,17 @@ html,body{
 	}
 	.main_block_left{
 		width: 90% !important;
+	}
+	.news_button{
+		font-size: 1.6rem;
+		height: 60px;
+	}
+	.news_mail{
+		height: 60px;
+		width: 55%;
+	}
+	.news_button{
+		width: 37%;
 	}
 
 

@@ -163,7 +163,7 @@ input:focus{
 		
 	}
 	&_open{
-		height: 200px;
+		height: 230px;
 		width: 100%;
 		background: #F0F0F0;
 		z-index: 1000;
@@ -180,10 +180,19 @@ input:focus{
 			visibility: hidden;
 			opacity: 0;
 		}
+		&_links{
+			margin: 15px 0;
+			display: flex;
+			&_title{
+				font-size: 1.2rem;
+				color: #666666;
+				margin-right: 30px;
+			}
+		}
 		
 		&_link{
-			margin-right: 55px;
-			margin-bottom: 10px;
+			margin: 0 8px;
+			
 		}
 		&_news{
 			display: -webkit-box;

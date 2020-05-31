@@ -20,6 +20,10 @@ $(document).ready(function () {
 		if (!e.target.classList.contains('search_click')) {
 			searchClose()
 		}
+		if (!e.target.classList.contains('bur_click')) {
+			$('.header_open').addClass('header_open_noactive')
+
+		}
 	})
 	let active_slide = 0
 	
@@ -29,7 +33,6 @@ $(document).ready(function () {
 	})
 	$('.header_bur').on('click',function () {
 		$('.header_open').toggleClass('header_open_noactive')
-		console.log('123');
 	})
 	
 	

@@ -46,13 +46,13 @@ html,body{
 	box-sizing: border-box;
 	padding: 5vh 0;
 	padding-top: 10vh;
-	z-index: 1100;
+	z-index: 11000;
 	&_mob{
 		display: none;
 	}
 	width: 100vw;
 	height: calc(~'100vh - 150px');
-	min-height: 100%;
+	min-height: 750px;
 	background: url('../img/mainBG.png');
 	&_block{
 		display: flex;
@@ -74,19 +74,25 @@ html,body{
 				margin-top: 20px;
 				margin-left: 30px;
 			}
+			&_sub{
+				font-size: 2rem;
+				margin-top: 40px;
+			}
 		}
+		
 	}
 }
 
 .logo{
 	margin-bottom: 12vh;
-	z-index: 10;
+	z-index: 1000;
 }
 
 .decor{
 	position: absolute;
 	opacity: .5;
 	width: 10vw;
+	z-index: 100;
 }
 #left{
 	left: 0;
@@ -102,6 +108,8 @@ html,body{
 .menu{
 	height: 160px;
 	background: #fff;
+	z-index: 10000;
+	position: relative;
 	&_mob{
 		display: none;
 	}
@@ -138,6 +146,8 @@ html,body{
 	position: relative;
 	overflow: hidden;
 	padding-bottom: 150px;
+	z-index: 100;
+	position: relative;
 	& .menu{
 		height: 100px;
 		position: absolute;
@@ -174,9 +184,33 @@ html,body{
 		&_item{
 			font-size: 2.8rem;
 			display: flex;
+			position: relative;
 			&_text{
 				margin-top: 20px;
 				margin-left: 30px;
+			}
+			&_animation{
+				background: #F8F8F8;
+				width: 105%;
+				height: 105%;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%,-50%);
+				animation: romb_animation 4s linear infinite;
+
+			}
+			&_img{
+				position: relative;
+				height: 50px;
+				min-width: 50px;
+				border: 5px solid #792421;
+				transform: rotate(45deg);
+				background: #792421;
+
+				& img{
+					position: absolute;
+				}
 			}
 			&:last-child{
 				margin-left: 38%;
@@ -185,21 +219,62 @@ html,body{
 		}
 	}
 	&_cost{
-		width: 450px;
-		height: 450px;
-		background: url('../img/cost_border.png') no-repeat;
+		width: 320px;
+		height: 320px;
+		border: 15px solid #792421;
 		background-size: cover;
 		position: relative;
 		left: 50%;
-		transform: translateX(-50%);
+		transform: translateX(-50%) rotate(45deg);
 		top: -50px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
+		cursor: pointer;
+		&_text{
+			transform: rotate(-45deg);
+			width: 105%;
+			height: 105%;
+			background: #F8F8F8;
+			overflow: hidden; 
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			animation: cost_animation 4s infinite linear alternate;
+			white-space: nowrap;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+			&_wrap{
+				width: 100%;
+				height: 100%;
+				position: relative;
+				opacity: 1;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				transform: rotate(-45deg);
+				& span{
+					&:nth-child(1){
+						font-size: 2.6rem;
+						margin-bottom: -15px;
+
+					}
+					&:last-child{
+						margin-top: -15px;
+					}
+				}
+			}
+		}
+		
 		& span{
 			& b{
-				font-size: 2.4rem;
+				font-size: 3rem;
 			}
 			font-size: 2.2rem;
 			&:last-child{
@@ -208,19 +283,109 @@ html,body{
 				font-family: @forum;
 			}
 		}
+		&_animation{
+			background: #792421;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			width: 105%;
+			height: 105%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			overflow: hidden; 
+			&_text{
+				color: #fff;
+				font-size: 3.8rem;
+				transform: rotate(-45deg);
+				font-family: @forum;
+				& span{
+					font-size: 2.9rem !important;
+				}
+			}
+		}
 	}
 }
+.margin_bottom{
+	margin-bottom: -15px;
+}
+.margin_top{
+	margin-top: -15px;
+}
+.anim_bottom{
+	height: 33vh;
+	background: #7B2522;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+}
 
+
+
+
+
+@keyframes romb_animation {
+	from{
+		width: 0%;
+		height: 0%;
+	} 
+	15%,55% {
+		width: 105%;
+		height: 105%;
+	}
+	70%{
+		width: 0;
+		height: 0;
+	}
+	to{
+		width: 0;
+		height: 0;
+	}
+}
+@keyframes cost_animation {
+	from,10%{
+		width: 105%;
+		height: 105%;
+	}
+	40%,60%{
+		height: 0;
+		width: 0;
+	}
+	90%,to{
+		width: 105%;
+		height: 105%;
+	}
+
+}
+
+
+
+
+
+
+
+
+.buy_block_img_top{
+	top: 0px;
+	right: 20px;
+}
+.buy_block_img_bottom{
+	top: 0px;
+	left: 120px;
+}
 
 .advantages{
 	color: #fff;
 	background: #7B2522;
 	padding: 100px 0;
 	position: relative;
-	z-index: 1100;
 	&_head{
 		display: flex;
 		z-index: 10000;
+		position: relative;
 		& .logo_small{
 			margin-right: 25px;
 		}
@@ -251,7 +416,7 @@ html,body{
 		padding: 55px;
 		box-sizing: border-box;
 		background-size: cover !important;
-		z-index: 100;
+		z-index: 1;
 		&_title{
 			font-size: 3.1rem;
 			margin-bottom: 35px;
@@ -308,6 +473,9 @@ html,body{
 #card_7{
 	background: url('../img/advatages_7.png');
 }
+#card_8{
+	background: url('../img/advatages_8.png');
+}
 
 #decor_left_top{
 	top: 9%;
@@ -327,12 +495,16 @@ html,body{
 .advantages_text_bottom{
 	margin-top: 100px;
 	font-size: 1.4rem;
+	z-index: 100;
+	position: relative;
 }
 
 
 
 .free_worker{
 	height: 1100px;
+	z-index: 1000;
+	position: relative;
 	&_mobblock{
 		display: none;
 	}
@@ -374,6 +546,8 @@ html,body{
 	display: none;
 }
 .clients{
+	z-index: 100;
+
 	color: #fff;
 	background: #792421;
 	padding-top: 170px;
@@ -415,6 +589,8 @@ html,body{
 
 
 .rewards{
+	z-index: 100;
+	position: relative;
 	margin-top: 400px;
 	&_right{
 		display: flex;
@@ -467,9 +643,13 @@ html,body{
 		align-items: center;
 	}
 }
-
+.phone{
+	max-height: 490px;
+}
 
 .insta{
+	z-index: 100;
+	position: relative;
 	background: #F8F8F8;
 	box-sizing: border-box;
 	padding: 110px 0;
@@ -541,6 +721,8 @@ html,body{
 }
 
 .news{
+	z-index: 100;
+	position: relative;
 	margin-top: 300px;
 	&_icon{
 		width: 6%;
@@ -603,6 +785,8 @@ html,body{
 
 
 .footer{
+	z-index: 100;
+	position: relative;
 	height: 750px;
 	background: #8D1F1B;
 	box-sizing: border-box;
@@ -620,13 +804,32 @@ html,body{
 
 }
 
+
+.anim_square{
+	width: 80%;
+	height: 80%;
+	background: #792421;
+	transform: rotate(45deg);
+	& img{
+		transform: rotate(-45deg);
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	
+}
+
+
+
+
+
 @media (max-width: 1440px) {
 	html{
 		font-size: 14px;
 	}
 	.main_block_left{
 		& .logo{
-			margin-bottom: 100px;
+			margin-bottom: 60px;
 		}
 	}
 	.phone{
@@ -670,7 +873,9 @@ html,body{
 		& br{
 			content: '' !important;
 		}
+
 	}
+
 	.container{
 		max-width: 700px;
 	}
@@ -688,6 +893,11 @@ html,body{
 	.buy_cost{
 		width: 400px;
 		height: 400px;
+		&_text_wrap span{
+			&:nth-child(1){
+				margin-bottom: 0;
+			}
+		}
 	}
 	.buy_BG{
 		height: 1000px;
@@ -697,10 +907,13 @@ html,body{
 	.advantages_card{
 		width: 315px;
 		height: 315px;
-		padding: 20px;
+		padding: 18px;
 		&_title{
 			font-size: 2.8rem;
-			margin-bottom: 20px;
+			margin-bottom: 15px;
+		}
+		&_text{
+			line-height: 1.2;
 		}
 	}
 	.clients_button{
@@ -756,6 +969,27 @@ html,body{
 	.insta_link{
 		margin-right: 10px;
 	}
+	.logo_small img{
+		width: 55px;
+		height: 55px;
+	}
+	.main_block_text{
+		&_info{
+			font-size: 3rem;
+		}
+		&_sub{
+			font-size: 2rem;
+		}
+	}
+	.buy_block_img_top{
+		top: 40px;
+		right: 0;
+		left: 50px;
+	}
+	.buy_cost{
+		width: 230px;
+		height: 230px;
+	}
 
 
 }
@@ -764,11 +998,7 @@ html,body{
 	html{
 		font-size: 11px;
 	}
-	.logo_small{
-		& img{
-			width: 65px;
-		}
-	}
+	
 	.main_block_text_info{
 		margin-left: 20px;
 	}
@@ -788,6 +1018,9 @@ html,body{
 	
 }
 @media (max-width: 768px) {
+	.more_ico{
+		display: none;
+	}
 	.main{
 		display: none;
 		&_mob{
@@ -824,6 +1057,7 @@ html,body{
 				align-items: center;
 				justify-content: flex-end;
 				margin-top: 5%;
+				max-width: 280px;
 			}
 		}
 	}
@@ -866,23 +1100,33 @@ html,body{
 		}
 	}
 	.menu{
-		height: 120px !important;
+		height: auto !important;
+		padding-bottom: 10px;
 	}
 	.buy_block{
 		margin: 0;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
+		left: 0;
 		&_item:last-child {
-			margin: 0;
 			margin-top: 80px;
+		}
+		&_img_top{
+			margin-left: 12px !important;
+		}
+		&_img_bottom{
+			left: 0;
 		}
 	}
 	.buy_cost{
 		top: 100px;
+		width: 200px;
+		height: 200px;
 	}
 	.buy{
-		padding-bottom: 250px;
+		padding-bottom: 300px;
+		padding-top: 30px;
 		&_BG{
 			right: 0%;
 			top: 4%;
@@ -931,8 +1175,13 @@ html,body{
 		& .buy_cost_text span:last-child{
 			font-size: 2.9rem;
 		}
+		& .buy_cost_text_wrap span:last-child{
+			margin-top: 0;
+		}
+		
 
 	}
+	
 	.free_worker_mobblock_last{
 		margin-top: 200px;
 		display: flex;
@@ -970,7 +1219,7 @@ html,body{
 		z-index: -4;
 	}
 	#decor_left_bottom{
-		top: 94%;
+		top: 92%;
 		opacity: 1;
 		display: flex !important;
 		transform: translateY(-50%);
@@ -1037,6 +1286,7 @@ html,body{
 		&_right{
 			height: auto;
 			max-height: none;
+			justify-content: center;
 			&_more{
 				display: none;
 			}
@@ -1047,9 +1297,10 @@ html,body{
 				justify-content: center;
 				align-items: center;
 				height: 380px;
-				& #reward_0{
-					width: 100%;
-					height: 100%;
+				width: 260px;
+				& .reward{
+					width: 100% !important;
+					height: 100% !important;
 					object-fit: contain;
 				}
 			}
@@ -1115,7 +1366,14 @@ html,body{
 	.footer{
 		height: 250px;
 	}
-
+	.buy_block_img_top{
+		top: 0;
+		right: 0;
+		left: 0;
+	}
+	.buy_block_item{
+		margin-left: 12px;
+	}
 
 
 }
@@ -1164,6 +1422,9 @@ html,body{
 	}
 	.news_button{
 		width: 37%;
+	}
+	.free_worker_mobblock{
+		padding-top: 20px;
 	}
 
 

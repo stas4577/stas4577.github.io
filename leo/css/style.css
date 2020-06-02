@@ -34,10 +34,10 @@ body {
   box-sizing: border-box;
   padding: 5vh 0;
   padding-top: 10vh;
-  z-index: 1100;
+  z-index: 11000;
   width: 100vw;
   height: calc(100vh - 150px);
-  min-height: 100%;
+  min-height: 750px;
   background: url('../img/mainBG.png');
 }
 .main_mob {
@@ -65,14 +65,19 @@ body {
   margin-top: 20px;
   margin-left: 30px;
 }
+.main_block_text_sub {
+  font-size: 2rem;
+  margin-top: 40px;
+}
 .logo {
   margin-bottom: 12vh;
-  z-index: 10;
+  z-index: 1000;
 }
 .decor {
   position: absolute;
   opacity: .5;
   width: 10vw;
+  z-index: 100;
 }
 #left {
   left: 0;
@@ -87,6 +92,8 @@ body {
 .menu {
   height: 160px;
   background: #fff;
+  z-index: 10000;
+  position: relative;
 }
 .menu_mob {
   display: none;
@@ -118,9 +125,10 @@ body {
 .buy {
   background: #F8F8F8;
   color: #792421;
-  position: relative;
   overflow: hidden;
   padding-bottom: 150px;
+  z-index: 100;
+  position: relative;
 }
 .buy .menu {
   height: 100px;
@@ -159,50 +167,189 @@ body {
 .buy_block_item {
   font-size: 2.8rem;
   display: flex;
+  position: relative;
 }
 .buy_block_item_text {
   margin-top: 20px;
   margin-left: 30px;
+}
+.buy_block_item_animation {
+  background: #F8F8F8;
+  width: 105%;
+  height: 105%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: romb_animation 4s linear infinite;
+}
+.buy_block_item_img {
+  position: relative;
+  height: 50px;
+  min-width: 50px;
+  border: 5px solid #792421;
+  transform: rotate(45deg);
+  background: #792421;
+}
+.buy_block_item_img img {
+  position: absolute;
 }
 .buy_block_item:last-child {
   margin-left: 38%;
   margin-top: 40px;
 }
 .buy_cost {
-  width: 450px;
-  height: 450px;
-  background: url('../img/cost_border.png') no-repeat;
+  width: 320px;
+  height: 320px;
+  border: 15px solid #792421;
   background-size: cover;
   position: relative;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) rotate(45deg);
   top: -50px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  cursor: pointer;
+}
+.buy_cost_text {
+  transform: rotate(-45deg);
+  width: 105%;
+  height: 105%;
+  background: #F8F8F8;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: cost_animation 4s infinite linear alternate;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.buy_cost_text_wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-45deg);
+}
+.buy_cost_text_wrap span:nth-child(1) {
+  font-size: 2.6rem;
+  margin-bottom: -15px;
+}
+.buy_cost_text_wrap span:last-child {
+  margin-top: -15px;
 }
 .buy_cost span {
   font-size: 2.2rem;
 }
 .buy_cost span b {
-  font-size: 2.4rem;
+  font-size: 3rem;
 }
 .buy_cost span:last-child {
   font-size: 4rem;
   font-weight: 200;
   font-family: 'Forum';
 }
+.buy_cost_animation {
+  background: #792421;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 105%;
+  height: 105%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.buy_cost_animation_text {
+  color: #fff;
+  font-size: 3.8rem;
+  transform: rotate(-45deg);
+  font-family: 'Forum';
+}
+.buy_cost_animation_text span {
+  font-size: 2.9rem !important;
+}
+.margin_bottom {
+  margin-bottom: -15px;
+}
+.margin_top {
+  margin-top: -15px;
+}
+.anim_bottom {
+  height: 33vh;
+  background: #7B2522;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+@keyframes romb_animation {
+  from {
+    width: 0%;
+    height: 0%;
+  }
+  15%,
+  55% {
+    width: 105%;
+    height: 105%;
+  }
+  70% {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 0;
+    height: 0;
+  }
+}
+@keyframes cost_animation {
+  from,
+  10% {
+    width: 105%;
+    height: 105%;
+  }
+  40%,
+  60% {
+    height: 0;
+    width: 0;
+  }
+  90%,
+  to {
+    width: 105%;
+    height: 105%;
+  }
+}
+.buy_block_img_top {
+  top: 0px;
+  right: 20px;
+}
+.buy_block_img_bottom {
+  top: 0px;
+  left: 120px;
+}
 .advantages {
   color: #fff;
   background: #7B2522;
   padding: 100px 0;
   position: relative;
-  z-index: 1100;
 }
 .advantages_head {
   display: flex;
   z-index: 10000;
+  position: relative;
 }
 .advantages_head .logo_small {
   margin-right: 25px;
@@ -233,7 +380,7 @@ body {
   padding: 55px;
   box-sizing: border-box;
   background-size: cover !important;
-  z-index: 100;
+  z-index: 1;
 }
 .advantages_card_title {
   font-size: 3.1rem;
@@ -285,6 +432,9 @@ body {
 #card_7 {
   background: url('../img/advatages_7.png');
 }
+#card_8 {
+  background: url('../img/advatages_8.png');
+}
 #decor_left_top {
   top: 9%;
   opacity: 1;
@@ -302,9 +452,13 @@ body {
 .advantages_text_bottom {
   margin-top: 100px;
   font-size: 1.4rem;
+  z-index: 100;
+  position: relative;
 }
 .free_worker {
   height: 1100px;
+  z-index: 1000;
+  position: relative;
 }
 .free_worker_mobblock {
   display: none;
@@ -346,6 +500,7 @@ body {
   display: none;
 }
 .clients {
+  z-index: 100;
   color: #fff;
   background: #792421;
   padding-top: 170px;
@@ -384,6 +539,8 @@ body {
   height: 100%;
 }
 .rewards {
+  z-index: 100;
+  position: relative;
   margin-top: 400px;
 }
 .rewards_right {
@@ -431,7 +588,12 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.phone {
+  max-height: 490px;
+}
 .insta {
+  z-index: 100;
+  position: relative;
   background: #F8F8F8;
   box-sizing: border-box;
   padding: 110px 0;
@@ -499,6 +661,8 @@ body {
   margin: 0 25px;
 }
 .news {
+  z-index: 100;
+  position: relative;
   margin-top: 300px;
 }
 .news_icon {
@@ -555,6 +719,8 @@ body {
   font-weight: 700;
 }
 .footer {
+  z-index: 100;
+  position: relative;
   height: 750px;
   background: #8D1F1B;
   box-sizing: border-box;
@@ -569,12 +735,24 @@ body {
   margin-left: calc(6% + 30px);
   margin-top: 50px;
 }
+.anim_square {
+  width: 80%;
+  height: 80%;
+  background: #792421;
+  transform: rotate(45deg);
+}
+.anim_square img {
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 @media (max-width: 1440px) {
   html {
     font-size: 14px;
   }
   .main_block_left .logo {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
   }
   .phone {
     width: 80%;
@@ -633,6 +811,9 @@ body {
     width: 400px;
     height: 400px;
   }
+  .buy_cost_text_wrap span:nth-child(1) {
+    margin-bottom: 0;
+  }
   .buy_BG {
     height: 1000px;
     right: -5%;
@@ -641,11 +822,14 @@ body {
   .advantages_card {
     width: 315px;
     height: 315px;
-    padding: 20px;
+    padding: 18px;
   }
   .advantages_card_title {
     font-size: 2.8rem;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+  }
+  .advantages_card_text {
+    line-height: 1.2;
   }
   .clients_button {
     width: 320px;
@@ -691,13 +875,29 @@ body {
   .insta_link {
     margin-right: 10px;
   }
+  .logo_small img {
+    width: 55px;
+    height: 55px;
+  }
+  .main_block_text_info {
+    font-size: 3rem;
+  }
+  .main_block_text_sub {
+    font-size: 2rem;
+  }
+  .buy_block_img_top {
+    top: 40px;
+    right: 0;
+    left: 50px;
+  }
+  .buy_cost {
+    width: 230px;
+    height: 230px;
+  }
 }
 @media (max-width: 992px) {
   html {
     font-size: 11px;
-  }
-  .logo_small img {
-    width: 65px;
   }
   .main_block_text_info {
     margin-left: 20px;
@@ -714,6 +914,9 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .more_ico {
+    display: none;
+  }
   .main {
     display: none;
   }
@@ -750,6 +953,7 @@ body {
     align-items: center;
     justify-content: flex-end;
     margin-top: 5%;
+    max-width: 280px;
   }
   .decor {
     display: none;
@@ -788,23 +992,33 @@ body {
     width: 100%;
   }
   .menu {
-    height: 120px !important;
+    height: auto !important;
+    padding-bottom: 10px;
   }
   .buy_block {
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    left: 0;
   }
   .buy_block_item:last-child {
-    margin: 0;
     margin-top: 80px;
+  }
+  .buy_block_img_top {
+    margin-left: 12px !important;
+  }
+  .buy_block_img_bottom {
+    left: 0;
   }
   .buy_cost {
     top: 100px;
+    width: 200px;
+    height: 200px;
   }
   .buy {
-    padding-bottom: 250px;
+    padding-bottom: 300px;
+    padding-top: 30px;
   }
   .buy_BG {
     right: 0%;
@@ -854,6 +1068,9 @@ body {
   .free_worker_mobblock .buy_cost_text span:last-child {
     font-size: 2.9rem;
   }
+  .free_worker_mobblock .buy_cost_text_wrap span:last-child {
+    margin-top: 0;
+  }
   .free_worker_mobblock_last {
     margin-top: 200px;
     display: flex;
@@ -891,7 +1108,7 @@ body {
     z-index: -4;
   }
   #decor_left_bottom {
-    top: 94%;
+    top: 92%;
     opacity: 1;
     display: flex !important;
     transform: translateY(-50%);
@@ -959,6 +1176,7 @@ body {
   .rewards_right {
     height: auto;
     max-height: none;
+    justify-content: center;
   }
   .rewards_right_more {
     display: none;
@@ -970,10 +1188,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 380px;
+    width: 260px;
   }
-  .rewards_right_main #reward_0 {
-    width: 100%;
-    height: 100%;
+  .rewards_right_main .reward {
+    width: 100% !important;
+    height: 100% !important;
     object-fit: contain;
   }
   .hide_mob {
@@ -1038,6 +1257,14 @@ body {
   .footer {
     height: 250px;
   }
+  .buy_block_img_top {
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+  .buy_block_item {
+    margin-left: 12px;
+  }
 }
 @media (max-width: 425px) {
   .container {
@@ -1084,6 +1311,9 @@ body {
   }
   .news_button {
     width: 37%;
+  }
+  .free_worker_mobblock {
+    padding-top: 20px;
   }
 }
 @media (max-width: 375px) {

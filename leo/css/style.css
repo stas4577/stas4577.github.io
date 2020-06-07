@@ -92,8 +92,20 @@ body {
 .menu {
   height: 160px;
   background: #fff;
-  z-index: 10000;
-  position: relative;
+  z-index: 100000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.menu_top {
+  bottom: 100%;
+  transform: translateY(100%);
+  height: 120px;
+}
+.menu_top #logo {
+  top: 50%;
+  transform: translateY(-50%) scale(0.2);
 }
 .menu_mob {
   display: none;
@@ -456,7 +468,7 @@ body {
   position: relative;
 }
 .free_worker {
-  height: 1100px;
+  height: 570px;
   z-index: 1000;
   position: relative;
 }
@@ -513,6 +525,7 @@ body {
 .clients_wrap {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 .clients_info {
   font-size: 2.5rem;
@@ -531,12 +544,12 @@ body {
   cursor: pointer;
 }
 .clients .main_block_right {
-  height: 90%;
+  width: 35%;
 }
 .clients .main_block_right img {
-  height: auto;
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 .rewards {
   z-index: 100;
@@ -547,8 +560,10 @@ body {
   display: flex;
   max-height: 347px;
 }
-.rewards_right img {
-  max-height: 100%;
+.rewards_right #reward_0 {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .rewards_right_main {
   position: relative;
@@ -558,6 +573,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   margin-left: 30px;
+  align-items: flex-start;
 }
 .rewards_right_more img {
   height: 25%;
@@ -683,22 +699,65 @@ body {
   padding-left: calc(6% + 30px);
   margin-top: 60px;
 }
-.news_mail {
-  height: 110px;
+.news_animate {
   width: 60%;
-  border: 5px solid #8D1F1B;
-  background: #F8F8F8;
   margin-right: 5%;
+  position: relative;
+  z-index: 1;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #8D1F1B;
+}
+.news_animate label {
+  font-size: 2rem;
+  color: #8D1F1B;
+  position: absolute;
+  z-index: 2;
+  left: 5%;
+  cursor: pointer;
+  display: inline-block;
+  animation: news_span_animate 5s infinite forwards alternate linear;
+}
+.news_animate_mail {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #8D1F1B;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #fff;
+  font-size: 1.6rem;
+  padding-left: 5%;
+  z-index: 1;
+}
+.news_mail {
+  height: 100%;
+  width: 100%;
+  background: #F8F8F8;
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  padding-left: 50px;
   font-size: 2rem;
   color: #8D1F1B;
+  z-index: 2;
+  position: relative;
+  animation: news_animate 5s infinite forwards alternate linear;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0;
+  border: none;
+  padding-left: 5%;
 }
-.news_mail::placeholder {
-  font-size: 2rem;
-  color: #8D1F1B;
+.news_mail:focus {
+  animation: none;
+}
+.news_mail:focus ~ #animation_span {
+  animation: none;
 }
 .news_button {
   height: 110px;
@@ -717,6 +776,41 @@ body {
 .news_info {
   margin-top: 30px;
   font-weight: 700;
+}
+@keyframes news_animate {
+  from,
+  25% {
+    width: 100%;
+    height: 100%;
+  }
+  37.5%,
+  50% {
+    width: 80%;
+    height: 0;
+  }
+  62.5% {
+    height: 0;
+    width: 80%;
+  }
+  75%,
+  to {
+    width: 100%;
+    height: 100%;
+  }
+}
+@keyframes news_span_animate {
+  from,
+  25% {
+    opacity: 1;
+  }
+  37.5%,
+  62.5% {
+    opacity: 0;
+  }
+  75%,
+  to {
+    opacity: 1;
+  }
 }
 .footer {
   z-index: 100;
@@ -928,6 +1022,7 @@ body {
     box-sizing: border-box;
     position: relative;
     display: flex;
+    z-index: 100;
   }
   .main_block {
     flex-direction: column;
@@ -953,7 +1048,7 @@ body {
     align-items: center;
     justify-content: flex-end;
     margin-top: 5%;
-    max-width: 280px;
+    width: auto;
   }
   .decor {
     display: none;
@@ -1080,6 +1175,10 @@ body {
   }
   .free_worker_mobblock_last .free_worker_block_subtitle {
     font-size: 2.6rem;
+  }
+  .free_worker {
+    padding-bottom: 100px;
+    height: auto;
   }
   .advantages_head {
     flex-direction: column;
@@ -1225,13 +1324,15 @@ body {
     width: 50%;
     min-width: 220px;
   }
-  .news_mail {
+  .news_row {
+    align-items: stretch;
+  }
+  .news_animate {
     height: 80px;
-    padding-left: 4%;
   }
   .news_button {
-    height: 80px;
     font-size: 1.8rem;
+    height: auto;
   }
   .news_icon {
     width: 65px;
@@ -1305,7 +1406,7 @@ body {
     font-size: 1.6rem;
     height: 60px;
   }
-  .news_mail {
+  .news_animate {
     height: 60px;
     width: 55%;
   }

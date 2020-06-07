@@ -45,4 +45,28 @@ $(document).ready(function () {
 		})
 	}
 
+	setTimeout(() => {
+	let scroll_top = $(window).scrollTop()
+		$(window).on('scroll',function () {
+			if (scroll_top < $(window).scrollTop()) {
+				$('.menu').addClass('menu_top')
+			} else if ($(window).scrollTop() <= 250) {
+				$('.menu').removeClass('menu_top')
+			}
+			scroll_top = $(window).scrollTop()
+		})
+		if ($(window).scrollTop() >= 250) {
+			$('.menu').addClass('menu_top')
+		}
+
+	},200)
+	setTimeout(function() {
+		$('.menu').css('transition','bottom .6s, transform .6s, height .6s')
+		$('#logo').css('transition','all .5s')
+	}, 300);
+
+
+
+
+
 })

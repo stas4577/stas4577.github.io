@@ -18,22 +18,18 @@ body {
   font-family: 'Myriad Pro';
   overflow-x: hidden;
 }
-html,
-body {
-  height: 100%;
-}
-.logo_small {
-  opacity: 0.5;
-}
 .container {
   margin: 0 auto;
   max-width: 1150px;
+}
+.logo_small {
+  opacity: 0.5;
 }
 .main {
   position: relative;
   box-sizing: border-box;
   padding: 5vh 0;
-  padding-top: 10vh;
+  padding-top: 5vh;
   z-index: 11000;
   width: 100vw;
   height: calc(100vh - 150px);
@@ -70,7 +66,7 @@ body {
   margin-top: 40px;
 }
 .logo {
-  margin-bottom: 12vh;
+  margin-bottom: 40px;
   z-index: 1000;
 }
 .decor {
@@ -300,7 +296,7 @@ body {
   margin-top: -15px;
 }
 .anim_bottom {
-  height: 33vh;
+  height: 25vh;
   background: #7B2522;
   width: 100%;
   position: fixed;

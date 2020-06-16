@@ -29,6 +29,14 @@ $(document).ready(function () {
 	}
 	$('#right_arrow').on('click',nextReward)
 	$('#left_arrow').on('click',prevReward)
+
+
+
+
+
+
+
+
 	if ($(window).height()>768) {
 		let anim_start = $('#start').offset()['top'] - $(window).height()
 		let anim_end = $('#end').offset()['top'] + $(window).height()
@@ -44,6 +52,7 @@ $(document).ready(function () {
 				}
 		})
 	}
+
 
 	setTimeout(() => {
 	let scroll_top = $(window).scrollTop()

@@ -28,10 +28,16 @@ $(document).ready(function () {
 		nextReward()
 	}
 	$('#right_arrow').on('click',nextReward)
+	$('#right_arrow').on('click',() => {
+		clearInterval(reward_interval)
+	})
 	$('#left_arrow').on('click',prevReward)
+	$('#left_arrow').on('click',() => {
+		clearInterval(reward_interval)
+	})
 
 
-
+	let reward_interval = setInterval (nextReward,4000)
 
 
 
@@ -57,9 +63,9 @@ $(document).ready(function () {
 	setTimeout(() => {
 	let scroll_top = $(window).scrollTop()
 		$(window).on('scroll',function () {
-			if (scroll_top < $(window).scrollTop()) {
+			if (300 < $(window).scrollTop()) {
 				$('.menu').addClass('menu_top')
-			} else if ($(window).scrollTop() <= 250) {
+			} else if ($(window).scrollTop() <= 300) {
 				$('.menu').removeClass('menu_top')
 			}
 			scroll_top = $(window).scrollTop()

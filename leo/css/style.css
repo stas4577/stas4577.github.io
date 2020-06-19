@@ -66,7 +66,7 @@ body {
   margin-top: 40px;
 }
 .logo {
-  margin-bottom: 40px;
+  margin-bottom: 8vh;
   z-index: 1000;
 }
 .decor {
@@ -97,7 +97,7 @@ body {
 .menu_top {
   bottom: 100%;
   transform: translateY(100%);
-  height: 120px;
+  height: 70px;
 }
 .menu_top #logo {
   top: 50%;
@@ -122,13 +122,35 @@ body {
 .menu_img img {
   z-index: 1000;
 }
+@media (max-width: 768px) {
+  .menu_top {
+    bottom: 0;
+    transform: none;
+  }
+}
 #logo {
   position: absolute;
   left: -100px;
   top: -67px;
+  z-index: 100;
+}
+#logo__name {
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.2rem;
+  font-family: 'Forum';
+  color: #792421;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity .6s;
 }
 #link_phone {
   margin-right: 30px;
+}
+.menu_top #logo__name {
+  opacity: 1;
 }
 .buy {
   background: #F8F8F8;
@@ -212,9 +234,9 @@ body {
   border: 15px solid #792421;
   background-size: cover;
   position: relative;
-  left: 50%;
+  left: 35%;
   transform: translateX(-50%) rotate(45deg);
-  top: -50px;
+  top: -150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -296,7 +318,7 @@ body {
   margin-top: -15px;
 }
 .anim_bottom {
-  height: 25vh;
+  height: 10vh;
   background: #7B2522;
   width: 100%;
   position: fixed;
@@ -468,6 +490,12 @@ body {
   z-index: 1000;
   position: relative;
 }
+.free_worker .clients_button {
+  margin-top: 30px;
+  border-color: #7B2522;
+  background: #7B2522;
+  color: #fff;
+}
 .free_worker_mobblock {
   display: none;
 }
@@ -529,10 +557,10 @@ body {
   margin: 30px 0;
 }
 .clients_button {
-  width: 450px;
-  height: 130px;
+  width: 400px;
+  height: 90px;
   box-sizing: border-box;
-  border: 10px solid #fff;
+  border: 6px solid #fff;
   font-size: 2.1rem;
   display: flex;
   justify-content: center;
@@ -550,7 +578,7 @@ body {
 .rewards {
   z-index: 100;
   position: relative;
-  margin-top: 400px;
+  margin-top: 200px;
 }
 .rewards_right {
   display: flex;
@@ -756,7 +784,6 @@ body {
   animation: none;
 }
 .news_button {
-  height: 110px;
   background: #8D1F1B;
   outline: none;
   border: none;
@@ -767,7 +794,6 @@ body {
 }
 .news_row {
   display: flex;
-  align-items: flex-start;
 }
 .news_info {
   margin-top: 30px;
@@ -811,7 +837,7 @@ body {
 .footer {
   z-index: 100;
   position: relative;
-  height: 750px;
+  height: 300px;
   background: #8D1F1B;
   box-sizing: border-box;
   color: #fff;
@@ -851,10 +877,10 @@ body {
     max-width: 992px;
   }
   #logo {
-    width: 480px;
+    width: 520px;
   }
   .menu {
-    height: 127px;
+    height: 65px;
   }
   .row_one {
     padding-left: 6px;
@@ -884,6 +910,9 @@ body {
   }
   .main_block_left br {
     content: '' !important;
+  }
+  .menu {
+    height: 60px;
   }
   .container {
     max-width: 700px;
@@ -983,6 +1012,9 @@ body {
   .buy_cost {
     width: 230px;
     height: 230px;
+  }
+  .news_animate {
+    height: 80px;
   }
 }
 @media (max-width: 992px) {
@@ -1400,10 +1432,8 @@ body {
   }
   .news_button {
     font-size: 1.6rem;
-    height: 60px;
   }
   .news_animate {
-    height: 60px;
     width: 55%;
   }
   .news_button {

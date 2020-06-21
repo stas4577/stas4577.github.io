@@ -236,7 +236,7 @@ body {
   position: relative;
   left: 35%;
   transform: translateX(-50%) rotate(45deg);
-  top: -150px;
+  top: -300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -591,7 +591,7 @@ body {
 .rewards {
   z-index: 100;
   position: relative;
-  margin-top: 200px;
+  margin-bottom: 200px;
 }
 .rewards_right {
   display: flex;
@@ -1343,6 +1343,7 @@ body {
   }
   .clients .main_block_text {
     flex-direction: column;
+    align-items: center;
   }
   .clients_button {
     display: none;
@@ -1448,7 +1449,7 @@ body {
     margin-left: 15px;
   }
   .footer {
-    height: 250px;
+    height: 300px;
   }
   .buy_block_img_top {
     top: 0;

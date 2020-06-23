@@ -852,6 +852,14 @@ body{
 	justify-content: center;
 	align-items: center;
 }
+.news__form{
+	width: 60%;
+	margin-right: 5%;
+}
+.news__text{
+	margin-bottom: 25px;
+	width: 70%;
+}
 .news{
 	z-index: 100;
 	position: relative;
@@ -872,13 +880,13 @@ body{
 	}
 	&_body{
 		padding-left: calc(~'6% + 30px');
-		margin-top: 60px;
+		margin-top: 80px;
 	}
 	&_animate{
-		width: 60%;
-		margin-right: 5%;
+		width: 100%;
 		position: relative;
 		z-index: 1;
+
 		height: 110px;
 		display: flex;
 		justify-content: center;
@@ -1225,7 +1233,10 @@ body{
 	html{
 		font-size: 11px;
 	}
-	
+	.news__text{
+		font-size: 1.4rem;
+		width: 85%;
+	}
 	.main_block_text_info{
 		margin-left: 20px;
 	}
@@ -1242,6 +1253,7 @@ body{
 			margin: 30px 0;
 		}
 	}
+	
 	
 }
 @media (max-width: 768px) {
@@ -1653,7 +1665,7 @@ body{
 	.news_button{
 		font-size: 1.6rem;
 	}
-	.news_animate{
+	.news__form{
 		width: 55%;
 	}
 	.news_button{
@@ -1661,6 +1673,9 @@ body{
 	}
 	.free_worker_mobblock{
 		padding-top: 20px;
+	}
+	.news_row{
+		padding-right: 10px;
 	}
 
 

@@ -513,6 +513,7 @@ a {
     border-bottom: 1px solid #DADBDE !important;
     padding-top: 80px !important;
     padding-bottom: 40px !important;
+    padding-left: 0 !important;
   }
   .news__title {
     top: 5%;

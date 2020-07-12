@@ -5,6 +5,8 @@
 	<title>ModX</title>
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1, maximum-scale=1">
+	<script src="scripts/jquery-3.4.1.js"></script>
+	<script src="scripts/script.js"></script>
 </head>
 <body>
 	<header class="header">
@@ -24,13 +26,62 @@
 			</a>
 		</div>
 		<div class="container header__mob">
-				<a href="#"><img src="img/burger.png" alt=""></a>
+				<a class="burger__click" href="#">
+					<div class="burger__line"></div>
+					<div class="burger__line"></div>
+					<div class="burger__line"></div>
+				</a>
 				<a href="#"><img src="img/phone.png" alt=""></a>
 				<a href="#"><img src="img/map.png" alt=""></a>
 				<a href="#"><img src="img/mail.png" alt=""></a>
 				<a href="#"><img src="img/search.png" alt=""></a>
 		</div>
 	</header>
+	<div class="burger__menu">
+			<div data-index="0" class="burger__link">Главная</div>
+			<div class="burger__link__more">
+				<a href="#">Первый пункт меню второго уровня</a><br>
+				<a href="#">Активный пункт меню второго уровня</a><br>
+				<a href="#">Третий пункт меню</a>
+			</div>
+			<div data-index="1" class="burger__link">О Союзе</div>
+			<div class="burger__link__more">
+				<a href="#">Первый пункт меню второго уровня</a><br>
+				<a href="#">Активный пункт меню второго уровня</a><br>
+				<a href="#">Третий пункт меню</a>
+			</div>
+			<div data-index="2" class="burger__link">Аккредитация </div>
+			<div class="burger__link__more">
+				<a href="#">Первый пункт меню второго уровня</a><br>
+				<a href="#">Активный пункт меню второго уровня</a><br>
+				<a href="#">Третий пункт меню</a>
+			</div>
+			<div data-index="3" class="burger__link">Страхование</div>
+			<div class="burger__link__more">
+				<a href="#">Первый пункт меню второго уровня</a><br>
+				<a href="#">Активный пункт меню второго уровня</a><br>
+				<a href="#">Третий пункт меню</a>
+			</div>
+			<div data-index="4" class="burger__link">Реестр членов</div>
+			<div class="burger__link__more">
+				<a href="#">Первый пункт меню второго уровня</a><br>
+				<a href="#">Активный пункт меню второго уровня</a><br>
+				<a href="#">Третий пункт меню</a>
+			</div>
+			<div data-index="5" class="burger__link">Документы</div>
+			<div class="burger__link__more">
+				<a href="#">Первый пункт меню второго уровня</a><br>
+				<a href="#">Активный пункт меню второго уровня</a><br>
+				<a href="#">Третий пункт меню</a>
+			</div>
+			<div data-index="6" class="burger__link">Контакты</div>
+			<div class="burger__link__more">
+				<a href="#">Первый пункт меню второго уровня</a><br>
+				<a href="#">Активный пункт меню второго уровня</a><br>
+				<a href="#">Третий пункт меню</a>
+			</div>
+			<div class="burger__close"></div>
+	</div>
 	<section class="contacts">
 		<div class="container contacts__wrap">
 			<div class="contacts__big contacts__block">
@@ -66,59 +117,59 @@
 	<section class="company">
 		<div class="company__row">
 			<div class="border__top"></div>
-			<div class="container company__wrap">
-				<div class="company__block company__block_big company__show">
+			<sdwsdw class="container company__wrap">
+				<a href="#" class="company__block company__block_big company__show" href="">
 					<img src="img/logo_with_text.png" alt="">
-				</div>
-				<div class="company__block company__block_big company__block_logo company__hide">
+				</a>
+				<a href="#" class="company__block company__block_big company__block_logo company__hide" href="">
 					<img src="img/logo_head.png" alt="">
-				</div>
-				<div class="company__block company__block_big company__block_text company__hide">
+				</a>
+				<a href="#" class="company__block company__block_big company__block_text company__hide" href="">
 					<div class="text">
 						<span class="letter__black">С</span>оюз<br>
 						<span class="letter__black">Т</span>орговых<br>
 						<span class="letter__black">Э</span>лектронных<br>
 						<span class="letter__black">П</span>лощадок
 					</div>
-				</div>
-				<div class="company__block company__block_small">
+				</a>
+				<a href="" class="company__block company__block_small">
 					<img src="img/povol.png" alt="">
-				</div>
-				<div class="company__block company__block_small">
+				</a>
+				<a href="#" class="company__block company__block_small" href="">
 					<img src="img/center_torgov.png" alt="">
-				</div>
-				<div class="company__block company__block_big company__block_logo company__hide">
+				</a>
+				<a href="#" class="company__block company__block_big company__block_logo company__hide" href="">
 					<img src="img/logo_foot.png" alt="">
-				</div>
-				<div class="company__block company__block_big">
+				</a>
+				<a href="#" class="company__block company__block_big" href="">
 					<img src="img/elec.png" alt="">
-				</div>
-				<div class="company__block company__block_big">
+				</a>
+				<a href="#" class="company__block company__block_big" href="">
 					<img src="img/fabr.png" alt="">
-				</div>
-				<div class="company__block company__block_small">
+				</a>
+				<a href="#" class="company__block company__block_small" href="">
 					<img src="img/profit.png" alt="">
-				</div>
-				<div class="company__block company__block_small">
+				</a>
+				<a href="#" class="company__block company__block_small" href="">
 					<img src="img/prom.png" alt="">
-				</div>
-				<div class="company__block company__block_small">
+				</a>
+				<a href="#" class="company__block company__block_small" href="">
 					<img src="img/ural.png" alt="">
-				</div>
-				<div class="company__block company__block_small">
+				</a>
+				<a href="#" class="company__block company__block_small" href="">
 					<img src="img/evra.png" alt="">
-				</div>
-				<div class="company__block company__block_big">
+				</a>
+				<a href="#" class="company__block company__block_big" href="">
 					<img src="img/urel.png" alt="">
-				</div>
-				<div class="company__block company__block_big">
+				</a>
+				<a href="#" class="company__block company__block_big" href="">
 					<img src="img/tender.png" alt="">
 					<div class="company__update">
 						<span class="company__update_hide">14.05.2020 12:25  размещение  /  28.05.2020 16:04  обновление</span>
 						<span class="company__update_show">14.05.2020 12:25  размещение  <br>  28.05.2020 16:04  обновление</span>
 					</div>
-				</div>
-			</div>
+				</a>
+			</sdwsdw>
 			<div class="border__bottom"></div>
 		</div>
 	</section>

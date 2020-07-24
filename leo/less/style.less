@@ -76,6 +76,10 @@ body{
 				font-size: 3.6rem;
 				margin-top: 20px;
 				margin-left: 30px;
+				&_small{
+					font-size: 2.4rem;
+					line-height: 0.8;
+				}
 			}
 			&_sub{
 				font-size: 2rem;
@@ -177,6 +181,32 @@ body{
 .menu_top #logo__name{
 	opacity: 1;
 }
+.youtube{
+	border: 2px solid #D2B8B7;
+	margin-top: 25px;
+}
+.buy_cost_sub{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	& sub{
+		margin-top: 15px;
+		margin-bottom: 40px;
+	}
+	& .clients_button{
+		margin-top: 30px;
+    	border-color: #7B2522;
+    	background: #7B2522;
+    	width: 564px;
+	}
+	& .news__button__add{
+		background: #7B2522;
+		color: #fff;
+	}
+}
+
 .buy{
 	background: #F8F8F8;
 	color: #792421;
@@ -222,6 +252,7 @@ body{
 			font-size: 2.8rem;
 			display: flex;
 			position: relative;
+
 			&_text{
 				margin-top: 20px;
 				margin-left: 30px;
@@ -351,7 +382,59 @@ body{
 	margin-top: -15px;
 }
 
+@media (max-width:1440px) {
+	.buy_block_item:last-child{
+		margin-left: 50% !important;
+		margin-top: 0px !important;
+		top: -55px;
+	}
+	.buy_block_item{
+		top: -60px !important;
+	}
+}
+@media (max-width:1150px) {
+	.buy_block_item:last-child{
+		margin-left: 45% !important;
+		margin-top: 80px !important;
+		top: -8px;
+	}
+	.buy_block_item{
+		top: -80px !important;
+	}
+	#absolute{
+		margin-top: 0;
+	}
+}
 
+
+@media (max-width:768px) {
+	.buy_block_item:last-child{
+		margin-left: 12px !important;
+		margin-top: 80px !important;
+		top: -8px;
+	}
+	.buy_cost_sub{
+		margin-top: 200px;
+		text-align: center;
+	}
+	.buy{
+		padding-bottom: 100px !important;
+	}
+	
+}
+@media (max-width:490px) {
+	.buy_cost{
+		left: 200px;
+	}
+}
+@media (max-width:426px) {
+	.buy_cost{
+		margin-left: -10px;
+	}
+	.buy_block_item:first-child{
+		top: 0 !important;
+	}
+}
 
 
 
@@ -640,9 +723,9 @@ body{
 	}
 	&_button{
 		width: 400px;
-		height: 90px;
+		height: 74px;
 		box-sizing: border-box;
-		border: 6px solid #fff;
+		border: 3px solid #fff;
 		font-size: 2.1rem;
 		display: flex;
 		justify-content: center;
@@ -1219,9 +1302,22 @@ body{
 		left: 50px;
 	}
 	.buy_cost{
-		width: 230px;
-		height: 230px;
+		max-width: 320.02px;
+		max-height: 320.02px;
+		&_animation{
+			max-width: 325.27px;
+			max-height: 325.27px;
+		}
+		&_text{
+			max-width: 320px;
+			max-height: 320px;
+		}
+		
+		
+
 	}
+	
+
 	.news_animate{
 		height: 80px;
 	}

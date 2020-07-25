@@ -80,7 +80,14 @@ $(document).ready(function () {
 		$('#logo').css('transition','all .5s')
 	}, 300);
 
-
+	$('.item__head').on('click',function () {
+		if ($(this).parent().hasClass('item_active')) {
+			$(this).parent().removeClass('item_active')
+		} else {
+			$('.item__head').parent().removeClass('item_active')
+			$(this).parent().addClass('item_active')
+		}
+	})
 
 
 

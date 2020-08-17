@@ -91,4 +91,17 @@ $(document).ready(function () {
 
 
 
+
+	//Слайдер с отзывами
+	let active_feed = 1
+	function feedSlider () {
+		active_feed++
+		active_feed = active_feed % 11
+		if (active_feed == 0) {
+			active_feed = 1
+		}
+		$('.img__inner').attr('src','img/cleint' + active_feed + '.jpg')
+	}
+	let feed_interval = setInterval (feedSlider,4000)
+
 })

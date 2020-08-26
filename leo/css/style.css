@@ -818,7 +818,7 @@ body {
 .rewards_right #reward_0 {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .rewards_right_main {
   position: relative;

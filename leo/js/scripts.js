@@ -13,16 +13,19 @@ $(document).ready(function () {
 	let slider_length = $('.reward').length
 	function nextReward () {
 		let count = 0
-		for (let i = active_reward; count < slider_length;i = (i + 1) % 4) {
+		for (let i = active_reward; count < slider_length;i = (i + 1) % 7) {
 			let src = '#reward_' + count
 			count++
-			active_reward = (active_reward + 1) % 4
+			active_reward = (active_reward + 1) % 7
 			$(src).attr('src','img/reward_' + active_reward + '.png')
 		}
-		active_reward = (active_reward + 1) % 4
+		active_reward = (active_reward + 1) % 7
 	}
 
 	function prevReward () {
+		nextReward()
+		nextReward()
+		nextReward()
 		nextReward()
 		nextReward()
 		nextReward()
@@ -103,5 +106,18 @@ $(document).ready(function () {
 		$('.img__inner').attr('src','img/cleint' + active_feed + '.jpg')
 	}
 	let feed_interval = setInterval (feedSlider,4000)
+
+	//Функция просмотра картинок
+	function showPhoto (img){
+		$('.show__photo').css('display','flex')
+		$('#showPhoto').attr('src',img)
+	}
+	$('[data-show="show"]').on('click',function () {
+		showPhoto ($(this).attr('src'))
+	})
+	$('#show__close').on('click',function () {
+		$('.show__photo').css('display','none')
+	})
+	$('.show__photo').css('display','none')
 
 })

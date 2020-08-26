@@ -809,6 +809,7 @@ body {
   z-index: 100;
   position: relative;
   margin-bottom: 200px;
+  object-fit: contain;
 }
 .rewards_right {
   display: flex;
@@ -821,6 +822,7 @@ body {
 }
 .rewards_right_main {
   position: relative;
+  max-width: 260px;
 }
 .rewards_right_more {
   display: flex;
@@ -828,6 +830,7 @@ body {
   justify-content: space-between;
   margin-left: 30px;
   align-items: flex-start;
+  display: none;
 }
 .rewards_right_more img {
   height: 25%;
@@ -1755,4 +1758,33 @@ body {
   .insta_title {
     margin-left: 8px;
   }
+}
+
+
+.show__photo{
+  position: fixed;
+  z-index: 1000000;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+#showPhoto{
+  transform: scale(1.3);
+  max-width: 60vw;
+  max-height: 50vh;
+  border: 5px solid #fff;
+}
+#show__close{
+  max-width: 50px;
+  max-height: 50px;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  cursor: pointer;
+}
+[data-show="show"]{
+  cursor: pointer;
 }

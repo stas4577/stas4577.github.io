@@ -24,7 +24,7 @@ body {
 }
 .img {
   width: 220px;
-  height: 500px;
+  height: 470px;
   background: url(../img/border.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -152,6 +152,7 @@ body {
     bottom: 0;
     transform: none;
   }
+
 }
 #logo {
   position: absolute;
@@ -510,7 +511,7 @@ body {
   padding: 35px 75px;
 }
 .item_active .item__footer {
-  max-height: 250px;
+  max-height: 500px;
   padding: 25px 75px;
 }
 .item_active .item__footer img {
@@ -823,6 +824,12 @@ body {
 .rewards_right_main {
   position: relative;
   max-width: 260px;
+  height: 350px;
+}
+@media (max-width: 1150px) {
+  .rewards_right_main{
+    height: 278px;
+  }
 }
 .rewards_right_more {
   display: flex;
@@ -1698,6 +1705,9 @@ body {
   .buy_block_item {
     margin-left: 12px;
   }
+  .news{
+    margin-top: 100px;
+  }
 }
 @media (max-width: 425px) {
   .container {
@@ -1748,6 +1758,20 @@ body {
   }
   .news_row {
     padding-right: 10px;
+  }
+  .buy_block{
+    margin-top: 100px;
+  }
+  .item__body{
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+  }
+  .item__footer{
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+  }
+  .item_active .item__footer{
+    padding-bottom: 35px;
   }
 }
 @media (max-width: 375px) {

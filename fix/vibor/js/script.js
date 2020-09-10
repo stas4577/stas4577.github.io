@@ -54,6 +54,7 @@ $(document).ready(function () {
 		$('.main__button__iphone').addClass('none')
 		$('.main__button__scroll').addClass('none')
 		$('.main__button__price').addClass('main__button__price_active')
+		$('.aboutFix').addClass('aboutFix_active')
 	}
 	$('.main__button__scroll__item').on('click',modelCheck)
 	// Отмена выбора модели
@@ -63,6 +64,7 @@ $(document).ready(function () {
 		$('.main__button__iphone').removeClass('none')
 		$('.main__button__scroll').removeClass('none')
 		$('.main__button__price').removeClass('main__button__price_active')
+		$('.aboutFix').removeClass('aboutFix_active')
 	}
 	$('.main__button__checked').on('click',modelUncheck)
 	//Выбор на мобилках
@@ -76,4 +78,21 @@ $(document).ready(function () {
 			},100)
 		})
 	}
+
+	//Слайдер
+	function sliderMove (slider,num) {
+		
+		$('.aboutFix__slider[data-slider="' + slider + '"] img').attr('src',
+			'img/slider_' + slider + '_' + num + '.png'
+		)
+	}
+	sliderMove(1,1)
+	sliderMove(2,1)
+	$('.aboutFix__slider__bar').on('click',function () {
+		let slider_to = $(this).index() + 1
+		let slider_num = $(this).parents('.aboutFix__slider').data('slider')
+		sliderMove(slider_num,slider_to)
+		$(this).siblings().removeClass('aboutFix__slider__bar_active')
+		$(this).addClass('aboutFix__slider__bar_active')
+	})
 })

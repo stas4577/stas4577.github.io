@@ -641,6 +641,7 @@ a{
   font-weight: 600;
   position: relative;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 1, 0.08);
+  z-index: 10;
 
 }
 @media (max-width: 1024px) {
@@ -704,7 +705,9 @@ a{
   display: none;
 }
 
-
+.main__button_scrolling{
+  z-index: 10000;
+}
 
 .main__button__scroll__item{
   min-height: 90px;
@@ -796,10 +799,14 @@ a{
   font-size: 3rem;
   margin-top: 5px;
 }
-.aboutFix__main {}
+.aboutFix__main {
+  position: relative;
+}
 .aboutFix__row {
   display: flex;
   margin-top: 2.2rem;
+  position: relative;
+  z-index: 1000;
 }
 .aboutFix__main__text {
   margin-top: 1.8rem;
@@ -853,9 +860,26 @@ a{
   border-radius: 1.5rem;
   box-shadow: 0px 0px 16px 0px rgba(0, 0, 1, 0.11);
 }
+.fix__button{
+  cursor: pointer;
+}
 
-
-
+.aboutFix__video{
+  height: 40rem;
+  width: 100%;
+  background: url('../img/play_BG.png');
+  background-size: cover;
+}
+.video__youtube{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 10000;
+  display: none;
+}
 @media (max-width: 768px) {
   .aboutFix__slider img{
     max-width: 250px;
@@ -884,9 +908,88 @@ a{
   font-style: italic;
 }
 
-
-
-
+/*Декор*/
+.aboutFix__decor_left{
+  position: absolute;
+  left: 0%;
+  top: 40rem;
+  transform: translateX(-60%);
+}
+.aboutFix__decor_left img{
+  max-height: 100%;
+}
+.aboutFix__decor_right{
+  position: absolute;
+  right: 0;
+  top: 95rem;
+  transform: translateX(30%);
+}
+.aboutFix__decor_right img{
+  max-height: 100%;
+}
+img{
+  max-height: 100%;
+}
+.aboutFix__decor_right_dots{
+  position: absolute;
+  right: 0;
+  top: -60px;
+  transform: translateX(105%);
+}
+.aboutFix__decor_left_dots{
+  position: absolute;
+  left: 0;
+  bottom: 120px;
+  transform: translateX(-105%);
+}
+@media (max-width: 1024px) {
+  .aboutFix__decor_left{
+      height: 400px;
+  }
+  .aboutFix__decor_right{
+      height: 600px;
+  }
+}
+@media (max-width: 768px) {
+  .aboutFix__decor_left{
+      height: 250px;
+  }
+  .aboutFix__decor_right{
+      height: 400px;
+  }
+}
+@media (max-width: 425px) {
+  .aboutFix__decor_left{
+      height: 150px;
+  }
+  .aboutFix__decor_right{
+      height: 200px;
+  }
+  .people__play__button{
+    height: 150px;
+  }
+}
+.people__play__button{
+  position: absolute;
+  z-index: 1000;
+  cursor: pointer;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  
+}
+.people__play__button__animate{
+  transition: transform 1.2s;
+}
+.people__play__button:hover .people__play__button__animate{
+  transform: rotate(360deg);
+} 
+.people__play{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
 
 
 
@@ -917,6 +1020,8 @@ a{
   color: #fff;
   padding-top: 50px;
   padding-bottom: 40px;
+  position: relative;
+  z-index: 1000;
 }
 .footer__wrap {
   display: flex;

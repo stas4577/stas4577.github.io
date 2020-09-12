@@ -54,7 +54,15 @@ $(document).ready(function () {
 		$('.main__button__iphone').addClass('none')
 		$('.main__button__scroll').addClass('none')
 		$('.main__button__price').addClass('main__button__price_active')
-		$('.aboutFix').addClass('aboutFix_active')
+		$('.aboutFix__name').text(name)
+		$('.fix__button').addClass('aboutFix_clicked')
+		$('.aboutFix_clicked').on('click',function () {
+			$('.aboutFix').toggleClass('aboutFix_active')
+			if ($('.video__youtube').css('display') == 'block') {
+				$('.video__youtube').css('display','none')
+				$('.video__youtube').attr('src','')
+			}
+		})
 	}
 	$('.main__button__scroll__item').on('click',modelCheck)
 	// Отмена выбора модели
@@ -65,6 +73,10 @@ $(document).ready(function () {
 		$('.main__button__scroll').removeClass('none')
 		$('.main__button__price').removeClass('main__button__price_active')
 		$('.aboutFix').removeClass('aboutFix_active')
+		$('.aboutFix_clicked').off()
+		$('.fix__button').removeClass('aboutFix_clicked')
+		$('.video__youtube').css('display','none')
+		$('.video__youtube').attr('src','')
 	}
 	$('.main__button__checked').on('click',modelUncheck)
 	//Выбор на мобилках
@@ -78,7 +90,13 @@ $(document).ready(function () {
 			},100)
 		})
 	}
-
+	//Открытие видео
+	function openVideo () {
+		src = $(this).data('src')
+		$(this).next().attr('src',src + '?autoplay=1&loop=1&&playlist=Video_ID')
+		$('.video__youtube').css('display','block')
+	}
+	$('.people__play__button').on('click',openVideo)
 	//Слайдер
 	function sliderMove (slider,num) {
 		

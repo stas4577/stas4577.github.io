@@ -1,0 +1,12 @@
+							<div data-cost="1500 Р" data-time="2 часа" data-name="Замена панели управления iPod Shuffle" class="button__scroll__item">
+								Замена панели управления iPod Shuffle
+							</div>
+							<div data-cost="1500 Р" data-time="3 часа" data-name="Замена аккумулятора iPod Shuffle" class="button__scroll__item">
+								Замена аккумулятора iPod Shuffle
+							</div>
+							<div data-cost="1500 Р" data-time="2 час" data-name="Замена шлейфа синхронизации iPod Shuffle" class="button__scroll__item">
+								Замена шлейфа синхронизации iPod Shuffle
+							</div>
+							<div data-cost="2500 Р" data-time="4 часа" data-name="Замена корпуса iPod Shuffle" class="button__scroll__item">
+								Замена корпуса iPod Shuffle
+							</div>

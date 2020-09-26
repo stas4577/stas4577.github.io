@@ -1,0 +1,43 @@
+							<div data-cost=" 2000 руб." data-name="iPhone 4,4s,5 " class="button__scroll__item">iPhone 4,4s,5 </div>
+							<div data-cost=" 2500 руб." data-name="iPhone 5S " class="button__scroll__item">iPhone 5S </div>
+							<div data-cost=" 3000 руб." data-name="iPhone 6/ 6 plus " class="button__scroll__item">iPhone 6/ 6 plus </div>
+							<div data-cost="iPhone 6s/ 6s plus- 3500 руб." data-name="iPhone 6s/ 6s plus- 3500 руб" class="button__scroll__item">iPhone 6s/ 6s plus- 3500 руб</div>
+							<div data-cost=" 3000 руб." data-name="iPhone SE " class="button__scroll__item">iPhone SE </div>
+							<div data-cost=" 3800 руб." data-name="iPhone 7, 7 Plus " class="button__scroll__item">iPhone 7, 7 Plus </div>
+							<div data-cost=" 4000 руб." data-name="iPhone 8 " class="button__scroll__item">iPhone 8 </div>
+							<div data-cost=" 4200 руб." data-name="iPhone 8+ " class="button__scroll__item">iPhone 8+ </div>
+							<div data-cost=" 4500 руб." data-name="iPhone Xr " class="button__scroll__item">iPhone Xr </div>
+							<div data-cost=" 4500 руб." data-name="iPhone X " class="button__scroll__item">iPhone X </div>
+							<div data-cost=" 5000 руб." data-name="iPhone Xs " class="button__scroll__item">iPhone Xs </div>
+							<div data-cost=" 5800 руб." data-name="iPhone Xs max " class="button__scroll__item">iPhone Xs max </div>
+							<div data-cost=" 6000 руб." data-name="iPhone 11 " class="button__scroll__item">iPhone 11 </div>
+							<div data-cost=" 6500 руб." data-name="iPhone 11 pro " class="button__scroll__item">iPhone 11 pro </div>
+							<div data-cost=" 7000 руб." data-name="iPhone 11 Pro max " class="button__scroll__item">iPhone 11 Pro max </div>
+							<div data-cost=" 4500 руб." data-name="iPhone se (2020) " class="button__scroll__item">iPhone se (2020) </div>
+							<div data-cost=" 2300 руб." data-name="iPad 1,2,3 " class="button__scroll__item">iPad 1,2,3 </div>
+							<div data-cost=" 2300 руб." data-name="iPad 4 " class="button__scroll__item">iPad 4 </div>
+							<div data-cost=" 2500 руб." data-name="iPad Air " class="button__scroll__item">iPad Air </div>
+							<div data-cost=" 4000 руб." data-name="iPad Air 2 " class="button__scroll__item">iPad Air 2 </div>
+							<div data-cost=" 4500 руб." data-name="iPad Air (2019) " class="button__scroll__item">iPad Air (2019) </div>
+							<div data-cost=" 3500 руб." data-name="iPad 5 gen (2017) " class="button__scroll__item">iPad 5 gen (2017) </div>
+							<div data-cost=" 4000 руб." data-name="iPad 6 gen (2018) " class="button__scroll__item">iPad 6 gen (2018) </div>
+							<div data-cost=" 2000 руб." data-name="iPad mini " class="button__scroll__item">iPad mini </div>
+							<div data-cost=" 2200 руб." data-name="iPad mini 2 " class="button__scroll__item">iPad mini 2 </div>
+							<div data-cost=" 3500 руб." data-name="iPad mini 3 " class="button__scroll__item">iPad mini 3 </div>
+							<div data-cost=" 4000 руб." data-name="iPad mini 4 " class="button__scroll__item">iPad mini 4 </div>
+							<div data-cost=" 4500 руб." data-name="iPad mini 5 (2019) " class="button__scroll__item">iPad mini 5 (2019) </div>
+							<div data-cost=" 4000 руб." data-name="iPad Pro 9.7 " class="button__scroll__item">iPad Pro 9.7 </div>
+							<div data-cost=" 4300 руб." data-name="iPad Pro 10.5 " class="button__scroll__item">iPad Pro 10.5 </div>
+							<div data-cost=" 5000 руб." data-name="IPad Pro 11 (2018) " class="button__scroll__item">IPad Pro 11 (2018) </div>
+							<div data-cost=" 6000 руб." data-name="iPad Pro 11 (2020) " class="button__scroll__item">iPad Pro 11 (2020) </div>
+							<div data-cost=" 4300 руб." data-name="iPad Pro 12.9 " class="button__scroll__item">iPad Pro 12.9 </div>
+							<div data-cost=" 4500 руб." data-name="iPad Pro 12.9 (2017) " class="button__scroll__item">iPad Pro 12.9 (2017) </div>
+							<div data-cost=" 8000 руб." data-name="iPad Pro 12.9 (2018) " class="button__scroll__item">iPad Pro 12.9 (2018) </div>
+							<div data-cost=" 8500 руб." data-name="iPad Pro 12.9 (2020) " class="button__scroll__item">iPad Pro 12.9 (2020) </div>
+							<div data-cost="Apple Watch" data-name="Apple Watc" class="button__scroll__item">Apple Watc</div>
+							<div data-cost=" 2000 руб." data-name="S1 " class="button__scroll__item">S1 </div>
+							<div data-cost=" 2500 руб." data-name="S2 " class="button__scroll__item">S2 </div>
+							<div data-cost=" 3000 руб." data-name="S3 " class="button__scroll__item">S3 </div>
+							<div data-cost=" 4000 руб." data-name="S4 " class="button__scroll__item">S4 </div>
+							<div data-cost=" 4500 руб." data-name="S5 " class="button__scroll__item">S5 </div>
+							<div data-cost=" от 6500 руб." data-name="MacBook , iMac " class="button__scroll__item">MacBook , iMac </div>

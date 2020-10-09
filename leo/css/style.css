@@ -20,6 +20,7 @@ body {
 }
 html{
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 .container {
   margin: 0 auto;
@@ -192,6 +193,7 @@ html{
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+  text-align: center;
 }
 .buy_cost_sub sub {
   margin-top: 15px;
@@ -928,7 +930,7 @@ html{
   cursor: pointer;
 }
 .insta_links {
-  padding-left: 60px;
+  padding-left: 80px;
   display: flex;
   align-items: center;
   margin-top: 30px;
@@ -1817,4 +1819,42 @@ html{
 }
 [data-show="show"]{
   cursor: pointer;
+}
+
+
+.goUp{
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: 10000000;
+  cursor: pointer;
+  animation: goTop 1.5s linear alternate infinite;
+  transform: scale(1);
+}
+@keyframes goTop {
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.2);
+  }
+}
+#phone_gif{
+  width: 220px;
+  height: 520px;
+  padding-left: 10px;
+  padding-right: 15px;
+  background: url('../img/border.png');
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 100000;
+}
+@media (max-width: 768px) {
+  #phone_gif{
+    height: 400px;
+    width: 168px;
+    padding-left: 8px;
+    padding-right: 13px;
+  }
 }

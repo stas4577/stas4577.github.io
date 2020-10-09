@@ -3,7 +3,6 @@ $(document).ready(function () {
 	let active_page = 0
 	let height = $(window).height()
 	let menu_first_height = $('.menu').eq(0).height()
-	$(document).scrollTop(1)
 	let active_scroll = $(document).scrollTop()
 	let pause = false
 	$('.decor').mousedown(function (e) {

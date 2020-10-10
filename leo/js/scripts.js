@@ -42,7 +42,9 @@ $(document).ready(function () {
 	let reward_interval = setInterval (nextReward,4000)
 
 
-
+	if ($(window).scrollTop() >= 800) {
+		$('.goUp').css('opacity','1')
+	}
 
 
 	if ($(window).height()>768) {
@@ -69,6 +71,12 @@ $(document).ready(function () {
 				$('.menu').addClass('menu_top')
 			} else if ($(window).scrollTop() <= 300) {
 				$('.menu').removeClass('menu_top')
+			}
+			if ($(window).scrollTop() >= 800) {
+				$('.goUp').css('opacity','1')
+			}
+			if ($(window).scrollTop() < 800) {
+				$('.goUp').css('opacity','0')
 			}
 			scroll_top = $(window).scrollTop()
 		})

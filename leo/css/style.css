@@ -375,10 +375,8 @@ html{
   margin-top: -15px;
 }
 @media (max-width: 1440px) {
-  .buy_block_item:last-child {
-    margin-left: 50% !important;
-    margin-top: 0px !important;
-    top: -55px;
+  .buy_block_img_top{
+    right: -30px !important;
   }
   .buy_block_item {
     top: -60px !important;
@@ -596,9 +594,16 @@ html{
   top: 0px;
   right: 20px;
 }
+
 .buy_block_img_bottom {
   top: 0px;
-  left: 120px;
+  left: 80px;
+}
+.buy_block_img_right{
+  position: absolute;
+  left: -182px;
+  bottom: -200px;
+  white-space: nowrap;
 }
 .advantages {
   color: #fff;
@@ -1203,6 +1208,11 @@ html{
   .insta_links {
     padding-left: 80px;
   }
+  .buy_block_img_right{
+    left: -158px !important;
+    top: 150px !important;
+  }
+
 }
 @media (max-width: 1150px) {
   html {
@@ -1308,10 +1318,11 @@ html{
     font-size: 2rem;
   }
   .buy_block_img_top {
-    top: 40px;
+    top: 60px;
     right: 0;
     left: 50px;
   }
+
   .buy_cost {
     max-width: 320.02px;
     max-height: 320.02px;
@@ -1326,6 +1337,11 @@ html{
   }
   .news_animate {
     height: 80px;
+  }
+  .buy_block_img_right{
+    left: -300px !important;
+    top: 250px !important;
+    white-space: normal;
   }
 }
 @media (max-width: 992px) {
@@ -1349,6 +1365,11 @@ html{
     font-size: 2.6rem;
     margin: 30px 0;
   }
+  .buy_block_img_right{
+    left: -200px !important;
+    top: 150px !important;
+  }
+
 }
 @media (max-width: 768px) {
   .more_ico {
@@ -1716,6 +1737,16 @@ html{
   .news{
     margin-top: 100px;
   }
+  .buy_block_img_right{
+    left: -15px !important;
+    top: 100px !important;
+  }
+  .buy_cost{
+    top: 170px;
+  }
+  .buy_cost_sub{
+    margin-top: 250px;
+  }
 }
 @media (max-width: 425px) {
   .container {
@@ -1781,6 +1812,15 @@ html{
   .item_active .item__footer{
     padding-bottom: 35px;
   }
+  .buy_cost{
+    top: 190px;
+  }
+  .buy_cost_sub{
+    margin-top: 250px;
+  }
+  .buy_cost_2{
+    top: 150px;
+  }
 }
 @media (max-width: 375px) {
   .insta_block_img {
@@ -1830,6 +1870,8 @@ html{
   cursor: pointer;
   animation: goTop 1.5s linear alternate infinite;
   transform: scale(1);
+  opacity: 0;
+  transition: opacity .3s;
 }
 @keyframes goTop {
   from{

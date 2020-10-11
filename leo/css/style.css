@@ -815,7 +815,17 @@ html{
   white-space: nowrap;
 }
 .clients .main_block_right {
-  width: 35%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+}
+.clients .controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.controls img{
+  cursor: pointer;
 }
 .rewards {
   z-index: 100;
@@ -840,6 +850,9 @@ html{
 @media (max-width: 1150px) {
   .rewards_right_main{
     height: 278px;
+  }
+  .clients .main_block_right{
+    margin-left: 0;
   }
 }
 .rewards_right_more {
@@ -1614,7 +1627,9 @@ html{
   }
   .clients .main_block_right {
     height: auto;
-    width: 50%;
+  }
+  .controls{
+    width: 100%;
   }
   .clients .main_block_text {
     flex-direction: column;
@@ -1899,4 +1914,13 @@ html{
     padding-left: 8px;
     padding-right: 13px;
   }
+}
+.sub{
+  font-size: 1.5rem;
+}
+.footer_wrap{
+  display: flex;
+}
+.footer_text{
+  line-height: 1.3;
 }

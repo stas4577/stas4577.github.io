@@ -45,6 +45,9 @@ $(document).ready(function () {
 	if ($(window).scrollTop() >= 800) {
 		$('.goUp').css('opacity','1')
 	}
+	if ($(window).width() <= 768) {
+		$('.goUp').css('display','none')
+	}
 
 
 	if ($(window).height()>768) {
@@ -105,15 +108,27 @@ $(document).ready(function () {
 	//Слайдер с отзывами
 	let active_feed = 1
 	function feedSlider () {
-		active_feed++
-		active_feed = active_feed % 11
+		if (active_feed == -1) {
+			active_feed = 11
+		} else {
+			active_feed++
+		}
+		active_feed = active_feed % 12
 		if (active_feed == 0) {
 			active_feed = 1
 		}
 		$('.img__inner').attr('src','img/cleint' + active_feed + '.jpg')
 	}
 	let feed_interval = setInterval (feedSlider,4000)
-
+	$('#phone_right').on('click',function () {
+		feedSlider()
+		clearInterval(feed_interval)
+	})
+	$('#phone_left').on('click',function () {
+		active_feed = active_feed -2
+		feedSlider()
+		clearInterval(feed_interval)
+	})
 	//Функция просмотра картинок
 	function showPhoto (img){
 		$('.show__photo').css('display','flex')

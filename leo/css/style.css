@@ -248,6 +248,11 @@ html{
   padding-top: 110px;
   position: relative;
 }
+@media (max-width: 768px) {
+  .buy_wrap {
+    padding-top: 20px;
+  }
+}
 .buy_block {
   margin-left: 33%;
 }
@@ -406,7 +411,7 @@ html{
     text-align: center;
   }
   .buy {
-    padding-bottom: 100px !important;
+    padding-bottom: 0px !important;
   }
 }
 @media (max-width: 490px) {
@@ -976,13 +981,17 @@ html{
   padding: 0;
   margin: 0;
 }
+.news_button{
+  width: 100% !important;
+}
 .news__button__animate {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .news__button__main {
   background: #F8F8F8;
@@ -1547,7 +1556,7 @@ html{
     margin-top: 0;
   }
   .free_worker_mobblock_last {
-    margin-top: 200px;
+    margin-top: 30px;
     display: flex;
   }
   .free_worker_mobblock_last .free_worker_block_title {
@@ -1653,7 +1662,7 @@ html{
     font-size: 4rem;
   }
   .rewards {
-    margin-top: 100px;
+    margin-top: 10px;
   }
   .rewards_right {
     height: auto;
@@ -1757,7 +1766,7 @@ html{
     top: 100px !important;
   }
   .buy_cost{
-    top: 170px;
+    top: 0px;
   }
   .buy_cost_sub{
     margin-top: 250px;

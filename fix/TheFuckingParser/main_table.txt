@@ -1,0 +1,25 @@
+<div class="table__fix">
+				<div class="table__row">
+					<div class="table__row__head">Услуга</div>
+					<div class="table__row__text">$name</div>
+				</div>
+				<div class="table__row">
+					<div class="table__row__head">Неисправность</div>
+					<div class="table__row__text">
+						$fix
+					</div>
+				</div>
+				<div class="table__row">
+					<div class="table__row__head">Время</div>
+					<div class="table__row__text">
+						$time
+					</div>
+				</div>
+				<div class="table__row">
+					<div class="table__row__head">Цена</div>
+					<div class="table__row__text">
+						$cost
+					</div>
+				</div>
+			</div>
+$next

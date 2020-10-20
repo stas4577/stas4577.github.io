@@ -24,63 +24,27 @@
 							<div href="#" class="burger__link">
 								Ремонт
 								<div data-menu="0" class="burger__menu__second">
-									<a href="vibor">iPhone</a>
-									<a href="vibor">iPad</a>
-									<a href="vibor">Macbook</a>
-									<a href="vibor">iMac</a>
-									<a href="vibor">iWatch</a>
-									<a href="vibor">iPod</a>
-									<a href="vibor">Android</a>		
+									<a href="../remont-iphone">iPhone</a>
+									<a href="../remont-ipad">iPad</a>
+									<a href="../remont-macbook">Macbook</a>
+									<a href="../imac">iMac</a>
+									<a href="../remont-iwatch">iWatch</a>
+									<a href="../remont-ipod">iPod</a>
+									<a href="../remont-android">Android</a>
 								</div>
 							</div>
-							<div href="#" class="burger__link">
+							<a href="#" class="burger__link">
 							Отзывы
-							<div data-menu="1" class="burger__menu__second">
-									<a href="vibor">iPhone</a>
-									<a href="vibor">iPad</a>
-									<a href="vibor">Macbook</a>
-									<a href="vibor">iMac</a>
-									<a href="vibor">iWatch</a>
-									<a href="vibor">iPod</a>
-									<a href="vibor">Android</a>		
-								</div>
-							</div>
-							<div href="#" class="burger__link">
+							</a>
+							<a href="#" class="burger__link">
 							Обмен
-							<div data-menu="2" class="burger__menu__second">
-									<a href="vibor">iPhone</a>
-									<a href="vibor">iPad</a>
-									<a href="vibor">Macbook</a>
-									<a href="vibor">iMac</a>
-									<a href="vibor">iWatch</a>
-									<a href="vibor">iPod</a>
-									<a href="vibor">Android</a>		
-								</div>
-							</div>
-							<div href="#" class="burger__link">
+							</a>
+							<a href="../icloud" class="burger__link">
 							iCloud
-							<div data-menu="3" class="burger__menu__second">
-									<a href="vibor">iPhone</a>
-									<a href="vibor">iPad</a>
-									<a href="vibor">Macbook</a>
-									<a href="vibor">iMac</a>
-									<a href="vibor">iWatch</a>
-									<a href="vibor">iPod</a>
-									<a href="vibor">Android</a>		
-								</div>
-							</div>
-							<div href="#" class="burger__link">
+							</a>
+							<a href="../contacts" class="burger__link">
 							Контакты
-							<div data-menu="4" class="burger__menu__second">
-									<a href="vibor">iPhone</a>
-									<a href="vibor">iPad</a>
-									<a href="vibor">Macbook</a>
-									<a href="vibor">iMac</a>
-									<a href="vibor">iWatch</a>
-									<a href="vibor">iPod</a>
-									<a href="vibor">Android</a>		
-								</div>
-							</div>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -101,6 +65,50 @@
 		</div>
 			</div>
 	</header>
+	<div id="popup" class="">
+	<div id="close">
+		<img src="img/close.png" alt="">
+	</div>
+	<div class="popup__title">
+		Заявка
+	</div>
+	<form class="popup__form">
+		<div class="popup__input__name">
+			Ваше имя
+		</div>
+		<input id="name_input" placeholder="Иван" class="popup__input">
+		<div class="popup__input__name">
+			Ваш номер
+		</div>
+		<input id="phone_input" placeholder="Ваш номер" class="popup__input">
+		<div class="buttons__row">
+			<div class="button button_scrolling">
+						<div class="button__checked"></div>
+						<div class="button__iphone">Выберите <br> офис</div>
+						<div class="button__scroll">
+							<div class="button__scroll__gradient"></div>
+							<div data-cost="бесплатно" data-time="от 60 минут" data-name="ул. Верхняя Радищевская д. 7 стр. 1, 1-й этаж." class="button__scroll__item">
+								ул. Верхняя Ради...
+							</div>
+							<div data-cost="от 1000 Р" data-time="от 40 минут" data-name="ул. Вавилова д. 66, «ТЦ Триумфальный», 4-й этаж, павильон 403." class="button__scroll__item">
+								ул. Вавилова д. 66...
+							</div>
+							<div data-cost="от 1000 Р" data-time="от 40 минут" data-name="ул. Холодильный переулок, д.3 ТЦ «Ролл-Холл», 1 этаж, 4 ряд, офис 121" class="button__scroll__item">
+								ул. Холодильный...
+							</div>
+
+
+						</div>
+
+					</div>
+			<div id="validate" class="button button_blue">Оставить заявку</div>
+		</div>
+		<div class="form__text">
+			Оставьте заявку сейчас и получите <br>
+			<div class="text_blue">5% скидку на ремонт</div>
+		</div>		
+	</form>
+</div>
 
 	<section class="main">
 		<div class="container main__wrap">
@@ -146,99 +154,96 @@
 						<div class="button__iphone">Выберите <br> неисправность</div>
 						<div class="button__scroll">
 							<div class="button__scroll__gradient"></div>
-							<div data-cost="бесплатноР" data-time="от 10 минут" data-name="Диагностика" class="button__scroll__item">
+							<div data-href="#" data-cost="бесплатноР" data-time="от 10 минут" data-name="Диагностика" class="button__scroll__item">
 								Диагностика
 							</div>
-							<div data-cost="990 Р" data-time="от 20 минут" data-name="Чистка после попадания воды" class="button__scroll__item">
+							<div data-href="remont-posle-popadaniya-vlagi-iphone-6" data-cost="990 Р" data-time="от 20 минут" data-name="Чистка после попадания воды" class="button__scroll__item">
 								Чистка после попадания воды
 							</div>
-							<div data-cost="500/1000 Р" data-time="5 минут" data-name="Бронестекло 2D / 10D" class="button__scroll__item">
+							<div data-href="#" data-cost="500/1000 Р" data-time="5 минут" data-name="Бронестекло 2D / 10D" class="button__scroll__item">
 								Бронестекло 2D / 10D
 							</div>
-							<div data-cost="Замена на новый	от 5000 Р" data-time="от 5000 Р" data-name="Замена на новый" class="button__scroll__item">
+							<div data-href="#" data-cost="Замена на новый	от 5000 Р" data-time="от 5000 Р" data-name="Замена на новый" class="button__scroll__item">
 								Замена на новый
 							</div>
-							<div data-cost="2490 Р" data-time="30 минут" data-name="Замена стекла" class="button__scroll__item">
+							<div data-href="zamena-stekla-iphone-6" data-cost="2490 Р" data-time="30 минут" data-name="Замена стекла" class="button__scroll__item">
 								Замена стекла
 							</div>
-							<div data-cost="2490 Р" data-time="20 минут" data-name="Замена экрана копия" class="button__scroll__item">
+							<div data-href="zamena-displeya-iphone-6" data-cost="2490 Р" data-time="20 минут" data-name="Замена экрана копия" class="button__scroll__item">
 								Замена экрана копия
 							</div>
-							<div data-cost="2 990 Р" data-time="20 минут" data-name="Замена экрана оригинал" class="button__scroll__item">
+							<div data-href="zamena-displeya-iphone-6" data-cost="2 990 Р" data-time="20 минут" data-name="Замена экрана оригинал" class="button__scroll__item">
 								Замена экрана оригинал
 							</div>
-							<div data-cost="2 990 Р" data-time="60 минут" data-name="Замена корпуса" class="button__scroll__item">
+							<div data-href="zamena-korpusa-iphone-6" data-cost="2 990 Р" data-time="60 минут" data-name="Замена корпуса" class="button__scroll__item">
 								Замена корпуса
 							</div>
-							<div data-cost="1 490 Р" data-time="10 минут" data-name="Замена аккумулятора" class="button__scroll__item">
+							<div data-href="zamena-akkumulyatora-iphone-6" data-cost="1 490 Р" data-time="10 минут" data-name="Замена аккумулятора" class="button__scroll__item">
 								Замена аккумулятора
 							</div>
-							<div data-cost="1 490 Р" data-time="20 минут" data-name="Замена разъема зарядки" class="button__scroll__item">
+							<div data-href="zamena-razema-zaryadki-iphone-6" data-cost="1 490 Р" data-time="20 минут" data-name="Замена разъема зарядки" class="button__scroll__item">
 								Замена разъема зарядки
 							</div>
-							<div data-cost="990 Р" data-time="10 минут" data-name="Замена слухового динамика" class="button__scroll__item">
+							<div data-href="zamena-dinamika-sluhovogo-iphone-6" data-cost="990 Р" data-time="10 минут" data-name="Замена слухового динамика" class="button__scroll__item">
 								Замена слухового динамика
 							</div>
-							<div data-cost="1 490 Р" data-time="20 минут" data-name="Замена микрофона" class="button__scroll__item">
+							<div data-href="zamena-mikrofona-iphone-6" data-cost="1 490 Р" data-time="20 минут" data-name="Замена микрофона" class="button__scroll__item">
 								Замена микрофона
 							</div>
-							<div data-cost="1 190 Р" data-time="15 минут" data-name="Замена динамика" class="button__scroll__item">
+							<div data-href="zamena-muzykalnogo-dinamika-iphone-6" data-cost="1 190 Р" data-time="15 минут" data-name="Замена динамика" class="button__scroll__item">
 								Замена динамика
 							</div>
-							<div data-cost="1 490 Р" data-time="20 минут" data-name="Замена разъема наушников" class="button__scroll__item">
+							<div data-href="zamena-razema-naushnikov-iphone-6" data-cost="1 490 Р" data-time="20 минут" data-name="Замена разъема наушников" class="button__scroll__item">
 								Замена разъема наушников
 							</div>
-							<div data-cost="1 490 Р" data-time="20 минут" data-name="Замена камеры" class="button__scroll__item">
+							<div data-href="zamena-zadnej-osnovnoj-kamery-iphone-6" data-cost="1 490 Р" data-time="20 минут" data-name="Замена камеры" class="button__scroll__item">
 								Замена камеры
 							</div>
-							<div data-cost="990 Р" data-time="20 минут" data-name="Замена стекла камеры" class="button__scroll__item">
-								Замена стекла камеры
-							</div>
-							<div data-cost="1 190 Р" data-time="20 минут" data-name="Замена фронтальной камеры" class="button__scroll__item">
+							<div data-href="zamena-perednej-kamery-iphone-6" data-cost="1 190 Р" data-time="20 минут" data-name="Замена фронтальной камеры" class="button__scroll__item">
 								Замена фронтальной камеры
 							</div>
-							<div data-cost="1 190 Р" data-time="15 минут" data-name="Замена кнопки Home" class="button__scroll__item">
+							<div data-href="zamena-knopki-home-iphone-6" data-cost="1 190 Р" data-time="15 минут" data-name="Замена кнопки Home" class="button__scroll__item">
 								Замена кнопки Home
 							</div>
-							<div data-cost="1 290 Р" data-time="30 минут" data-name="Ремонт кнопки включения" class="button__scroll__item">
+							<div data-href="remont-knopki-vklyucheniya-iphone-6" data-cost="1 290 Р" data-time="30 минут" data-name="Ремонт кнопки включения" class="button__scroll__item">
 								Ремонт кнопки включения
 							</div>
-							<div data-cost="1 290 Р" data-time="30 минут" data-name="Замена кнопок громкости и переключения вибро" class="button__scroll__item">
+							<div data-href="zamena-shlejfa-knopok-gromkosti-i-pereklyucheniya-vibro-iphone-6" data-cost="1 290 Р" data-time="30 минут" data-name="Замена кнопок громкости и переключения вибро" class="button__scroll__item">
 								Замена кнопок громкости и переключения вибро
 							</div>
-							<div data-cost="990 Р" data-time="10 минут" data-name="Замена вибромотора" class="button__scroll__item">
+							<div data-href="zamena-vibromotora-iphone-6" data-cost="990 Р" data-time="10 минут" data-name="Замена вибромотора" class="button__scroll__item">
 								Замена вибромотора
 							</div>
-							<div data-cost="1190 Р" data-time="20 минут" data-name="Замена датчика света" class="button__scroll__item">
+							<div data-href="zamena-datchika-priblizheniya-iphone-6" data-cost="1190 Р" data-time="20 минут" data-name="Замена датчика света" class="button__scroll__item">
 								Замена датчика света
 							</div>
-							<div data-cost="1 490 Р" data-time="20 минут" data-name="Замена антенны Wi-Fi" class="button__scroll__item">
+							<div data-href="zamena-antenny-wi-fi-na-iphone-6" data-cost="1 490 Р" data-time="20 минут" data-name="Замена антенны Wi-Fi" class="button__scroll__item">
 								Замена антенны Wi-Fi
 							</div>
-							<div data-cost="3 490 Р" data-time="1-2 дня" data-name="Ремонт цепи подсветки" class="button__scroll__item">
+							<div data-href="remont-materinskoj-platy-iphone-6" data-cost="3 490 Р" data-time="1-2 дня" data-name="Ремонт цепи подсветки" class="button__scroll__item">
 								Ремонт цепи подсветки
 							</div>
-							<div data-cost="3 990 Р" data-time=" 1-2 дня" data-name="Замена wi-fi модуля" class="button__scroll__item">
+							<div data-href="remont-materinskoj-platy-iphone-6" data-cost="3 990 Р" data-time=" 1-2 дня" data-name="Замена wi-fi модуля" class="button__scroll__item">
 								Замена wi-fi модуля
 							</div>
-							<div data-cost="4 490 Р" data-time="1-2 дня" data-name="Замена контроллера питания" class="button__scroll__item">
+							<div data-href="remont-materinskoj-platy-iphone-6" data-cost="4 490 Р" data-time="1-2 дня" data-name="Замена контроллера питания" class="button__scroll__item">
 								Замена контроллера питания
 							</div>
-							<div data-cost="4 490 Р" data-time="1-2 дня" data-name="Восстановление сети" class="button__scroll__item">
+							<div data-href="remont-materinskoj-platy-iphone-6" data-cost="4 490 Р" data-time="1-2 дня" data-name="Восстановление сети" class="button__scroll__item">
 								Восстановление сети
 							</div>
-							<div data-cost="3 990 Р" data-time="1-2 дня" data-name="Восстановление цепи заряда" class="button__scroll__item">
+							<div data-href="remont-materinskoj-platy-iphone-6" data-cost="3 990 Р" data-time="1-2 дня" data-name="Восстановление цепи заряда" class="button__scroll__item">
 								Восстановление цепи заряда
 							</div>
-							<div data-cost="3990 Р" data-time="1-2 дня" data-name="Перепайка аудио контроллера (аудио кодека)" class="button__scroll__item">
+							<div data-href="remont-materinskoj-platy-iphone-6" data-cost="3990 Р" data-time="1-2 дня" data-name="Перепайка аудио контроллера (аудио кодека)" class="button__scroll__item">
 								Перепайка аудио контроллера (аудио кодека)
 							</div>
-							<div data-cost="490 Р" data-time="30 минут" data-name="Прошивка" class="button__scroll__item">
+							<div data-href="proshivka-obnovlenie-po-iphone-6" data-cost="490 Р" data-time="30 минут" data-name="Прошивка" class="button__scroll__item">
 								Прошивка
 							</div>
 
 
-							<div data-cost="Разблокировка iCloud/Apple id" data-time="--" data-name="4000 Р" class="button__scroll__item">
+							<div data-href="#" data-cost="Разблокировка iCloud/Apple id" data-time="--" data-name="4000 Р" class="button__scroll__item">
 								Разблокировка iCloud/Apple id
 							</div>
 
@@ -257,11 +262,11 @@
 			<div class="buttons__row">
 				<div data-button="time" data-noactive="true" class="button button_noactive">---- минут</div>
 				<div data-button="cost" data-noactive="true" class="button button_noactive">---- руб</div>
-				<div data-noactive="true" class="button button_noactive">О ремонте</div>
+				<a href="#" data-noactive="true" class="button button_noactive">О ремонте</a>
 			</div>
 			<div class="buttons__row margin_top">
 				<div data-button="swap" class="button">Обменять на новое</div>
-				<div data-button="request" class="button">Оставить заявку</div>
+				<div data-button="request" class="button button_app">Оставить заявку</div>
 			</div>
 			<div class="buttons__row margin_top">
 				<div class="aboutFix__video">
@@ -277,7 +282,7 @@
 			</div>
 			<div class="buttons__row margin_top">
 				<div data-button="calc" class="button">Калькулятор стоимости</div>
-				<div data-button="request" class="button">Оставить заявку</div>
+				<div data-button="request" class="button button_app">Оставить заявку</div>
 			</div>
 		</div>
 	</section>

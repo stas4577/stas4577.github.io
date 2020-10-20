@@ -633,14 +633,12 @@ a{
 .main__right__block {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 .main__right__block .aboutFix__main__title{
   margin-top: 0;
 }
-.main__right__block .main__right__text{
-  margin-top: 0;
-}
+
 .main__right__img {
   display: flex;
   flex-direction: column;
@@ -827,6 +825,81 @@ a{
     margin-left: 0;
   }
 }
+
+/*Таблица*/
+.table{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  &__block{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #fbfbfb;
+    box-shadow: 2px 3px 9px rgba(0, 0, 1, 0.14);
+    border-radius: 1.25rem;
+    padding: 1.5rem 2.5rem 2rem 2.5rem;
+  }
+  &__row{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-right: 2px solid rgba(172, 172, 172, 0.2);
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    &:nth-child(1){
+      flex: 0 0 20%;
+    }
+    &:nth-child(2){
+      flex: 0 0 50%;
+    }
+    &:nth-child(3){
+      flex: 0 0 16%;
+    }
+    &:nth-child(4){
+      flex: 0 0 14%;
+    }
+    &:last-child{
+      border: none;
+    }
+  }
+  &__fix{
+    display: flex;
+  }
+}
+.table__row__head{
+  color: #acacac;
+  font-size: 1.938rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid rgba(172, 172, 172, 0.2);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-weight: 500;
+}
+.table__row__text{
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  color: #616161;
+  font-weight: 500;
+}
+@media (max-width: 650px) {
+  .table{
+    &__block{
+      flex-direction: column;
+      
+      margin: 0 10%;
+    }
+    & .container{
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .table__row{
+    border-right: none;
+    margin-bottom: 2rem;
+  }
+}
+
+
 
 
 

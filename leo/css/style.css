@@ -413,10 +413,22 @@ html{
   .buy {
     padding-bottom: 0px !important;
   }
+  .buy_cost{
+    top: 160px !important;
+  }
 }
 @media (max-width: 490px) {
   .buy_cost {
     left: 200px;
+    top: 210px !important;
+    margin-bottom: 300px;
+  }
+}
+@media (max-width: 350px) {
+  .buy_cost {
+    left: 180px;
+    top: 210px !important;
+    margin-bottom: 300px;
   }
 }
 @media (max-width: 426px) {
@@ -1502,7 +1514,7 @@ html{
   }
   .buy {
     padding-bottom: 300px;
-    padding-top: 30px;
+    padding-top: 100px;
   }
   .buy_BG {
     right: 0%;

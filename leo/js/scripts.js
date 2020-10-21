@@ -12,16 +12,16 @@ $(document).ready(function () {
 	let slider_length = $('.reward').length
 	function nextReward () {
 		let count = 0
-		for (let i = active_reward; count < slider_length;i = (i + 1) % 7) {
-			let src = '#reward_' + count
-			count++
-			active_reward = (active_reward + 1) % 7
-			$(src).attr('src','img/reward_' + active_reward + '.png')
-		}
-		active_reward = (active_reward + 1) % 7
+		let src = '#reward_' + count
+		count++
+		active_reward = (active_reward + 1) % 10
+		$(src).attr('src','img/reward_' + active_reward + '.png')
 	}
 
 	function prevReward () {
+		nextReward()
+		nextReward()
+		nextReward()
 		nextReward()
 		nextReward()
 		nextReward()

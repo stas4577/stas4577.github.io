@@ -1,0 +1,250 @@
+<div data-fix="iPhone 4" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPhone 4s" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPhone 5" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPhone 5c" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPhone 5s" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPhone 6" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPhone 6 Plus" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPhone SE" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPhone 6S" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPhone 6S Plus" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPhone 7" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPhone 7 Plus" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPhone 8" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPhone 8 Plus" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPhone X" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPhone X" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPhone X" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPhone X" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPhone X" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPhone X" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPhone X" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPad 2" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPad 3-4" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPad 5 Поколения" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPad 6 Поколения" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPad 7 Поколения" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPad Air" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPad Air 2" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPad Mini" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPad 6 Поколения" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPad Mini 2" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPad Mini 3" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPad Mini 4" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPad Mini 5 Поколения" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPad Pro 10.5 дюйма" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPad Pro 11 дюймов" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPad Pro 9.7 дюйма" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPad pro 12.9 дюйма" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPad Pro 12.9 дюйма 2 поколения" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPad Pro 12.9 дюйма 3 поколения" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="IPod Nano" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iPod Shuffle" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="IPod Touch" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iWatch 1" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iWatch 2" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="iWatch 3" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="MacBook Unibody" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="MacBook Retina" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="MacBook Pro" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>
+<div data-fix="MacBook Air" class="main__button__scroll">
+							<div data-name="iPhone" class="main__button__scroll__item">
+								iPhone
+							</div>
+						</div>

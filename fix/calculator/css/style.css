@@ -1,0 +1,55 @@
+.main__button__checked{
+  background: #87c9c7;
+  text-align: center;
+}
+#cat{
+  z-index: 10000000000000 !important;
+}
+#fix{
+  z-index: 100 !important;
+}
+.main__button__scroll{
+  z-index: 10000000000000 !important;
+}
+
+
+
+
+
+
+.model_noactive:hover .main__button__iphone{
+  display: flex !important;
+}
+.model_noactive:hover{
+  justify-content: center !important;
+}
+.model_noactive:hover .main__button__scroll{
+  display: none !important;
+}
+@media (max-width: 425px) {
+  .model_noactive:hover{
+    justify-content: center;
+  }
+}
+@media (max-width: 425px) {
+.main__button_scrolling:hover .main__button__scroll{
+    display: flex;
+  }
+}
+
+#cost{
+  background: #89c1c0;
+  color: #fff;
+  border: 5px solid #92d1ce;
+  transition: background .5s,color .5s, border .5s;
+}
+.buttons__row{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.cost_noactive{
+  background: #f6f6f6 !important;
+  border: 5px solid #e4e4e4 !important;
+  color: #c3c3c3 !important;
+}

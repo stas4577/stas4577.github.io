@@ -142,6 +142,7 @@ $(document).ready(function () {
 		$('#cat .video__youtube').css('display','none')
 		$('#cat .video__youtube').attr('src','')
 		$('#model').addClass('model_noactive')
+		$('#fix').addClass('model_noactive')
 		$('div[data-cat]').css('display','none')
 		$('div[data-fix]').css('display','none')
 		modelUncheck()
@@ -166,6 +167,7 @@ $(document).ready(function () {
 		$('#model .video__youtube').attr('src','')
 		$('div[data-fix]').css('display','none')
 		fixUncheck()
+		$('#fix').addClass('model_noactive')
 		if ($(window).width() <= 425) {
 			$('#fix .main__button__scroll').css('display','none')
 			$('#fix .main__button__iphone').css('display','flex')

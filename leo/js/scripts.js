@@ -1,5 +1,9 @@
 'use strict'
 $(document).ready(function () {
+	$('.news_row').width($('.news__text').width())
+	$(window).on('resize',function () {
+		$('.news_row').width($('.news__text').width())
+	})
 	let active_page = 0
 	let height = $(window).height()
 	let menu_first_height = $('.menu').eq(0).height()
@@ -141,5 +145,15 @@ $(document).ready(function () {
 		$('.show__photo').css('display','none')
 	})
 	$('.show__photo').css('display','none')
-
+	//Функция просмотра доп текста
+	function showText(text) {
+		$('.show__text').addClass('show__text_active')
+		$('.show__text').text(text)
+		setTimeout(function () {
+			$('.show__text').removeClass('show__text_active')
+		},4500)
+	}
+	$('[data-text]').on('click',function () {
+		showText ($(this).data('text'))
+	})
 })

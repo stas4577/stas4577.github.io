@@ -317,7 +317,7 @@ a {
 	bottom: 0;
 	right: 0;
 	background: rgba(0, 0, 0, 0.1);
-	z-index: 100;
+	z-index: 10000;
 	opacity: 0;
 	visibility: hidden;
 	transition: all 0.3s;
@@ -1355,6 +1355,7 @@ a {
 	transition: all 0.3s;
 	position: relative;
 	z-index: 100;
+	cursor: pointer;
 }
 
 .people__button:hover {
@@ -1579,6 +1580,11 @@ a {
 	color: #fff;
 }
 
+.button_yellow:hover {
+	background: #f3d154;
+	color: #fff;
+}
+
 @media (max-width: 450px) {
 	.buttons__row {
 		flex-direction: column;
@@ -1740,4 +1746,104 @@ a {
 
 .none {
 	display: none !important;
+}
+/*Всплывающие окна для ремонта*/
+.window_active{
+	visibility: visible !important;
+	opacity: 1 !important;
+}
+.window{
+	min-width: 100vw;
+	min-height: 100vh;
+	background: #fbfbfb;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1000;
+	padding-top: 5rem;
+	overflow-y: scroll;
+	padding-bottom: 6rem;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility .6s, opacity .6s;
+}
+.office__row{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-bottom: 1rem;
+}
+.office__text{
+
+}
+.office__text__title{
+	font-size: 3.75rem;
+	color: #000;
+	font-weight: 900;
+	letter-spacing: .5rem;
+}
+.office__text__subtitle{
+	color: #92918d;
+	font-size: 1.56rem;
+}
+.office__num{
+	font-size: 4.063rem;
+	font-weight: 900;
+	border-radius: 100%;
+	border: 1.375rem solid #f3d154;
+	min-height: 9rem;
+	min-width: 9rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.office__decor{
+	justify-content: flex-end;
+}
+.office__line{
+	width: 0.5rem;
+	height: 8.563rem;
+	background: #000;
+	margin-right: 4.5rem;
+	transform: translateX(100%);
+	border-radius: 0.25rem;
+	background-color: #f3d154;
+}
+.window .button{
+	margin-top: 4.5rem !important;
+	margin-left: 0;
+}
+.window .buttons__row{
+	justify-content: flex-start;
+}
+@media (max-width: 768px) {
+	.office__text__title{
+		font-size: 2.8rem;
+	}
+}
+@media (max-width: 450px) {
+	.office__decor{
+		display: none;
+	}
+	.office__row{
+		flex-direction: column-reverse;
+		margin-bottom: 30px;
+		align-items: flex-start;
+	}
+	.window{
+		z-index: 1001;
+	}
+	.office__text__title{
+		font-size: 1.8rem;
+	}
+	.office__num{
+		font-size: 2.4rem;
+		min-height: 5rem;
+		min-width: 5rem;
+		border: .8rem solid #f3d154;
+		margin-bottom: 20px;
+	}
+
 }

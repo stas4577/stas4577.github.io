@@ -141,6 +141,18 @@ $(document).ready(function () {
 	}
 	// Удаление ошибок при изменении элемента
 	$('.popup__input').on('keypress',deleteError)
+	//Попап работы
+	function showWork(){
+		$('#' + $(this).data('button')).addClass('window_active')
+		$('html').css('overflow-y','hidden')
+
+	}
+	function hideWork () {
+		$('.window_active').removeClass('window_active')
+		$('html').css('overflow-y','scroll')
+	}
+	$('[data-button]').on('click',showWork)
+	$('.window_close').on('click',hideWork)
 
 
 })

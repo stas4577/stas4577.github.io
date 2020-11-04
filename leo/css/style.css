@@ -397,7 +397,7 @@ html{
     top: -80px !important;
   }
   #absolute {
-    margin-top: 0;
+    margin-top: 40px;
   }
 }
 @media (max-width: 768px) {
@@ -1016,7 +1016,6 @@ html{
   align-items: center;
   overflow: hidden;
   position: relative;
-  animation: news_animate 4s linear alternate infinite;
 }
 .news__button__main span {
   position: absolute;
@@ -1904,7 +1903,6 @@ html{
   right: 5%;
   z-index: 10000000;
   cursor: pointer;
-  animation: goTop 1.5s linear alternate infinite;
   transform: scale(1);
   opacity: 0;
   transition: opacity .3s;

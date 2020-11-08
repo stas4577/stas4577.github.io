@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FIX</title>
+	<link rel="stylesheet" href="../css/model.css">
+	<script src="../js/jquery-3.4.1.js"></script>
+	<script src="../js/model.js"></script>	
+			
+</head>
+<body>
+	<div id="grey_window" class="">
+		
+	</div>
+<header class="header">
+		<div class="container header__wrap">
+			<div class="header__logo">
+				<a href="/"><img id="logo" src="img/logo.png" alt=""></a>
+				<div class="header__burger">
+					<img id="burgerSwitcher" src="img/burger.svg" alt="">
+					<div class="burger_menu">
+						<div class="burger__links">
+							<div href="#" class="burger__link">
+								Ремонт
+								<div data-menu="0" class="burger__menu__second">
+									<a href="/remont-iphone">iPhone</a>
+									<a href="/remont-ipad">iPad</a>
+									<a href="/remont-macbook">Macbook</a>
+									<a href="/imac">iMac</a>
+									<a href="/remont-iwatch">iWatch</a>
+									<a href="/remont-ipod">iPod</a>
+									<a href="/remont-android">Android</a>
+								</div>
+							</div>
+							<a href="#" class="burger__link">
+							Отзывы
+							</a>
+							<a href="#" class="burger__link">
+							Обмен
+							</a>
+							<a href="/icloud" class="burger__link">
+							iCloud
+							</a>
+							<a href="/contacts" class="burger__link">
+							Контакты
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__info">
+				<div class="header__more mob__hide">
+					<img class="header__icon" src="img/society.svg" alt="">
+					<img class="header__icon" src="img/cost.svg" alt="">
+					<img class="header__icon" src="img/comment.svg" alt="">
+				</div>
+				<div class="header__contacts">
+					<a href="tel:+79863492525" class="header__contacts__phone">+79863492525</a>
+					<div class="header__contacts__more">
+						<img src="img/call.png" alt="">
+						<span>перезвоним за 5 минут</span>
+					</div>
+				</div>
+		</div>
+			</div>
+	</header>
+	<div id="popup" class="">
+	<div id="close">
+		<img src="img/close.png" alt="">
+	</div>
+	<div class="popup__title">
+		Заявка
+	</div>
+	<form class="popup__form">
+		<div class="popup__input__name">
+			Ваше имя
+		</div>
+		<input id="name_input" placeholder="Иван" class="popup__input">
+		<div class="popup__input__name">
+			Ваш номер
+		</div>
+		<input id="phone_input" placeholder="Ваш номер" class="popup__input">
+		<div class="buttons__row">
+			<div class="button button_scrolling">
+						<div class="button__checked"></div>
+						<div class="button__iphone">Выберите <br> офис</div>
+						<div class="button__scroll">
+							<div class="button__scroll__gradient"></div>
+							<div data-cost="бесплатно" data-time="от 60 минут" data-name="ул. Верхняя Радищевская д. 7 стр. 1, 1-й этаж." class="button__scroll__item">
+								ул. Верхняя Ради...
+							</div>
+							<div data-cost="от 1000 Р" data-time="от 40 минут" data-name="ул. Вавилова д. 66, «ТЦ Триумфальный», 4-й этаж, павильон 403." class="button__scroll__item">
+								ул. Вавилова д. 66...
+							</div>
+							<div data-cost="от 1000 Р" data-time="от 40 минут" data-name="ул. Холодильный переулок, д.3 ТЦ «Ролл-Холл», 1 этаж, 4 ряд, офис 121" class="button__scroll__item">
+								ул. Холодильный...
+							</div>
+
+
+						</div>
+
+					</div>
+			<div id="validate" class="button button_blue">Оставить заявку</div>
+		</div>
+		<div class="form__text">
+			Оставьте заявку сейчас и получите <br>
+			<div class="text_blue">5% скидку на ремонт</div> <br>
+			Оставляя заявку вы соглашаетесь с <a class="text_blue" href="/privacy-policy"><b>политикой конфиденциальности</b></a>
+		</div>		
+	</form>
+</div>
+
+	<section class="main">
+		<div class="container main__wrap">
+			<div class="main__right">
+				<div class="main__right__block">
+					<div class="main__right__img">
+						<div id="phone">
+							<img id="phoneMove" src="img/phone.png" alt="">
+						</div>
+						<div class="main__right__decor">
+							<img src="img/decor_right.png" alt="">
+						</div>
+					</div>
+					<div class="main__right__text">
+						<div class="title text_gray">Apple Watch 1-й серии</div>
+						<div class="text">
+							Команда нашего сервисного центра предлагает профессиональные услуги, направленные на диагностику и ремонт Apple Watch 1-й серии (38, 42 mm). Наши специалисты обладают большим опытом в области ремонта техники от американского бренда. Используем фирменное оборудование, продвинутый инструмент и высококачественные комплектующие – мы готовы к решению задач любой сложности!
+						</div>
+						
+						<div class="text text_blue">Вернем 5% при заказе с сайта</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+			
+
+	<section class="buttons">
+		<div class="container">
+			<div class="buttons__decor_right">
+				<img src="img/aboutFix_cirle_left.png" alt="">
+			</div>
+			<div class="buttons__decor_left">
+				<img src="img/aboutFix_cirle_right.png" alt="">
+			</div>
+			<div class="buttons__row">
+				<div class="button button_scrolling">
+						<div class="button__checked"></div>
+						<div class="button__iphone">Выберите <br> неисправность</div>
+						<div class="button__scroll">
+							<div class="button__scroll__gradient"></div>
+							<div data-cost="4 990 Р" data-time="60 минут" data-name="Замена стекла  Apple Watch Series 1" class="button__scroll__item">
+								Замена стекла  Apple Watch Series 1
+							</div>
+							<div data-cost="4 990 Р" data-time="60 минут" data-name="Замена экрана Apple Watch Series 1" class="button__scroll__item">
+								Замена экрана Apple Watch Series 1
+							</div>
+							<div data-cost="2 490 Р" data-time="60 минут" data-name="Замена аккумуляторной батареи" class="button__scroll__item">
+								Замена аккумуляторной батареи
+							</div>
+							<div data-cost="4 990 Р" data-time="60 минут" data-name="Замена задней панели iWatch 1" class="button__scroll__item">
+								Замена задней панели iWatch 1
+							</div>
+							<div data-cost="от 3500 Р" data-time="от 3 дней" data-name="Обмен Apple Watch на новые" class="button__scroll__item">
+								Обмен Apple Watch на новые
+							</div>
+						</div>
+
+					</div>
+			</div>
+			<div class="buttons__row">
+				<div class="text text_blue">Диогностика - бесплатно</div>
+			</div>
+			<div class="buttons__row">
+				<div data-button="time" data-noactive="true" class="button button_noactive">---- минут</div>
+				<div data-button="cost" data-noactive="true" class="button button_noactive">---- руб</div>
+				<a href="#" data-noactive="true" class="button button_noactive">О ремонте</a>
+			</div>
+			<div class="buttons__row margin_top">
+				<div data-button="swap" class="button">Обменять на новое</div>
+				<div data-button="request" class="button button_app">Оставить заявку</div>
+			</div>
+			<div class="buttons__row margin_top">
+				<div class="aboutFix__video">
+						<div data-src="https://www.youtube.com/embed/qcxcca7VYc0" class="people__play__button">
+							<img src="img/people_play_button.png" alt="" class="people__play__button__animate">
+							<img src="img/people_play.png" alt="" class="people__play">
+						</div>
+						<iframe class="video__youtube" width="550" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+			</div>
+			<div class="buttons__row__text margin_top">
+				<div class="aboutFix__main__title">Замена экрана Apple Watch 1-й серии</div><div class="aboutFix__main__text">Умные часы – любимый аксессуар пользователей, предпочитающих размеренному отдыху активный образ жизни. Именно поэтому наиболее частой поломкой носимого гаджета является поврежденный дисплей. Невзирая на высокопрочное сапфировое покрытие, сильный удар может оставить на экране царапины, трещины и другие повреждения.</div><div class="aboutFix__main__text"><strong>На необходимость замены компонента указывают такие признаки:</strong></div><ul><li>Трещины и сколы. Даже при работающем тачскрине, требуется заменить стекло, так как в образовавшиеся щели во время эксплуатации будут проникать влага и пыль, которые в негативном ключе отразятся на работе аппаратных составляющих;</li><li>Полосы и пятна на экране;</li><li>Неработающая подсветка, низкий уровень яркости.</li></ul><div class="aboutFix__main__text">Мастера выполнят полную диагностику устройства, после чего произведут замену вышедшего из строя компонента.</div><div class="aboutFix__main__title">Замена элемента питания Apple Watch Series 1</div><div class="aboutFix__main__text">Как и другая техника, часы Apple оснащены качественным аккумулятором. Его ресурс рассчитан на длительное время использования, однако, со временем пользователь начинает замечать быструю разрядку устройства. Из-за износа батареи гаджет неспособен работать в автономном режиме на протяжении всего дня. Выход – замена аккумулятора.</div><h3><strong>Намокание часов Apple</strong></h3><div class="aboutFix__main__text">Проникновение влаги внутрь устройства может привести к нежелательным последствиям, начиная отказом одной из систем, заканчивая полным выходом аксессуара из строя. После попадания жидкости на корпус устройства, рекомендуем незамедлительно воспользоваться услугами сервисного центра. Мы проведем чистку компонентов от остатку влаги, а также протестируем все элементы устройства для восстановления поврежденных.</div><h3><strong>Поломка Digital Crown</strong></h3><div class="aboutFix__main__text">Ремонт Apple Watch 1-й серии у метро Таганская, Профсоюзная и Университет также включает в себя замену колесика Digital Crown. Деталь может пострадать из-за влаги, механического давления или неаккуратного обращения.</div><div class="aboutFix__main__text">Выполняем ремонтные работы согласно требованиям и рекомендациям производителя. На оказанные услуги клиент получает гарантию.</div>
+			</div>
+			<div class="buttons__row margin_top">
+				<div data-button="calc" class="button">Калькулятор стоимости</div>
+				<div data-button="request" class="button button_app">Оставить заявку</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container footer__wrap">
+			<div class="footer__text">
+				Сервисный центр ifix-it.ru — это современный СЦ в Москве, который специализируется на ремонте техники марки Apple. Наши специалисты произведут ремонт любой сложности iPhone, iPad, MacBook, iMac, iWatch, iPod в Москве. У нас Вы можете заказать услуги по замене батареи в телефонах iPhone, дисплеи, элементы телефонов, планшетов и компьютеров марки Apple. Так же у нас присутствует услуга официальной разблокировки iCloud в Москве. Мы работаем ежедневно в Москве, метро Таганская и метро Профсоюзная. У нас вы получаете качественный сервис за разумные деньги, только качественные комплектующие для техники Эпл и гарантия на все наши услуги! Так же у нас присутствует услуга срочного ремонта и выездного ремонта в Москве.
+			</div>
+			<div class="footer__underline">
+				<div class="copy">© iFix-it</div>
+				<div class="footer__links">
+					<a class="footer__link" href="#"><img src="img/vk.png" alt=""></a>
+					<a class="footer__link" href="#"><img src="img/facebook.png" alt=""></a>
+					<a class="footer__link" href="#"><img src="img/insta.png" alt=""></a>
+					<a class="footer__link" href="#"><img src="img/tumblr.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
+
+

@@ -1178,11 +1178,6 @@ img{
   margin-top: 25px;
   font-weight: 600;
 }
-.text_blue{
-  color: #8ecfcd;
-  font-size: 0.875rem;
-  font-weight: 400;
-}
 
 #close{
   position: absolute;
@@ -1339,4 +1334,11 @@ img{
 .button[data-button=request]:hover {
   background: #6DD2CF;
   color: #fff;
+}
+/*Списки*/
+@media (max-width: 768px) {
+  ol{
+    padding-left: 15px;
+    padding-top: 10px;
+  }
 }

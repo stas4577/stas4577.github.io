@@ -320,7 +320,7 @@ a {
 	bottom: 0;
 	right: 0;
 	background: rgba(0, 0, 0, 0.1);
-	z-index: 100;
+	z-index: 1000;
 	opacity: 0;
 	visibility: hidden;
 	transition: all 0.3s;
@@ -1360,12 +1360,6 @@ img {
   margin-top: 25px;
   font-weight: 600;
 }
-.text_blue{
-  color: #8ecfcd;
-  font-size: 0.875rem;
-  font-weight: 400;
-}
-
 #close{
   position: absolute;
   right: 30px;

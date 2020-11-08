@@ -153,6 +153,11 @@ $(document).ready(function () {
 	}
 	$('[data-button]').on('click',showWork)
 	$('.window_close').on('click',hideWork)
+	// Перенаправление на калькулятор
+	function toCalc(){
+		$(location).attr('href','/calculator')
+	}
+	$('.button:contains("Калькулятор")').on('click',toCalc)
 
 
 })

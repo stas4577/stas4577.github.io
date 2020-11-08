@@ -153,7 +153,11 @@ $(document).ready(function () {
 	}
 	// Удаление ошибок при изменении элемента
 	$('.popup__input').on('keypress',deleteError)
-	
+	// Перенаправление на калькулятор
+	function toCalc(){
+		$(location).attr('href','/calculator')
+	}
+	$('.button:contains("Калькулятор")').on('click',toCalc)
 	
 
 })

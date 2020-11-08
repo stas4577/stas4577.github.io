@@ -15,104 +15,156 @@
 		
 	</div>
 	
-
-<header class="header">
-		<div class="container header__wrap">
-			<div class="header__logo">
-				<a href="#"><img id="logo" src="img/logo.png" alt=""></a>
-				<div class="header__burger">
-					<img id="burgerSwitcher" src="img/burger.svg" alt="">
-					<div class="burger_menu">
-						<div class="burger__links">
-							<div href="#" class="burger__link">
-								Ремонт
-								<div data-menu="0" class="burger__menu__second">
-									<a href="remont-iphone">iPhone</a>
-									<a href="remont-ipad">iPad</a>
-									<a href="remont-macbook">Macbook</a>
-									<a href="imac">iMac</a>
-									<a href="remont-iwatch">iWatch</a>
-									<a href="remont-ipod">iPod</a>
-									<a href="remont-android">Android</a>		
-								</div>
-							</div>
-							<a href="#" class="burger__link">
-							Отзывы
-							</a>
-							<a href="obmen-iphone-ipad" class="burger__link">
-							Обмен
-							</a>
-							<a href="icloud" class="burger__link">
-							iCloud
-							</a>
-							<a href="contacts" class="burger__link">
-							Контакты
-							</a>
-						</div>
-					</div>
+<!-- @import "header.html" -->
+<div class="window" id="office">
+	<div class="container">
+		<div class="office__row">
+			<div class="office__text">
+				<div class="office__text__title">
+					ВЫ ПРИЕЗЖАЕТЕ
+				</div>
+				<div class="office__text__subtitle">
+					к нам в сервисный центр
 				</div>
 			</div>
-			<div class="header__info">
-				<div class="header__more mob__hide">
-					<img class="header__icon" src="img/society.svg" alt="">
-					<img class="header__icon" src="img/cost.svg" alt="">
-					<img class="header__icon" src="img/comment.svg" alt="">
-				</div>
-				<div class="header__contacts">
-					<a href="tel:+79863492525" class="header__contacts__phone">+79863492525</a>
-					<div class="header__contacts__more">
-						<img src="img/call.png" alt="">
-						<span>перезвоним за 5 минут</span>
-					</div>
-				</div>
-		</div>
+			<div class="office__num">
+				1
 			</div>
-	</header>
-	<div id="popup" class="">
-	<div id="close">
-		<img src="img/close.png" alt="">
-	</div>
-	<div class="popup__title">
-		Заявка
-	</div>
-	<form class="popup__form">
-		<div class="popup__input__name">
-			Ваше имя
 		</div>
-		<input id="name_input" placeholder="Иван" class="popup__input">
-		<div class="popup__input__name">
-			Ваш номер
+		<div class="office__row office__decor">
+			<div class="office__line"></div>
 		</div>
-		<input id="phone_input" placeholder="Ваш номер" class="popup__input">
+		<div class="office__row">
+			<div class="office__text">
+				<div class="office__text__title">
+					РАССКАЗЫВАЕТЕ
+				</div>
+				<div class="office__text__subtitle">
+					о своей поломке, затем мастер проводит диагностику
+				</div>
+			</div>
+			<div class="office__num">
+				2
+			</div>
+		</div>
+		<div class="office__row office__decor">
+			<div class="office__line"></div>
+		</div>
+		<div class="office__row">
+			<div class="office__text">
+				<div class="office__text__title">
+					ПОСЛЕ СОГЛАСИЯ
+				</div>
+				<div class="office__text__subtitle">
+					мастер проводит ремонт вашего устройства
+				</div>
+			</div>
+			<div class="office__num">
+				3
+			</div>
+		</div>
+		<div class="office__row office__decor">
+			<div class="office__line"></div>
+		</div>
+		<div class="office__row">
+			<div class="office__text">
+				<div class="office__text__title">
+					ВЫ ОПЛАЧИВАЕТЕ
+				</div>
+				<div class="office__text__subtitle">
+					наши услуги, получаете чек и 3 месяца гарантии
+				</div>
+			</div>
+			<div class="office__num">
+				4
+			</div>
+		</div>
 		<div class="buttons__row">
-			<div class="button button_scrolling">
-						<div class="button__checked"></div>
-						<div class="button__iphone">Выберите <br> офис</div>
-						<div class="button__scroll">
-							<div class="button__scroll__gradient"></div>
-							<div data-cost="бесплатно" data-time="от 60 минут" data-name="ул. Верхняя Радищевская д. 7 стр. 1, 1-й этаж." class="button__scroll__item">
-								ул. Верхняя Ради...
-							</div>
-							<div data-cost="от 1000 Р" data-time="от 40 минут" data-name="ул. Вавилова д. 66, «ТЦ Триумфальный», 4-й этаж, павильон 403." class="button__scroll__item">
-								ул. Вавилова д. 66...
-							</div>
-							<div data-cost="от 1000 Р" data-time="от 40 минут" data-name="ул. Холодильный переулок, д.3 ТЦ «Ролл-Холл», 1 этаж, 4 ряд, офис 121" class="button__scroll__item">
-								ул. Холодильный...
-							</div>
-
-
-						</div>
-
-					</div>
-			<div id="validate" class="button button_blue">Оставить заявку</div>
+			<div class="button button_yellow button_app">
+				Оставить заявку
+			</div>
+			<div class="button button_blue window_close">
+				Вернуться
+			</div>
 		</div>
-		<div class="form__text">
-			Оставьте заявку сейчас и получите <br>
-			<div class="text_blue">5% скидку на ремонт</div>
-		</div>		
-	</form>
-</div>
 
+	</div>
+</div>
+<div class="window" id="exit">
+	<div class="container">
+		<div class="office__row">
+			<div class="office__text">
+				<div class="office__text__title">
+					РАССКАЗЫВАЕТЕ
+				</div>
+				<div class="office__text__subtitle">
+					о проблеме своего устройства и договариваетесь <br>
+о встрече с нашим мастером
+				</div>
+			</div>
+			<div class="office__num">
+				1
+			</div>
+		</div>
+		<div class="office__row office__decor">
+			<div class="office__line"></div>
+		</div>
+		<div class="office__row">
+			<div class="office__text">
+				<div class="office__text__title">
+					НАШ МАСТЕР
+				</div>
+				<div class="office__text__subtitle">
+					приезжает на место и проводит диагностику
+				</div>
+			</div>
+			<div class="office__num">
+				2
+			</div>
+		</div>
+		<div class="office__row office__decor">
+			<div class="office__line"></div>
+		</div>
+		<div class="office__row">
+			<div class="office__text">
+				<div class="office__text__title">
+					ПОСЛЕ СОГЛАСИЯ
+				</div>
+				<div class="office__text__subtitle">
+					проводим замену у вас на глазах
+				</div>
+			</div>
+			<div class="office__num">
+				3
+			</div>
+		</div>
+		<div class="office__row office__decor">
+			<div class="office__line"></div>
+		</div>
+		<div class="office__row">
+			<div class="office__text">
+				<div class="office__text__title">
+					ВЫ ОПЛАЧИВАЕТЕ
+				</div>
+				<div class="office__text__subtitle">
+					наши услуги, получаете чек и 3 месяца гарантии
+				</div>
+			</div>
+			<div class="office__num">
+				4
+			</div>
+		</div>
+		<div class="buttons__row">
+			<div class="button button_yellow button_app">
+				Оставить заявку
+			</div>
+			<div class="button button_blue window_close">
+				Вернуться
+			</div>
+		</div>
+
+	</div>
+</div>
 
 	<section class="main">
 		<div class="container main__wrap">
@@ -289,7 +341,7 @@
 				<img src="img/repait_decor.png" alt="" class="repair__decor">
 				<img src="img/repair_small_circle.png" alt="" class="repair__small__circle">
 				<div class="repair__item">
-					<div class="repait__item__body">
+					<a href="calculator/" class="repait__item__body">
 						<div class="repait__item__title">
 							Устройство не заряжается
 						</div>	
@@ -297,10 +349,10 @@
 							<img src="img/repair_border.png" alt="" class="repair__item__decor">
 							<img class="repair__item__icon" src="img/batery.png" alt="">
 						</div>
-					</div>				
+					</a>				
 				</div>
 				<div class="repair__item">
-					<div class="repait__item__body">
+					<a href="calculator/" class="repait__item__body">
 						<div class="repait__item__title">
 							Устройство не
 							включается
@@ -309,10 +361,10 @@
 							<img src="img/repair_border.png" alt="" class="repair__item__decor">
 							<img class="repair__item__icon" src="img/power.png" alt="">
 						</div>
-					</div>				
+					</a>				
 				</div>
 				<div class="repair__item">
-					<div class="repait__item__body">
+					<a href="calculator/" class="repait__item__body">
 						<div class="repait__item__title">
 							Не работает
 							сенсер
@@ -321,10 +373,10 @@
 							<img src="img/repair_border.png" alt="" class="repair__item__decor">
 							<img class="repair__item__icon" src="img/swap.png" alt="">
 						</div>
-					</div>				
+					</a>				
 				</div>
 				<div class="repair__item">
-					<div class="repait__item__body">
+					<a href="calculator/" class="repait__item__body">
 						<div class="repait__item__title">
 							Не ловит сеть
 						</div>	
@@ -332,10 +384,10 @@
 							<img src="img/repair_border.png" alt="" class="repair__item__decor">
 							<img class="repair__item__icon" src="img/internet.png" alt="">
 						</div>
-					</div>				
+					</a>				
 				</div>
 				<div class="repair__item">
-					<div class="repait__item__body">
+					<a href="calculator/" class="repait__item__body">
 						<div class="repait__item__title">
 							Не ловит Wi-Fi
 						</div>	
@@ -343,10 +395,10 @@
 							<img src="img/repair_border.png" alt="" class="repair__item__decor">
 							<img class="repair__item__icon" src="img/wifi.png" alt="">
 						</div>
-					</div>				
+					</a>				
 				</div>
 				<div class="repair__item">
-					<div class="repait__item__body">
+					<a href="calculator/" class="repait__item__body">
 						<div class="repait__item__title">
 							Разбился экран
 						</div>	
@@ -354,10 +406,10 @@
 							<img src="img/repair_border.png" alt="" class="repair__item__decor">
 							<img class="repair__item__icon" src="img/crash.png" alt="">
 						</div>
-					</div>				
+					</a>				
 				</div>
 				<div class="repair__item">
-					<div class="repait__item__body">
+					<a href="calculator/" class="repait__item__body">
 						<div class="repait__item__title">
 							IPhone быстро
 							разряжается
@@ -366,10 +418,10 @@
 							<img src="img/repair_border.png" alt="" class="repair__item__decor">
 							<img class="repair__item__icon" src="img/batery_bad.png" alt="">
 						</div>
-					</div>				
+					</a>				
 				</div>
 				<div class="repair__item">
-					<div class="repait__item__body">
+					<a href="calculator/" class="repait__item__body">
 						<div class="repait__item__title">
 							Замена задней
 							панели
@@ -378,10 +430,10 @@
 							<img src="img/repair_border.png" alt="" class="repair__item__decor">
 							<img class="repair__item__icon" src="img/band.png" alt="">
 						</div>
-					</div>				
+					</a>				
 				</div>
 				<div class="repair__item">
-					<div class="repait__item__body">
+					<a href="calculator/" class="repait__item__body">
 						<div class="repait__item__title">
 							На устройство попала вода
 						</div>	
@@ -389,10 +441,10 @@
 							<img src="img/repair_border.png" alt="" class="repair__item__decor">
 							<img class="repair__item__icon" src="img/water.png" alt="">
 						</div>
-					</div>				
+					</a>				
 				</div>
 				<div class="repair__item">
-					<div class="repait__item__body">
+					<a href="calculator/" class="repait__item__body">
 						<div class="repait__item__title">
 							Ремонт материнских плат
 						</div>	
@@ -400,13 +452,13 @@
 							<img src="img/repair_border.png" alt="" class="repair__item__decor">
 							<img class="repair__item__icon" src="img/mather.png" alt="">
 						</div>
-					</div>				
+					</a>				
 				</div>
 
 			</div>
 			<div class="repair__more">
 				<div class="container repair__more__wrap">
-					<a href="#" class="repair__more__button">
+					<a href="calculator/" class="repair__more__button">
 						Все неисправности
 					</a>
 				</div>
@@ -457,11 +509,12 @@
 				</div>
 			</div>
 			<div class="people__buttons">
-				<a href="#" class="people__button">Ремонт в офисе</a>
-				<a href="#" class="people__button">Ремонт на выезде</a>
+				<div data-button="office" class="people__button">Ремонт в офисе</div>
+				<div data-button="exit" class="people__button">Ремонт на выезде</div>
 			</div>
 		</div>
 	</section>
+	
 	<footer class="footer">
 		<div class="container footer__wrap">
 			<div class="footer__text">

@@ -1,4 +1,4 @@
-
+$("head").append( '<link id="favicon" rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">' );
 $(document).ready(function () {
 	// Паралакс для телефона
 	$('html').on('mousemove',function (e) {
@@ -26,6 +26,9 @@ $(document).ready(function () {
 		menuSecondOpen($(this))
 	})
 	function menuSecondOpen (el) {
+		if (el.children('.burger__menu__second').length == 0) {
+			return false
+		}
 		let menu_selected = el.find('.burger__menu__second')
 		$('.burger__link').addClass('burger__link_noactive')
 		el.removeClass('burger__link_noactive')

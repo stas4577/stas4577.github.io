@@ -1,0 +1,63 @@
+							<div data-cost="ЦенаР" data-time="Время работы" data-name="Услуга" class="button__scroll__item">
+								Услуга
+							</div>
+							<div data-cost="бесплатно" data-time="от 10 минут" data-name="Диагностика" class="button__scroll__item">
+								Диагностика
+							</div>
+							<div data-cost="от 1000 Р" data-time="от 20 минут" data-name="Ремонт после попадания влаги" class="button__scroll__item">
+								Ремонт после попадания влаги
+							</div>
+							<div data-cost="1500 Р" data-time="20 минут" data-name="Замена дисплея" class="button__scroll__item">
+								Замена дисплея
+							</div>
+							<div data-cost="1400 Р" data-time="30 минут" data-name="Замена тачскрина (переднего стекла)" class="button__scroll__item">
+								Замена тачскрина (переднего стекла)
+							</div>
+							<div data-cost="1500 Р" data-time="60 минут" data-name="Замена задней крышки" class="button__scroll__item">
+								Замена задней крышки
+							</div>
+							<div data-cost="1500 Р" data-time="60 минут" data-name="Замена средней части корпуса (серебристой)" class="button__scroll__item">
+								Замена средней части корпуса (серебристой)
+							</div>
+							<div data-cost="1400 Р" data-time="20 минут" data-name="Замена аккумулятора" class="button__scroll__item">
+								Замена аккумулятора
+							</div>
+							<div data-cost="800 Р" data-time="20 минут" data-name="Замена разговорного (слухового) динамика" class="button__scroll__item">
+								Замена разговорного (слухового) динамика
+							</div>
+							<div data-cost="1200 Р" data-time="20 минут" data-name="Замена микрофона в сборе с шлейфом зарядки" class="button__scroll__item">
+								Замена микрофона в сборе с шлейфом зарядки
+							</div>
+							<div data-cost="1200 Р" data-time="25 минут" data-name="Замена музыкального(полифонического) динамика" class="button__scroll__item">
+								Замена музыкального(полифонического) динамика
+							</div>
+							<div data-cost="900 Р" data-time="25 минут" data-name="Замена кнопки Home" class="button__scroll__item">
+								Замена кнопки Home
+							</div>
+							<div data-cost="1200 Р" data-time="20 минут" data-name="Замена камеры и вспышки" class="button__scroll__item">
+								Замена камеры и вспышки
+							</div>
+							<div data-cost="1000 Р" data-time="40 минут" data-name="Ремонт кнопки включения" class="button__scroll__item">
+								Ремонт кнопки включения
+							</div>
+							<div data-cost="1000 Р" data-time="20 минут" data-name="Замена шлейфа датчика приближения" class="button__scroll__item">
+								Замена шлейфа датчика приближения
+							</div>
+							<div data-cost="1000 Р" data-time="40 минут" data-name="Замена шлейфа с разъемом гарнитуры и кнопками громкости" class="button__scroll__item">
+								Замена шлейфа с разъемом гарнитуры и кнопками громкости
+							</div>
+							<div data-cost="от 2000 Р" data-time="от 30 минут" data-name="Ремонт цепи подсветки" class="button__scroll__item">
+								Ремонт цепи подсветки
+							</div>
+							<div data-cost="3800 Р" data-time="от 30 минут" data-name="Замена контроллера питания" class="button__scroll__item">
+								Замена контроллера питания
+							</div>
+							<div data-cost="2600 Р" data-time="Восстановление цепи заряда" data-name="Восстановление сети" class="button__scroll__item">
+								Восстановление сети
+							</div>
+							<div data-cost="3500 Р" data-time="от 40 минут" data-name="Перепайка аудио контроллера (аудио кодека)" class="button__scroll__item">
+								Перепайка аудио контроллера (аудио кодека)
+							</div>
+							<div data-cost="500 Р" data-time="от 20 минут" data-name="Прошивка, разблокировка, джейлбрейк" class="button__scroll__item">
+								Прошивка, разблокировка, джейлбрейк
+							</div>

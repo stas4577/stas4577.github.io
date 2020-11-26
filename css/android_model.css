@@ -1286,7 +1286,7 @@ img {
   top: 50%;
   transform: translate(-50%,-50%);
   background: #ffffff;
-  z-index: 1000000000000;
+  z-index: 10000000000;
   border-radius: 1.25rem;
   display: flex;
   flex-direction: column;
@@ -1515,4 +1515,12 @@ img {
 .button[data-button=request]:hover {
   background: #6DD2CF;
   color: #fff;
+}
+
+
+#main_button{
+	z-index: 1000000000 !important;
+}
+#main_button .button__scroll{
+	z-index: 10000000000;
 }

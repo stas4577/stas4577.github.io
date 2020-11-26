@@ -1,5 +1,8 @@
 
 $(document).ready(function () {
+	let page_name = $('.title').text()
+	$("head").append( '<link id="favicon" rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">' );
+	$("title").text(page_name)
 	// Паралакс для телефона
 	$('html').on('mousemove',function (e) {
 		let mult = 15
@@ -26,6 +29,9 @@ $(document).ready(function () {
 		menuSecondOpen($(this))
 	})
 	function menuSecondOpen (el) {
+		if (el.children('.burger__menu__second').length == 0) {
+			return false
+		}
 		let menu_selected = el.find('.burger__menu__second')
 		$('.burger__link').addClass('burger__link_noactive')
 		el.removeClass('burger__link_noactive')
@@ -55,10 +61,11 @@ $(document).ready(function () {
 		name = $(this).data('name')
 		href = $(this).data('href')
 		$('a[data-noactive]').attr('href',href)
-		$('.button__checked').addClass('button__checked_active')
-		$('.button__checked').text(name)
-		$('.button__iphone').addClass('none')
-		$('.button__scroll').addClass('none')
+		$('a[data-button="price"]').attr('href',href)
+		$('.button').has($(this)).children('.button__checked').addClass('button__checked_active')
+		$('.button').has($(this)).children('.button__checked').text(name)
+		$('.button').has($(this)).children('.button__iphone').addClass('none')
+		$('.button').has($(this)).children('.button__scroll').addClass('none')
 		$('.button__price').addClass('button__price_active')
 		$('.aboutFix__name').text(name)
 		$('.fix__button').addClass('aboutFix_clicked')
@@ -97,11 +104,16 @@ $(document).ready(function () {
 	if ($(window).width() <= 425) {
 		$('.button__scroll__item').off()
 		$('.button_scrolling').on('mouseenter',function () {
-			$('.button__scroll').css('display','flex')
-			$('.button__iphone').css('display','none')
+			$(this).children('.button__scroll').css('display','flex')
+			$(this).children('.button__iphone').css('display','none')
 			setTimeout(function () {
 				$('.button__scroll__item').on('click',modelCheck)
 			},100)
+			$('.button_scrolling').on('mouseleave',function () {
+				$('.button__scroll').css('display','none')
+				$('.button__iphone').css('display','flex')
+				$('.button__scroll__item').off()
+			})
 		})
 	}
 	//Открытие видео
@@ -158,6 +170,11 @@ $(document).ready(function () {
 		$(location).attr('href','/calculator')
 	}
 	$('.button:contains("Калькулятор")').on('click',toCalc)
+	// Перенаправление на обмен
+	function toSwap(){
+		$(location).attr('href','/obmen-iphone-ipad')
+	}
+	$('.button:contains("Обменять на новое")').on('click',toSwap)
 	
 
 })

@@ -176,5 +176,6 @@ $(document).ready(function () {
 	}
 	$('.button:contains("Обменять на новое")').on('click',toSwap)
 	
+	
 
 })

@@ -15,9 +15,9 @@ def get_html(link):
 def get_fix_links (html):
 	links = html.select('.row-hover tr')
 	return links
-url = 'https://ifix-it.ru/remont-android/remont-android-xiaomi'
+url = 'https://ifix-it.ru/remont-android/remont-android-huawei'
 page = get_html(url)
-models = page.select_one('.elementor-element-61ff16e')
+models = page.select_one('.elementor-element-7cde39b')
 models = models.select('a')
 template_file = open('template.txt','r',encoding="utf-8")
 template = template_file.read()
@@ -25,12 +25,12 @@ template_file.close()
 for model in models:
 	folder_to_create = model['href']
 	folder_to_create = folder_to_create[folder_to_create.rfind('/')+1:]
-	try:
-		os.mkdir(folder_to_create)
-	except:
-		print ('Папка ' + folder_to_create + ' уже создана')
+	#try:
+	#	os.mkdir(folder_to_create)
+	#except:
+	#	print ('Папка ' + folder_to_create + ' уже создана')
 
-	current_link = 'https://ifix-it.ru' + model['href']
+	current_link = model['href']
 	this_page = get_html(current_link)
 	this_page_text = this_page.select_one('.elementor-section-stretched')
 	this_page_text = this_page_text.select_one('.elementor-text-editor')
@@ -48,10 +48,10 @@ for model in models:
 		for item in el.select('td'):
 			ready_line = ready_line + item.text + '\t'
 		text_for_table = text_for_table + ready_line + '\n'
-	table_file = open('table.txt','w')
+	table_file = open('table.txt','w',encoding="utf-8")
 	table_file.write(text_for_table)
 	table_file.close()
-	table_file = open('table.txt','r')
+	table_file = open('table.txt','r',encoding="utf-8")
 	table_text = table.main(table_file)
 	table_file.close()
 	result_text = template
@@ -59,13 +59,14 @@ for model in models:
 	result_text = result_text.replace('$sub_text',sub_text)
 	result_text = result_text.replace('$name',model.text)
 	result_text = result_text.replace('$table',text_for_table)
+	result_text = result_text.replace('$fix_links',table_text)
 	shutil.copytree(os.getcwd() + '\\' + 'files',folder_to_create)
 	result_file = open(os.getcwd() + '\\' + folder_to_create + '\\' + 'index.txt','w',encoding="utf-8")
 	result_file.write(result_text)
 	result_file.close()
 	os.rename(os.getcwd() + '\\' + folder_to_create + '\\' + 'index.txt',os.getcwd() + '\\' + folder_to_create + '\\' + 'index.kit')
 
-
+print ('Готово!')
 input()
  
 	

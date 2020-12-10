@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Все неисправность</title>
+	<link rel="stylesheet" href="/css/model.css">
+	<script src="/js/jquery-3.4.1.js"></script>
+	<script src="/js/model.js"></script>	
+	<script src="fix.js"></script>
+			
+</head>
+<body>
+	<div id="grey_window" class="">
+		
+	</div>
+<header class="header">
+		<div class="container header__wrap">
+			<div class="header__logo">
+				<a href="/"><img id="logo" src="img/logo.png" alt=""></a>
+				<div class="header__burger">
+					<img id="burgerSwitcher" src="img/burger.svg" alt="">
+					<div class="burger_menu">
+						<div class="burger__links">
+							<div href="#" class="burger__link">
+								Ремонт
+								<div data-menu="0" class="burger__menu__second">
+									<a href="/remont-iphone">iPhone</a>
+									<a href="/remont-ipad">iPad</a>
+									<a href="/remont-macbook">Macbook</a>
+									<a href="/imac">iMac</a>
+									<a href="/remont-iwatch">iWatch</a>
+									<a href="/remont-ipod">iPod</a>
+									<a href="/remont-android">Android</a>
+								</div>
+							</div>
+							<a href="/comments" class="burger__link">
+							Отзывы
+							</a>
+							<a href="/obmen-iphone-ipad" class="burger__link">
+							Обмен
+							</a>
+							<a href="/icloud" class="burger__link">
+							iCloud
+							</a>
+							<a href="/contacts" class="burger__link">
+							Контакты
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__info">
+				<div class="header__more mob__hide">
+					<img class="header__icon" src="img/society.svg" alt="">
+					<img class="header__icon" src="img/cost.svg" alt="">
+					<img class="header__icon" src="img/comment.svg" alt="">
+				</div>
+				<div class="header__contacts">
+					<a href="tel:+79863492525" class="header__contacts__phone">+79863492525</a>
+					<div class="header__contacts__more">
+						<img src="img/call.png" alt="">
+						<span>перезвоним за 5 минут</span>
+					</div>
+				</div>
+		</div>
+			</div>
+	</header>
+	<div id="popup" class="">
+	<div id="close">
+		<img src="img/close.png" alt="">
+	</div>
+	<div class="popup__title">
+		Заявка
+	</div>
+	<form class="popup__form">
+		<div class="popup__input__name">
+			Ваше имя
+		</div>
+		<input id="name_input" placeholder="Иван" class="popup__input">
+		<div class="popup__input__name">
+			Ваш номер
+		</div>
+		<input id="phone_input" placeholder="Ваш номер" class="popup__input">
+		<div class="buttons__row">
+			<div class="button button_scrolling">
+						<div class="button__checked"></div>
+						<div class="button__iphone">Выберите <br> офис</div>
+						<div class="button__scroll">
+							<div class="button__scroll__gradient"></div>
+							<div data-cost="бесплатно" data-time="от 60 минут" data-name="ул. Верхняя Радищевская д. 7 стр. 1, 1-й этаж." class="button__scroll__item">
+								ул. Верхняя Ради...
+							</div>
+							<div data-cost="от 1000 Р" data-time="от 40 минут" data-name="ул. Вавилова д. 66, «ТЦ Триумфальный», 4-й этаж, павильон 403." class="button__scroll__item">
+								ул. Вавилова д. 66...
+							</div>
+							<div data-cost="от 1000 Р" data-time="от 40 минут" data-name="ул. Холодильный переулок, д.3 ТЦ «Ролл-Холл», 1 этаж, 4 ряд, офис 121" class="button__scroll__item">
+								ул. Холодильный...
+							</div>
+
+
+						</div>
+
+					</div>
+			<div id="validate" class="button button_blue">Оставить заявку</div>
+		</div>
+		<div class="form__text">
+			Оставьте заявку сейчас и получите <br>
+			<div class="text_blue">5% скидку на ремонт</div> <br>
+			Оставляя заявку вы соглашаетесь с <a class="text_blue" href="/privacy-policy"><b>политикой конфиденциальности</b></a>
+		</div>		
+	</form>
+</div>	<section class="buttons">
+		<div class="container">
+			<div class="buttons__row">
+				<div class="button button_scrolling">
+						<div class="button__checked"></div>
+						<div class="button__iphone">Выберите <br> неисправность</div>
+						<div class="button__scroll">
+							<div class="button__scroll__gradient"></div>
+							<div data-href="/greetsya-iphone" data-name="Греется iPhone" class="button__scroll__item">
+	Греется iPhone
+</div>
+ <div data-href="/iphone-postoyanno-perezagruzhaetsya" data-name="iPhone постоянно перезагружается" class="button__scroll__item">
+	iPhone постоянно перезагружается
+</div>
+ <div data-href="/iphone-sam-vyklyuchaetsya" data-name="iPhone сам выключается" class="button__scroll__item">
+	iPhone сам выключается
+</div>
+ <div data-href="/iphone-zavis-na-yabloke" data-name="Айфон завис на «яблоке»" class="button__scroll__item">
+	Айфон завис на «яблоке»
+</div>
+ <div data-href="/ne-vklyuchaetsya-iphone" data-name="iPhone не включается" class="button__scroll__item">
+	iPhone не включается
+</div>
+ <div data-href="/na-ustrojstvo-popala-voda" data-name="Что делать, если Айфон упал в воду" class="button__scroll__item">
+	Что делать, если Айфон упал в воду
+</div>
+ <div data-href="/ne-rabotaet-gps-v-iphone" data-name="Не работает GPS в iPhone" class="button__scroll__item">
+	Не работает GPS в iPhone
+</div>
+ <div data-href="/ne-rabotaet-bluetooth-na-iphone" data-name="Не работает Bluetooth на iPhone" class="button__scroll__item">
+	Не работает Bluetooth на iPhone
+</div>
+ <div data-href="/ne-rabotaet-giroskop-na-iphone" data-name="Не работает гироскоп на iPhone" class="button__scroll__item">
+	Не работает гироскоп на iPhone
+</div>
+ <div data-href="/ne-rabotaet-avtoyarkost-v-iphone" data-name="Не работает автояркость в iPhone" class="button__scroll__item">
+	Не работает автояркость в iPhone
+</div>
+ <div data-href="/ne-rabotaet-vibraciya-na-iphone" data-name="Не работает вибрация на iPhone" class="button__scroll__item">
+	Не работает вибрация на iPhone
+</div>
+ <div data-href="/iphone-ne-lovit-set-wi-fi" data-name="Не работает WiFi на iPhone" class="button__scroll__item">
+	Не работает WiFi на iPhone
+</div>
+ <div data-href="/ne-rabotayut-naushniki-s-iphone" data-name="Не работают наушники c iPhone" class="button__scroll__item">
+	Не работают наушники c iPhone
+</div>
+ <div data-href="/ne-rabotaet-dinamik-v-iphone" data-name="Не работает динамик в iPhone" class="button__scroll__item">
+	Не работает динамик в iPhone
+</div>
+ <div data-href="/plohoi-zvuk-v-iphone" data-name="Плохой звук в iPhone " class="button__scroll__item">
+	Плохой звук в iPhone 
+</div>
+ <div data-href="/ne-rabotaet-mikrofon-v-iphone" data-name="Не работает микрофон в iPhone " class="button__scroll__item">
+	Не работает микрофон в iPhone 
+</div>
+ <div data-href="/propal-zvuk-na-iphone" data-name="Пропал звук на Айфоне " class="button__scroll__item">
+	Пропал звук на Айфоне 
+</div>
+ <div data-href="/zamena-zadney-paneli" data-name="Разбито стекло iPhone " class="button__scroll__item">
+	Разбито стекло iPhone 
+</div>
+ <div data-href="/othodit-ekran-na-iphone" data-name="Отходит экран на iPhone" class="button__scroll__item">
+	Отходит экран на iPhone
+</div>
+ <div data-href="/zamena-zadney-paneli" data-name="Разбит корпус iPhone" class="button__scroll__item">
+	Разбит корпус iPhone
+</div>
+ <div data-href="/razbilsya-ekran" data-name="Разбит дисплей iPhone " class="button__scroll__item">
+	Разбит дисплей iPhone 
+</div>
+ <div data-href="/othodit-ekran-na-iphone" data-name="Отходит экран на iPhone " class="button__scroll__item">
+	Отходит экран на iPhone 
+</div>
+ <div data-href="/ekran-iphone-ne-gasnet-pri-razgovore" data-name="Экран iPhone не гаснет при разговоре" class="button__scroll__item">
+	Экран iPhone не гаснет при разговоре
+</div>
+ <div data-href="/mercaet-ekran-iphone" data-name="Мерцает экран iPhone" class="button__scroll__item">
+	Мерцает экран iPhone
+</div>
+ <div data-href="/ekran-belyi-ili-siniy-ili-krasnyi-na-iphone" data-name="Экран белый или синий или красный на iPhone" class="button__scroll__item">
+	Экран белый или синий или красный на iPhone
+</div>
+ <div data-href="/pyatna-na-ekrane-iphone" data-name="Пятна на экране iPhone" class="button__scroll__item">
+	Пятна на экране iPhone
+</div>
+ <div data-href="/ne-rabotaet-ekran-iphone" data-name="Не работает экран iPhone" class="button__scroll__item">
+	Не работает экран iPhone
+</div>
+ <div data-href="/razbilsya-ekran" data-name="Разбит экран iPhone " class="button__scroll__item">
+	Разбит экран iPhone 
+</div>
+ <div data-href="/glyuchit-sensor-iphone" data-name="Глючит сенсор iPhone " class="button__scroll__item">
+	Глючит сенсор iPhone 
+</div>
+ <div data-href="/ne-rabotaet-displei-iphone" data-name="Не работает дисплей iPhone" class="button__scroll__item">
+	Не работает дисплей iPhone
+</div>
+ <div data-href="/ne-rabotaet-internet-v-iphone" data-name="Не работает интернет в iPhone" class="button__scroll__item">
+	Не работает интернет в iPhone
+</div>
+ <div data-href="/iphone-ne-vidit-sim-kartu" data-name="iPhone не видит SIM-карту" class="button__scroll__item">
+	iPhone не видит SIM-карту
+</div>
+ <div data-href="/iphone-ploho-lovit-set" data-name="iPhone плохо ловит сеть" class="button__scroll__item">
+	iPhone плохо ловит сеть
+</div>
+ <div data-href="/ne-lovit-set-iphone" data-name="iPhone не ловит сеть " class="button__scroll__item">
+	iPhone не ловит сеть 
+</div>
+ <div data-href="/iphone-ne-lovit-set-wi-fi" data-name="Wi-Fi не подключается в iPhone " class="button__scroll__item">
+	Wi-Fi не подключается в iPhone 
+</div>
+ <div data-href="/iphone-ne-vidit-set-wifi" data-name="iPhone не видит сеть Wi-Fi" class="button__scroll__item">
+	iPhone не видит сеть Wi-Fi
+</div>
+ <div data-href="/iphone-ne-lovit-set-wi-fi" data-name="Не работает WiFi на iPhone" class="button__scroll__item">
+	Не работает WiFi на iPhone
+</div>
+ <div data-href="/macbuk-ne-zagruzhaetsya-dalshe-yabloka" data-name="Макбук не загружается дальше яблока на черном экране, ошибка в macOS" class="button__scroll__item">
+	Макбук не загружается дальше яблока на черном экране, ошибка в macOS
+</div>
+ <div data-href="/itunes-ne-vidit-iphone" data-name="iTunes не видит iPhone" class="button__scroll__item">
+	iTunes не видит iPhone
+</div>
+ <div data-href="/pereproshivka-iphone" data-name="Перепрошивка iPhone" class="button__scroll__item">
+	Перепрошивка iPhone
+</div>
+ <div data-href="/oshibki-v-itunes-izza-iphone" data-name="Ошибки в iTunes из-за iPhone" class="button__scroll__item">
+	Ошибки в iTunes из-за iPhone
+</div>
+ <div data-href="/tormozit-iphone" data-name="Тормозит iPhone" class="button__scroll__item">
+	Тормозит iPhone
+</div>
+ <div data-href="/iphone-trebuet-podklyucheniya-k-itunes" data-name="iPhone требует подключения к iTunes" class="button__scroll__item">
+	iPhone требует подключения к iTunes
+</div>
+ <div data-href="/iphone-zavis-na-yabloke" data-name="Айфон завис на «яблоке»" class="button__scroll__item">
+	Айфон завис на «яблоке»
+</div>
+ <div data-href="/ne-rabotaet-touch-id-na-iphone" data-name="Не работает Touch ID на iPhone" class="button__scroll__item">
+	Не работает Touch ID на iPhone
+</div>
+ <div data-href="/ne-rabotaet-pereklyuchatel-vibro-v-iphone" data-name="Не работает переключатель вибро в iPhone" class="button__scroll__item">
+	Не работает переключатель вибро в iPhone
+</div>
+ <div data-href="/ne-rabotayut-knopki-gromkosti-v-iphone" data-name="Не работают кнопки громкости в iPhone " class="button__scroll__item">
+	Не работают кнопки громкости в iPhone 
+</div>
+ <div data-href="/ne-rabotaet-knopka-vklyucheniya-v-iphone" data-name="Не работает кнопка включения в iPhone" class="button__scroll__item">
+	Не работает кнопка включения в iPhone
+</div>
+ <div data-href="/ne-rabotaet-knopka-home-v-iphone" data-name="Не работает кнопка Home в iPhone" class="button__scroll__item">
+	Не работает кнопка Home в iPhone
+</div>
+ <div data-href="/ne-rabotayut-knopki-na-iphone" data-name="Не работают кнопки на iPhone" class="button__scroll__item">
+	Не работают кнопки на iPhone
+</div>
+ <div data-href="/postoyanno-gorit-vspyshka-v-iphone" data-name="Постоянно горит вспышка в iPhone" class="button__scroll__item">
+	Постоянно горит вспышка в iPhone
+</div>
+ <div data-href="/ne-rabotaet-vspyshka-v-iphone" data-name="Не работает вспышка в iPhone " class="button__scroll__item">
+	Не работает вспышка в iPhone 
+</div>
+ <div data-href="/pyatna-na-kamere-iphone" data-name="Пятна на камере iPhone" class="button__scroll__item">
+	Пятна на камере iPhone
+</div>
+ <div data-href="/mutnaya-kamera-na-iphone" data-name="Мутная камера на iPhone" class="button__scroll__item">
+	Мутная камера на iPhone
+</div>
+ <div data-href="/ne-fokusiruetsya-kamera-na-iphone" data-name="Не фокусируется камера на iPhone" class="button__scroll__item">
+	Не фокусируется камера на iPhone
+</div>
+ <div data-href="/ne-rabotaet-zadnyaya-kamera-iphone" data-name="Не работает задняя камера iPhone" class="button__scroll__item">
+	Не работает задняя камера iPhone
+</div>
+ <div data-href="/ne-rabotaet-perednyaya-kamera-iphone" data-name="Не работает передняя камера iPhone " class="button__scroll__item">
+	Не работает передняя камера iPhone 
+</div>
+ <div data-href="/aksesuar-ne-podderjivaetsya-iphone" data-name="Аксессуар не поддерживается iPhone" class="button__scroll__item">
+	Аксессуар не поддерживается iPhone
+</div>
+ <div data-href="/vzdulsya-akkumulyator-iphone" data-name="Вздулся аккумулятор iPhone" class="button__scroll__item">
+	Вздулся аккумулятор iPhone
+</div>
+ <div data-href="/ne-pravilnyi-procent-zaryada-iphone" data-name="Неправильный процент заряда iPhone" class="button__scroll__item">
+	Неправильный процент заряда iPhone
+</div>
+ <div data-href="/bystro-ryazryazhaetsya-iphone" data-name="iPhone быстро разряжается " class="button__scroll__item">
+	iPhone быстро разряжается 
+</div>
+ <div data-href="/ustrojstvo-ne-zaryazhaetsya" data-name="iPhone не заряжается " class="button__scroll__item">
+	iPhone не заряжается 
+</div>
+ <div data-href="/remont-materinskih-plat-iphone" data-name="Ремонт материнских плат iPhone" class="button__scroll__item">
+	Ремонт материнских плат iPhone
+</div>
+ 
+							</div>
+
+					</div>
+			</div>
+			<div class="buttons__row margin_top">
+				<div class="aboutFix__video">
+						<div data-src="https://www.youtube.com/embed/qcxcca7VYc0" class="people__play__button">
+							<img src="img/people_play_button.png" alt="" class="people__play__button__animate">
+							<img src="img/people_play.png" alt="" class="people__play">
+						</div>
+						<iframe class="video__youtube" width="550" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+			</div>
+			<div class="buttons__row margin_top">
+				<div data-button="calc" class="button">Калькулятор стоимости</div>
+				<div data-button="request" class="button button_app">Оставить заявку</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container footer__wrap">
+			<div class="footer__text">
+				Сервисный центр ifix-it.ru — это современный СЦ в Москве, который специализируется на ремонте техники марки Apple. Наши специалисты произведут ремонт любой сложности iPhone, iPad, MacBook, iMac, iWatch, iPod в Москве. У нас Вы можете заказать услуги по замене батареи в телефонах iPhone, дисплеи, элементы телефонов, планшетов и компьютеров марки Apple. Так же у нас присутствует услуга официальной разблокировки iCloud в Москве. Мы работаем ежедневно в Москве, метро Таганская и метро Профсоюзная. У нас вы получаете качественный сервис за разумные деньги, только качественные комплектующие для техники Эпл и гарантия на все наши услуги! Так же у нас присутствует услуга срочного ремонта и выездного ремонта в Москве.
+			</div>
+			<div class="footer__underline">
+				<div class="copy">© iFix-it</div>
+				<div class="footer__links">
+					<a class="footer__link" href="#"><img src="img/vk.png" alt=""></a>
+					<a class="footer__link" href="#"><img src="img/facebook.png" alt=""></a>
+					<a class="footer__link" href="#"><img src="img/insta.png" alt=""></a>
+					<a class="footer__link" href="#"><img src="img/tumblr.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

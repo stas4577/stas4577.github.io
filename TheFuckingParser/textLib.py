@@ -1,11 +1,5 @@
 def text_correct (text):
-	text = text.replace('<div class="elementor-text-editor elementor-clearfix">','')
-	text = text.replace('</div>','')
-	text = text.replace('<p>','<div class="aboutFix__main__text">')
-	text = text.replace('</p>','</div>')
-	text = text.replace('<h2>','<div class="aboutFix__main__title">')
-	text = text.replace('<h2 style="text-align: center;">','<div class="aboutFix__main__title">')
-	text = text.replace('</h2>','</div>')
+	text = text.replace('<p>','<p class="aboutFix__main__text">')
 	text = text.replace('<b>',' <span class="text_blue">')
 	text = text.replace('</b>','</span> ')
 	while text.find('noscript') != -1:

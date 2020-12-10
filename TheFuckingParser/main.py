@@ -87,6 +87,14 @@ def get_page_name (html):
 # Получение текста страницы
 def get_page_text (html):
 	text = html.select('div.elementor-text-editor')[-1]
+	if text.find('Вернём 5% при заказе с сайта') != -1:
+		text = html.select('div.elementor-text-editor')[-2]
+		try:
+			text.select_one('table').decompose()
+			print('Таблица')
+		except:
+			pass
+		print ('Поймал исключение')
 	return str(text)
 default_path = os.getcwd()
 template_text = template.read()
@@ -94,8 +102,6 @@ main_page = 'https://ifix-it.ru/remont-ipad'
 main_page = get_html(main_page)
 all_models_href = main_page.select('.wp-caption a')
 for num in range (len(all_models_href)):
-	if num <= 8:
-		continue
 	if all_models_href[num]['href'].find('/') == -1:
 		link = default_href + '/' + all_models_href[num]['href']
 	else:
@@ -137,7 +143,10 @@ for num in range (len(all_models_href)):
 			ready_text = ready_text.replace('$time',info_fix['time'])
 			ready_text = ready_text.replace('$cost',info_fix['cost'])
 			main_text = template_text.replace('$main_table',ready_text)
-			title = get_page_name(get_html(fix_links[i]['href']))
+			try:
+				title = get_page_name(get_html(fix_links[i]['href']))
+			except:
+				continue
 			main_text = main_text.replace('$title',title)
 			page_text = get_page_text(get_html(fix_links[i]['href']))
 			page_text = textLib.text_correct(page_text)

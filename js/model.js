@@ -101,19 +101,15 @@ $(document).ready(function () {
 	}
 	$('.button__checked').on('click',modelUncheck)
 	//Выбор на мобилках
+	$('.button__scroll__item').off()
 	if ($(window).width() <= 425) {
 		$('.button__scroll__item').off()
 		$('.button_scrolling').on('mouseenter',function () {
-			$(this).children('.button__scroll').css('display','flex')
-			$(this).children('.button__iphone').css('display','none')
+			$('.button__scroll').css('display','flex')
+			$('.button__iphone').css('display','none')
 			setTimeout(function () {
 				$('.button__scroll__item').on('click',modelCheck)
 			},100)
-			$('.button_scrolling').on('mouseleave',function () {
-				$('.button__scroll').css('display','none')
-				$('.button__iphone').css('display','flex')
-				$('.button__scroll__item').off()
-			})
 		})
 	}
 	//Открытие видео

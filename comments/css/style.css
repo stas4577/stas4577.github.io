@@ -991,3 +991,9 @@ img {
 .footer__link:last-child {
 	margin-right: 0;
 }
+/*Мобилки*/
+@media(max-width: 450px){
+	.comments{
+		display: none !important;
+	}
+}

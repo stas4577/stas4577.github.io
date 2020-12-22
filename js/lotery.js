@@ -2,7 +2,7 @@
 $(document).ready(function () {
 	let page_name = $('.title').text()
 	$("head").append( '<link id="favicon" rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">' );
-	$("title").text(page_name)
+	$("title").text('Беспроигрышная лотерея')
 	// Паралакс для телефона
 	$('html').on('mousemove',function (e) {
 		let mult = 15

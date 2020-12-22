@@ -172,16 +172,16 @@ $(document).ready(function () {
 	}
 	$('.button:contains("Обменять на новое")').on('click',toSwap)
 	
-	if ($(window).height() > 700) {
-		$('.lotery__block').height($('.lotery__item__wrap').width())
-	}
-	$(window).on('resize',function () {
-		if ($(window).height() > 700) {
-			$('.lotery__block').height($('.lotery__item__wrap').width())
-		} else{
-			$('.lotery__block').css('height','auto')
-		}
-	})
+	//if ($(window).height() > 700) {
+	//	$('.lotery__block').height($('.lotery__item__wrap').width())
+	//}
+	//$(window).on('resize',function () {
+	//	if ($(window).height() > 700) {
+	//		$('.lotery__block').height($('.lotery__item__wrap').width())
+	//	} else{
+	//		$('.lotery__block').css('height','auto')
+	//	}
+	//})
 	let power_change = 50
 	let screen_change = 100
 	let usb_change = 150

@@ -1158,9 +1158,9 @@ p{
 	font-size: 1.25rem;
 }
 .lotery__roll__button{
-	width: 22.563rem;
+	width: 25rem;
 	height: 5.438rem;
-	background-color: #fad85a;
+	background-color: #fbfbfb;
 	border-radius: 1.25rem;
 	display: flex;
 	justify-content: center;
@@ -1168,10 +1168,25 @@ p{
 	font-weight: 600;
 	font-size: 1.438rem;
 	margin-top: 20px;
-	transition: transform .3s;
+	transition: all .3s;
 	cursor: pointer;
+	box-shadow: 0.375rem 0.563rem 1.125rem rgba(205, 205, 205, 0.51);
+	color: #6a6a6a;
 }
-.lotery__roll__button:hover{
+.lotery__roll__button_active{
+	background-color: #fad85a;
+	box-shadow: none;
+	width: 22.563rem;
+	color: #000;
+}
+.lotery__roll__button_blue{
+	background-color: #8dcdcc;
+	box-shadow: none;
+	width: 22.563rem;
+	color: #ffffff;
+
+}
+.lotery__roll__button_active:hover{
 	transform: scale(1.1);
 }
 

@@ -182,10 +182,11 @@ $(document).ready(function () {
 	//		$('.lotery__block').css('height','auto')
 	//	}
 	//})
-	let power_change = 50
-	let screen_change = 100
-	let usb_change = 150
+	let power_change = 100
+	let screen_change = 200
+	let usb_change = 300
 	function roll(){
+		$('.lotery__roll__button').off()
 		let roll_num = Math.random()
 		roll_num = roll_num*1000
 		roll_num = Math.round(roll_num)
@@ -288,6 +289,38 @@ $(document).ready(function () {
 		setTimeout(function() {
 			$('.lotery__block__item .lotery__item__img').eq(2).css('opacity','1')
 			$('.lotery__block__item .lotery__item__title').eq(2).css('opacity','1')
+			setTimeout(function() {
+				if (result == "False") {
+					let timer = 15
+					let roll_interval = setInterval(function () {
+						$('.lotery__roll__button').removeClass('lotery__roll__button_active')
+						$('.lotery__roll__button').text('Испытать удачу через ' + timer + ' сек')
+						if (timer == 0){
+							$('.lotery__roll__button').addClass('lotery__roll__button_active')
+							$('.lotery__roll__button').text('Испытать удачу')
+							$('.lotery__roll__button').on('click',roll)
+							clearInterval(roll_interval)
+						}
+						timer--
+					},1000)
+				} else{
+					if (result == 'Стекло') {
+						$('.lotery__roll__text').html('Поздравляем! Вы выиграли <b>защитную пленку</b>')
+						$('.lotery__roll__button').addClass('lotery__roll__button_blue')
+						$('.lotery__roll__button').text('Забрать подарок')
+					}
+					if (result == 'Зарядка') {
+						$('.lotery__roll__text').html('Поздравляем! Вы выиграли <b>зарядку</b>')
+						$('.lotery__roll__button').addClass('lotery__roll__button_blue')
+						$('.lotery__roll__button').text('Забрать подарок')
+					}
+					if (result == 'Кабель') {
+						$('.lotery__roll__text').html('Поздравляем! Вы выиграли <b>USB кабель</b>')
+						$('.lotery__roll__button').addClass('lotery__roll__button_blue')
+						$('.lotery__roll__button').text('Забрать подарок')
+					}
+				}
+			},1000)
 		},2000)
 		},1000)
 		

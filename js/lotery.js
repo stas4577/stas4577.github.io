@@ -122,25 +122,25 @@ $(document).ready(function () {
 	// Создание маски для ввода телефона
 	// Открытие попапа
 	function openPopup () {
-		$('#popup').addClass('popup_active')
+		$('#popup_1').addClass('popup_active')
 		$('#grey_window').addClass('grey_active')
 	}
 	// Закрытие попапа
 	function closePopup () {
-		$('#popup').removeClass('popup_active')
+		$('#popup_1').removeClass('popup_active')
 		$('#grey_window').removeClass('grey_active')
 	}
 	$('.button_app').on('click',openPopup)
-	$('#close').on('click',closePopup)
+	$('#close_1').on('click',closePopup)
 	// Валидатор
 	function validate () {
 		errors = false
-		if ($('#name_input').val().length == 0) {
-			createError ($('#name_input'))
+		if ($('#name_input_1').val().length == 0) {
+			createError ($('#name_input_1'))
 			errors = true
 		}
-		if ($('#phone_input').val().length != 11) {
-			createError($('#phone_input'))
+		if ($('#phone_input_1').val().length != 11) {
+			createError($('#phone_input_1'))
 			errors = true
 		}
 		if (errors) {
@@ -150,7 +150,7 @@ $(document).ready(function () {
 		}
 
 	}
-	$('#validate').on('click',validate)
+	$('#validate_1').on('click',validate)
 	// Функция создание ошибок
 	function createError (el) {
 		el.addClass('input_error')
@@ -182,9 +182,9 @@ $(document).ready(function () {
 	//		$('.lotery__block').css('height','auto')
 	//	}
 	//})
-	let power_change = 100
-	let screen_change = 200
-	let usb_change = 300
+	let power_change = 300
+	let screen_change = 600
+	let usb_change = 900
 	function roll(){
 		$('.lotery__roll__button').off()
 		let roll_num = Math.random()
@@ -319,6 +319,7 @@ $(document).ready(function () {
 						$('.lotery__roll__button').addClass('lotery__roll__button_blue')
 						$('.lotery__roll__button').text('Забрать подарок')
 					}
+					$('.lotery__roll__button_blue').on('click',openPopup)
 				}
 			},1000)
 		},2000)
@@ -326,7 +327,6 @@ $(document).ready(function () {
 		
 	}
 	$('.lotery__roll__button').on('click',roll)
-
-
+	//openPopup()
 
 })

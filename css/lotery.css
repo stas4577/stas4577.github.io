@@ -1012,6 +1012,9 @@ p{
 }
 /*Попап*/
 #popup{
+	display: none;
+}
+#popup_1{
   position: fixed;
   left: 50%;
   top: 50%;
@@ -1067,7 +1070,7 @@ p{
   font-weight: 600;
 }
 
-#close{
+#close_1{
   position: absolute;
   right: 30px;
   top: 30px;
@@ -1243,4 +1246,8 @@ p{
 		height: 40px;
 		width: 20px;
 	}
+}
+#validate__wrap{
+	display: flex;
+	justify-content: center;
 }

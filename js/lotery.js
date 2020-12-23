@@ -324,7 +324,6 @@ $(document).ready(function () {
 			},1000)
 		},2000)
 		},1000)
-		
 	}
 	$('.lotery__roll__button').on('click',roll)
 	//openPopup()

@@ -101,7 +101,6 @@ $(document).ready(function () {
 	}
 	$('.button__checked').on('click',modelUncheck)
 	//Выбор на мобилках
-	$('.button__scroll__item').off()
 	if ($(window).width() <= 425) {
 		$('.button__scroll__item').off()
 		$('.button_scrolling').on('mouseenter',function () {

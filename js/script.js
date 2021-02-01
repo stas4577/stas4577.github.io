@@ -172,6 +172,68 @@ $(document).ready(function () {
 		$(location).attr('href','/calculator')
 	}
 	$('.button:contains("Калькулятор")').on('click',toCalc)
+	//Отзывы
+	let active_slider = 1
+	function sliderTo(){
+		id = $(this).index() + 1
+		$('.slider__block').removeClass('slider__block_active')
+		$('#block_' + id).addClass('slider__block_active')
+		$('.slider__nav__item').removeClass('active')
+		$('.slider__nav__item').eq(id-1).addClass('active')
+		active_slider = id
+		clearInterval(interval)
+	}
+	function sliderNext() {
+		active_slider = active_slider + 1
+		if (active_slider > $('.slider__nav__item').length) {
+			active_slider = 1
+		}
+		$('.slider__block').removeClass('slider__block_active')
+		$('#block_' + active_slider).addClass('slider__block_active')
+		$('.slider__nav__item').removeClass('active')
+		$('.slider__nav__item').eq(active_slider-1).addClass('active')
+	}
+	function sliderPrev() {
+		active_slider = active_slider - 1
+		if (active_slider == 0) {
+			active_slider = $('.slider__nav__item').length
+		}
+		$('.slider__block').removeClass('slider__block_active')
+		$('#block_' + active_slider).addClass('slider__block_active')
+		$('.slider__nav__item').removeClass('active')
+		$('.slider__nav__item').eq(active_slider-1).addClass('active')
+	}
+	let interval = setInterval(sliderNext,8000)
+	$('.slider__nav__item').on('click',sliderTo)
+	
+
+
+
+	$(".slider").swipe( {
+    //Generic swipe handler for all directions
+    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+      if (direction == 'left') {
+      	sliderNext()
+      }
+      if (direction == 'right'){
+      	sliderPrev()
+      }
+    }
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 })

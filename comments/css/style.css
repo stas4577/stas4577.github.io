@@ -516,9 +516,15 @@ a {
 		top: -120px;
 	}
 }
+.mob__show{
+	display: none !important;
+}
 @media (max-width: 500px) {
 	.mob__hide {
-		display: none;
+		display: none !important;
+	}
+	.mob__show{
+		display: flex !important;
 	}
 
 	#phone {
@@ -997,3 +1003,4 @@ img {
 		display: none !important;
 	}
 }
+

@@ -224,7 +224,30 @@ $(document).ready(function () {
 
 
 
-
+	// Всё что после правок
+	//Слайдер
+	function sliderMove (slider,num) {
+		
+		$('.aboutFix__slider[data-slider="' + slider + '"] img').attr('src',
+			'img/slider_' + slider + '_' + num + '.png'
+		)
+	}
+	sliderMove(1,1)
+	sliderMove(2,1)
+	$('.aboutFix__slider__bar').on('click',function () {
+		let slider_to = $(this).index() + 1
+		let slider_num = $(this).parents('.aboutFix__slider').data('slider')
+		sliderMove(slider_num,slider_to)
+		$(this).siblings().removeClass('aboutFix__slider__bar_active')
+		$(this).addClass('aboutFix__slider__bar_active')
+	})
+	//Открытие видео
+	function openVideo () {
+		src = $(this).data('src')
+		$(this).next().attr('src',src + '?autoplay=1&loop=1&&playlist=Video_ID')
+		$('.video__youtube').css('display','block')
+	}
+	$('.people__play__button').on('click',openVideo)
 
 
 

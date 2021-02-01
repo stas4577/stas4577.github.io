@@ -720,11 +720,16 @@ a {
 		top: -120px;
 	}
 }
+.mob__show{
+	display: none !important;
+}
 @media (max-width: 500px) {
 	.mob__hide {
-		display: none;
+		display: none !important;
 	}
-
+	.mob__show{
+		display: flex !important;
+	}
 	#phone {
 		width: 200px;
 		height: 200px;
@@ -1552,28 +1557,4 @@ img {
 
 .footer__link:last-child {
 	margin-right: 0;
-}
-.header_info{
-	padding-top: 10px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin-bottom: 15px;
-}
-.header_info span{
-	padding: 0 10px;
-	border-right: 1px solid #000;
-	font-size: 0.8rem;
-}
-.header_info span:first-child{
-	padding-left: 0;
-}
-.header_info span:last-child{
-	padding-right: 0;
-	border-right: none;
-}
-@media (max-width: 768px){
-	.header_info span{
-		border-right: none;
-	}
 }

@@ -176,35 +176,37 @@ $(document).ready(function () {
 	let active_slider = 1
 	function sliderTo(){
 		id = $(this).index() + 1
+		$('.comments__block').addClass('comments__block_noactive')
+		$('.comments__block').eq(id-1).removeClass('comments__block_noactive')
 		$('.slider__block').removeClass('slider__block_active')
 		$('#block_' + id).addClass('slider__block_active')
-		$('.slider__nav__item').removeClass('active')
-		$('.slider__nav__item').eq(id-1).addClass('active')
+		$('.slider__nav').removeClass('slider__nav_active')
+		$('.slider__nav').eq(id-1).addClass('slider__nav_active')
 		active_slider = id
-		clearInterval(interval)
 	}
 	function sliderNext() {
 		active_slider = active_slider + 1
-		if (active_slider > $('.slider__nav__item').length) {
+		if (active_slider > $('.slider__nav').length) {
 			active_slider = 1
 		}
-		$('.slider__block').removeClass('slider__block_active')
-		$('#block_' + active_slider).addClass('slider__block_active')
-		$('.slider__nav__item').removeClass('active')
-		$('.slider__nav__item').eq(active_slider-1).addClass('active')
+		$('.comments__block').addClass('comments__block_noactive')
+		$('.comments__block').eq(active_slider - 1).removeClass('comments__block_noactive')
+		$('.slider__nav').removeClass('slider__nav_active')
+		$('.slider__nav').eq(active_slider-1).addClass('slider__nav_active')
 	}
 	function sliderPrev() {
 		active_slider = active_slider - 1
 		if (active_slider == 0) {
 			active_slider = $('.slider__nav__item').length
 		}
-		$('.slider__block').removeClass('slider__block_active')
-		$('#block_' + active_slider).addClass('slider__block_active')
-		$('.slider__nav__item').removeClass('active')
-		$('.slider__nav__item').eq(active_slider-1).addClass('active')
+		$('.comments__block').addClass('comments__block_noactive')
+		$('.comments__block').eq(active_slider - 1).removeClass('comments__block_noactive')
+		$('.slider__nav').removeClass('slider__nav_active')
+		$('.slider__nav').eq(active_slider-1).addClass('slider__nav_active')
 	}
-	let interval = setInterval(sliderNext,8000)
-	$('.slider__nav__item').on('click',sliderTo)
+	$('.slider__nav').on('click',sliderTo)
+	$('.slider_right').on('click',sliderNext)
+	$('.slider_left').on('click',sliderPrev)
 	
 
 

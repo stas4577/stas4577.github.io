@@ -1122,12 +1122,14 @@ img {
 	margin-top: 15px;
 }
 .comments__title{
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-weight: 600;
 	margin-bottom: 10px;
 }
 .comments__subtitle{
-	font-size: 1.3rem;
+	margin-top: -5px;
+	font-size: 1rem;
+	font-weight: 500;
 }
 @media(max-width: 450px){
 	.comments{

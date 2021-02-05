@@ -582,13 +582,29 @@
 	</section>	
 	<section class="map">
 		<div class="container">
-			<p class="map__text">Адреса на карте</p>
-		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A06213977f1bcc5825e3de168b26b713e7d216aa84e15983ed5f79234c6483d36&amp;source=constructor" width="100%" height="400px" frameborder="0"></iframe>
+			<div class="map__decor_left">
+				<img src="img/decor_left.png" alt="">
+			</div>
+			<div class="map__decor_circle">
+				<img src="img/repair_circle.png" alt="">
+			</div>
+			<p class="aboutFix__title">Адреса</p>
+			<p class="aboutFix__subtitle text_yellow">на карте</p>
+		<iframe class="map__yandex" src="https://yandex.ru/map-widget/v1/?um=constructor%3A06213977f1bcc5825e3de168b26b713e7d216aa84e15983ed5f79234c6483d36&amp;source=constructor" width="100%" height="450px" frameborder="0"></iframe>
+		<div class="map__button">
+			<div data-button="office" class="people__button">Наши контакты</div>
+		</div>
 		</div>
 	</section>
 	<section class="comments_sect">
 		<div class="comments__pre">
 		<div class="container">
+			<div class="aboutFix__title">
+				Наши
+			</div>
+			<div class="aboutFix__subtitle">
+				Отзывы
+			</div>
 			<div class="comments__title">
 				Мы ориентируемся на качество
 			</div>
@@ -599,124 +615,65 @@
 	</div>		
 	<section class="comments">
 		<div class="container comments__wrap">
-			<div class="comment">
-				<div class="comment__img">
-					<img src="img/comment_1.png" alt="">
+			<div class="slider__to slider_left">
+					<img src="img/slider_left.png" alt="">
 				</div>
-				<div class="comment__link">
-					Источник: <a target="_blank" class="text_blue" href="https://go.2gis.com/ciz7fa">2GIS</a>
-				</div>
-			</div>
-			<div class="comment">
-				<div class="comment__img">
-					<img src="img/comment_2.png" alt="">
-				</div>
-				<div class="comment__link">
-					Источник: <a target="_blank" class="text_blue" href="https://www.yell.ru/moscow/com/ifix-it_11345635/">Yell.ru</a>
+			<div class="comments__block">
+				<div class="comment__wrap">
+					<img class="slider__img" src="img/comment_1.png" alt="">
+					<div class="comment__from">
+						<a target="_blank" href="https://2gis.ru/moscow/inside/4504235282598287/firm/4504127921516484?m=37.549602%2C55.683243%2F19.02">Источник: <span class="text_blue">“2GIS”</span></a>
+					</div>
 				</div>
 			</div>
-			<div class="comment">
-				<div class="comment__img">
-					<img src="img/comment_3.png" alt="">
-				</div>
-				<div class="comment__link">
-					Источник: <a target="_blank" class="text_blue" href="https://yandex.ru/maps/org/iphone_remont/1257703132/?ll=37.549553%2C55.682975&z=19">Яндекс</a>
-				</div>
-			</div>
-			<div class="comment">
-				<div class="comment__img">
-					<img src="img/comment_4.png" alt="">
-				</div>
-				<div class="comment__link">
-					Источник: <a target="_blank" class="text_blue" href="https://www.google.com/search?newwindow=1&rlz=1C1CHZL_ruRU745RU745&sxsrf=ACYBGNS5o_z05Jah4A_B5ZV10coPQr2dVg:1573984965522&q=%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82+iphone&npsic=0&rflfq=1&rlha=0&rllag=55675852,37546746,901&tbm=lcl&ved=2ahUKEwjHs4H2_vDlAhXM4KYKHWcXAtUQtgN6BAgKEAQ&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2&rldoc=1#lrd=0x46b54cec34912ceb:0xc5b0aef9321c4f95,1,,,&rlfi=hd:;si:14245078006683684757;mv:[[55.683259350723134,37.55204279970542],[55.681520348777894,37.54513349214733],null,[55.68238985941588,37.548588145926374],18]">Google</a>
+			<div class="comments__block comments__block_noactive">
+				<div class="comment__wrap">
+					<img class="slider__img" src="img/comment_2.png" alt="">
+					<div class="comment__from">
+						<a target="_blank" href="https://www.yell.ru/moscow/com/ifix-it_11345635/">Источник: <span class="text_blue">“Yell.ru”</span></a>
+					</div>
 				</div>
 			</div>
+			<div class="comments__block comments__block_noactive">
+				<div class="comment__wrap">
+					<img class="slider__img" src="img/comment_3.png" alt="">
+					<div class="comment__from">
+						<a target="_blank" href="https://yandex.ru/maps/org/ifix_it_ru/1257703132/?ll=37.549553%2C55.682975&z=19">Источник: <span class="text_blue">“Яндекс”</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="comments__block comments__block_noactive">
+				<div class="comment__wrap">
+					<img class="slider__img" src="img/comment_4.png" alt="">
+					<div class="comment__from">
+						<a target="_blank" href="https://www.google.com/search?newwindow=1&rlz=1C1CHZL_ruRU745RU745&sxsrf=ACYBGNS5o_z05Jah4A_B5ZV10coPQr2dVg:1573984965522&q=ремонт+iphone&npsic=0&rflfq=1&rlha=0&rllag=55675852,37546746,901&tbm=lcl&ved=2ahUKEwjHs4H2_vDlAhXM4KYKHWcXAtUQtgN6BAgKEAQ&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2&rldoc=1#lrd=0x46b54cec34912ceb:0xc5b0aef9321c4f95,1,,,&rlfi=hd:;si:14245078006683684757;mv:[[55.6832593603885,37.55204279970542],[55.68152035844326,37.54513349214733]]">Источник: <span class="text_blue">“Google”</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="slider__to slider_right">
+					<img src="img/slider_right.png" alt="">
+				</div>
 		</div>
-	</section>
-	<section class="comments__mob">
-		<div class="container">
-			<div class="slider">
-				<div id="block_1" class="slider__block slider__block_active">
-					<div class="slider__text">
-						Замену аккумулятлра на айфон 6s сдедали за 10 минут. Место отличное, очереди нет, посидели в кресле и вышли с работающим девайсом.
-						В подарок бесплатно поставили новое защитное стекло.
-						Хорошее место, грамотный персонал, есть где припарковать авто, рекомендую.
-					</div>
-					<div class="slider__from">
-						<div class="slider__from__icon">
-							<img src="img/yandex.png" alt="">
-						</div>
-						<div class="slider__from__text">
-							<span><b>Отзыв с yandex</b> </span>
-							<a target="_blank" href="https://yandex.ru/maps/org/iphone_remont/1257703132/?ll=37.549553%2C55.682975&z=19">Читать оригинал</a>
-						</div>
-					</div>
-				</div>
-				<div id="block_2" class="slider__block">
-					<div class="slider__text">
-						Пришла с «мертвым»айфоном(не смог сам обновиться), все быстро и восстановили!!! Очередей нет, место приятное, есть где подождать. На звонок отвечают или в течении 10 мин перезванивают! Рекомендую!
-					</div>
-					<div class="slider__from">
-						<div class="slider__from__icon">
-							<img src="img/google.png" alt="">
-						</div>
-						<div class="slider__from__text">
-							<span><b>Отзыв с google</b> </span>
-							<a target="_blank" href="https://www.google.com/search?newwindow=1&rlz=1C1CHZL_ruRU745RU745&sxsrf=ACYBGNS5o_z05Jah4A_B5ZV10coPQr2dVg:1573984965522&q=%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82+iphone&npsic=0&rflfq=1&rlha=0&rllag=55675852,37546746,901&tbm=lcl&ved=2ahUKEwjHs4H2_vDlAhXM4KYKHWcXAtUQtgN6BAgKEAQ&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2&rldoc=1#lrd=0x46b54cec34912ceb:0xc5b0aef9321c4f95,1,,,&rlfi=hd:;si:14245078006683684757;mv:[[55.683259350723134,37.55204279970542],[55.681520348777894,37.54513349214733],null,[55.68238985941588,37.548588145926374],18]">Читать оригинал</a>
-						</div>
-					</div>
-				</div>
-				<div id="block_3" class="slider__block">
-					<div class="slider__text">
-						Ремонтирую здесь технику уже не в первый раз. всё нравится, особенно отношение мастеров, всё подробно объяснят и скажут в чём была проблема и как лучше безопасно использовать технику
-					</div>
-					<div class="slider__from">
-						<div class="slider__from__icon">
-							<img src="img/2gis.png" alt="">
-						</div>
-						<div class="slider__from__text">
-							<span><b>Отзыв с 2gis</b> </span>
-							<a target="_blank" href="https://go.2gis.com/ciz7fa">Читать оригинал</a>
-						</div>
-					</div>
-				</div>
-				<div id="block_4" class="slider__block">
-					<div class="slider__text">
-						Хороший уровень обслуживания в сервисе, находятся недалеко от метро, открыты для общения с клиентом. Что касается ремонта. тоже нет никаких проблем, телефон работает отлично после замены аккумулятора
-					</div>
-					<div class="slider__from">
-						<div class="slider__from__icon">
-							<img src="img/yell.png" alt="">
-						</div>
-						<div class="slider__from__text">
-							<span><b>Отзыв с yell</b> </span>
-							<a target="_blank" href="https://www.yell.ru/moscow/com/ifix-it_11345635/">Читать оригинал</a>
-						</div>
-					</div>
-				</div>
-			</div>
+		<div class="container slider__nav__wrap">
+			<div class="slider__nav slider__nav_active"></div>
+			<div class="slider__nav"></div>
+			<div class="slider__nav"></div>
+			<div class="slider__nav"></div>
 		</div>
-
-	</section>	
-	<section class="slider__nav container">
-		<div class="slider__nav__item active"></div>
-		<div class="slider__nav__item"></div>
-		<div class="slider__nav__item"></div>
-		<div class="slider__nav__item"></div>
+		
 	</section>
 	<div class="container fix__container">
 		<div class="people__buttons">
-			<div data-button="office" class="people__button">Ремонт в офисе</div>
-			<div data-button="exit" class="people__button">Ремонт на выезде</div>
+			<a href="/comments" class="people__button">Оставить отзыв</a>
 		</div> 
 	</div>
 	</section>
 	<section class="aboutFix">
 
 		<div class="container">
-			<div class="aboutFix__title">О нашем ремонте</div>
+			<div class="aboutFix__title">О нашем</div>
 			<div class="aboutFix__subtitle text_yellow aboutFix__name">
-				 
+				 Ремонте
 			</div>
 			<div class="aboutFix__main">
 				<div class="aboutFix__row">
@@ -731,7 +688,11 @@
 					<div class="aboutFix__row__text">
 						<div class="aboutFix__main__text">Мы же в свою очередь не обращаем внимание на причину поломки, а принимаемся за починку iPhone с любыми повреждениями. Наш мастер при вас произведет диагностику телефона, ознакомит вас с расценками и продолжительностью ремонтных работ.</div>
 						<div class="aboutFix__main__text">Для ремонта мы используем только качественные, проверенные детали. Поэтому клиенты могут быть уверены в том, что повторно их телефон не сломается.</div>
-						<div class="aboutFix__main__subtitle">Список работ, которые мы выполняем:</div>
+					</div>
+				</div>
+				<div class="aboutFix__row margin_top">
+					<div class="aboutFix__row__text">
+							<div class="aboutFix__main__title margin_top_none">Список работ, которые мы выполняем:</div>
 						<div class="aboutFix__main__text text_italic">
 							— устраняем проблемы с загрузкой приложений и файлов;<br>
 							— производим замену дисплея или <span class="text_blue">стекла</span>;<br>
@@ -741,16 +702,7 @@
 							— меняем аккумуляторы, корпуса, кнопки и датчики.
 						</div>
 					</div>
-					<div data-slider="1" class="aboutFix__slider">
-						<div class="aboutFix__slider__img">
-							<img class="" src="" alt="">
-						</div>
-						<div class="aboutFix__slider__status">
-							<div class="aboutFix__slider__bar aboutFix__slider__bar_active"></div>
-							<div class="aboutFix__slider__bar"></div>
-							<div class="aboutFix__slider__bar"></div>
-						</div>
-					</div>
+					<img class="aboutFix__img" src="img/slider_1_1.png" alt="">
 				</div>
 				<div class="aboutFix__row">
 					<div class="aboutFix__row__text">
@@ -776,6 +728,12 @@
 				</div>
 			</div>
 		</div>
+		<div class="container fix__container">
+		<div class="people__buttons">
+			<div data-button="office" class="people__button">Ремонт в офисе</div>
+			<div data-button="exit" class="people__button">Ремонт на выезде</div>
+		</div> 
+	</div>
 	</section>
 	<footer class="footer">
 		<div class="container footer__wrap">

@@ -1132,15 +1132,8 @@ img {
 	font-weight: 500;
 }
 @media(max-width: 450px){
-	.comments{
-		display: none !important;
-	}
-	.comments__mob{
-		display: flex;
-		margin-top: 35px;
-		background: #000;
-		color: #fff;
-		font-size: 1.2rem;
+	.slider__to{
+		display: none;
 	}
 	.slider{
 		padding-top: 20px;

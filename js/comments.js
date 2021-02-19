@@ -21,6 +21,21 @@ $(document).ready(function () {
 			$('#burgerSwitcher').attr('src','img/burger.svg')
 		}
 	}
+	function contactsSwitcher () {
+		$('.contacts_menu').toggleClass('contacts_active')
+		$('#grey_window').toggleClass('grey_active')
+		$('.contacts_menu').css('top','40px')
+	}
+
+	// Меню второго уровня
+	
+	function closeAllPopup() {
+		$('.burger_menu').removeClass('burger_active')
+		$('.contacts_menu').removeClass('contacts_active')
+		$('#grey_window').removeClass('grey_active')
+		$('#burgerSwitcher').attr('src','img/burger.svg')
+	}
+	$('#contactsSwitcher').on('click',contactsSwitcher)
 	$('#burgerSwitcher').on('click',burgerSwitcher)
 
 	// Меню второго уровня
@@ -49,13 +64,7 @@ $(document).ready(function () {
 		}
 	}
 	//Закрытие бургера при клике вне поля
-	$('#grey_window').on('click',function (e) {
-		if ($('.burger_menu').hasClass('burger_active')) {
-			burgerSwitcher()
-		} else {
-			closePopup()
-		}
-	})
+	$('#grey_window').on('click',closeAllPopup)
 	// Выбор модели
 	function modelCheck () {
 		name = $(this).data('name')
